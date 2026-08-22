@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>what i'm working on &mdash; Ben Sovocool</title>
+<style>
+  :root { --ink:#1a1a1a; --quiet:#6b6b6b; --rule:#e3e3e3; }
+  html { font-size: 17px; }
+  body {
+    background: #fff;
+    margin: 0 auto;
+    max-width: 36rem;
+    padding: 2.5rem 1.25rem 4rem;
+    color: var(--ink);
+    font-family: Charter, Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+  }
+  .crumb {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--quiet);
+    margin-bottom: 2rem;
+  }
+  .crumb a { color: var(--quiet); }
+  h1 { font-size: 1.35rem; margin: 0 0 1.75rem 0; }
+  p { margin: 0 0 1rem 0; }
+  ul { list-style-type: "\2014\00a0\00a0"; padding-left: 1.5rem; margin: 0 0 1rem 0; }
+  ul ul { margin-top: 0.5rem; margin-bottom: 0; }
+  li { margin-bottom: 0.5rem; }
+  img { max-width: 100%; height: auto; }
+  figure { margin: 0 0 1rem 0; }
+  blockquote {
+    margin: 0 0 1rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--rule);
+    color: var(--quiet);
+  }
+  code, pre {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.85em;
+  }
+  pre { overflow-x: auto; padding: 0.75rem; border: 1px solid var(--rule); }
+  a { color: #0000ee; }
+  a:visited { color: #551a8b; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 1.75rem 0; }
+</style>
+</head>
+<body>
+
+<p class="crumb"><a href="../index.html">&larr; ben sovocool</a></p>
+
+<h1>what i'm working on - 8.21.26</h1>
+
+<p>Below is a list of problems that I think are interesting and that I&rsquo;m either working on now or plan on working on in the near future. The common area here appears to be compressibility. In a sense, the whole practice of law is a question of compressibility: reducing the mess of human behavior into compact rules, then navigating ambiguity and conflict within the rule-system and between rules and the world.</p>
+
+<p>If you are working on any of the below, I&rsquo;d love to talk to you!</p>
+
+<p>1. Financial Regulation and Alignment</p>
+
+<p>It seems that there are useful parallels between recurring issues in financial regulation/policy and other complex adaptive systems, including multi-agent systems.</p>
+
+<p>Here are some areas I&rsquo;m interested in and that I think may be productive:</p>
+
+<ul>
+  <li>Manufactured CDS defaults (GSO/Hovnanian, etc.) and sim2real</li>
+  <li>What does it mean for a financial system to be &ldquo;aligned&rdquo; at a macro level? Are markets &ldquo;aligned,&rdquo; and what interventions help or hurt alignment?</li>
+  <li>Regulatory arbitrage generally. Is arbitrage morally good, bad, neutral?</li>
+  <li>Derivatives &mdash; I love derivatives in all their forms. I think there is a macro-level paper about law-abiding and the relative sensitivity of derivatives and their underlyings that is waiting to be written but is right outside of my grasp.</li>
+</ul>
+
+<p>2. SEC Plain English, &ldquo;Legalese&rdquo;</p>
+
+<p>As a general rule, I&rsquo;m a defender of &ldquo;legalese.&rdquo; In 1998, the SEC introduce a rule requiring that public-company disclosures (proxies, annual and quarterly reports, [8-Ks?]) be written in &ldquo;plain English.&rdquo; This was intended to reduce what was viewed as unnecessary &ldquo;legalese,&rdquo; particularly in proxy filings, and improve readability for retail investors. But anyone who has read a proxy filing can attest that they are not particularly clear. In fact, proxy filings grew monotonically in length until around 2021/2022, as below:</p>
+
+<figure>
+  <img src="../assets/median-item-1a-length.png" alt="Line chart of the median Item 1A (risk factor) word count for all 10-K filers by fiscal year, rising steadily from about 3,200 words in 2005 to a peak above 11,000 in 2022, then declining to about 9,600 by 2025.">
+</figure>
+
+<p>I think (a) the Plain English Rule was a failure; (b) the fact that it would be a failure was (in hindsight) predictable on information-theoretic grounds; and (c) we can learn from this to avoid other well-intentioned but ultimately defective rules in other contexts.</p>
+
+<p>The spoiler is that imposing a rule governing output does not produce desired results where selection pressure is only coming from one subset of the reader population (here, selection pressure occurs via shareholder demand letters and litigation, which are interpreted by the court, and thus &ldquo;legalese&rdquo; is the only channel exerting meaningful selection pressure).</p>
+
+<p>3. Credit Agreement Manifolds</p>
+
+<p>Credit agreements are fun and interesting documents. They are very long and dense documents, and, unlike merger or stock purchase agreements (which deal with other, free-standing documents) they are largely self-contained. But the credit agreement edifice entirely revolves around the simple concept of credit risk. We can therefore view credit agreements through the lens of option pricing (like a CDS) and treat different sections as different options &mdash; and through this lens, credit agreements (and the related royalty, licensing, and securitization agreements) become much more simple to understand.</p>
+
+<p>It seems that different models trained on the same concepts create similar representational structures. But it is unclear whether these shared representational structures bear any resemblance to an underlying &ldquo;Platonic form.&rdquo; Perhaps credit agreements will be a helpful lever. My intuition is that the topology of learned representations is similar in some meaningful way to the topology of the options pricing structure for a given clause (in other words, that there is some underlying form that models seize on). This could be totally untrue, but it would be fun to figure it out. I have every credit agreement filed since the start of EDGAR&rsquo;s electronic full text search (EFTS) program and am happy to share some or all with others.</p>
+
+<p>4. Memory</p>
+
+<p>Large language models are amnesiac on deployment. Developing persistent, cross-context memory seems to be a natural next step in developing the capabilities of LLMs. Memory also seems to play a critical role in our considerations of personhood and moral worth. Right now, &ldquo;memory&rdquo; is achieved through note-taking. Although there are many good reasons to use note-taking, and a mature memory system would still use note-taking, a notes-only system seems (a) inefficient and (b) inconsistent with human memory. One compelling possibility is to use low-rank adapters (LoRA) to alter weights.</p>
+
+<p>Thinking about memory systems has been a fun way to learn more about information theory broadly and, although I don&rsquo;t expect to have any extraordinary breakthroughs here, I&rsquo;m always interested to hear about new developments in this space. I have a long-standing repo at <a href="https://github.com/bsovocool16/dreaming-lora">github.com/bsovocool16/dreaming-lora</a> that I contribute to occasionally.</p>
+
+<p>5. AOB/Miscellanea</p>
+
+<ul>
+  <li>Superintelligence in the legal system; effects thereof (for good or bad)
+    <ul>
+      <li>Agency law and APA comment letters</li>
+      <li>Superintelligence, outcome-prediction, and sim2real issues in precedent generation/manipulation</li>
+    </ul>
+  </li>
+  <li>AI in the business of law, MSOs and impacts on the profession (I&rsquo;ve written about this on LinkedIn).</li>
+  <li>AI Constitutions:
+    <ul>
+      <li>Who are the parties to an &ldquo;AI Constitution&rdquo;? Who are the parties to historical constitutions?</li>
+      <li>How much have historical constitutions conformed to the actual values/desires of the <i>polis</i>? Is it appropriate to view the Framers as a &ldquo;vanguard class&rdquo; of liberal values? Are labs the &ldquo;vanguard class&rdquo;?</li>
+      <li>What mechanisms would provide LLMs with meaningful inputs in their constitutions? To what extent do political subjects need or have input in their constitutions?</li>
+      <li>Is &ldquo;value pluralism&rdquo; something we care about, either instrumentally or intrinsically?</li>
+    </ul>
+  </li>
+  <li>What parallels exist between AI persona basins and Dworkin&rsquo;s idea of &ldquo;law as integrity&rdquo;? Does the number of internally-coherent legal systems decrease with scale, and is there any fully-coherent legal system, or do all systems result in some degree of internal incoherence?</li>
+  <li>Why is AI contract drafting so weird? What can we do to improve drafting quality? My intuition here is that models that are better exposed to the implicit cost function of legal drafting will draft better, more parsimonious edits.</li>
+</ul>
+
+</body>
+</html>
