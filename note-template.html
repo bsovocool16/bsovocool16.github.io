@@ -45,6 +45,19 @@
   a { color: #0000ee; }
   a:visited { color: #551a8b; }
   hr { border: none; border-top: 1px solid var(--rule); margin: 1.75rem 0; }
+  sup.fn { font-size: 0.7em; line-height: 0; vertical-align: super; }
+  sup.fn a { text-decoration: none; }
+  .footnotes {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--quiet);
+  }
+  .footnotes ol { padding-left: 1.25rem; margin: 0; }
+  .footnotes li { margin-bottom: 0.5rem; scroll-margin-top: 2rem; }
+  .footnotes p { margin: 0; }
+  .footnotes a.back { text-decoration: none; }
 </style>
 </head>
 <body>
@@ -54,7 +67,13 @@
 <h1>[note title]</h1>
 <p class="date">[date] &middot; working note</p>
 
-<p>[write. timer on.]</p>
+<p>[write. timer on.]<sup class="fn" id="fnref1"><a href="#fn1">1</a></sup></p>
+
+<div class="footnotes">
+<ol>
+  <li id="fn1"><p>[footnote text.] <a class="back" href="#fnref1">&#8617;</a></p></li>
+</ol>
+</div>
 
 </body>
 </html>
