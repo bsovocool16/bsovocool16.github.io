@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>thoughts on ai practice of law &mdash; Ben Sovocool</title>
+<style>
+  :root { --ink:#1a1a1a; --quiet:#6b6b6b; --rule:#e3e3e3; }
+  html { font-size: 17px; }
+  body {
+    background: #fff;
+    margin: 0 auto;
+    max-width: 36rem;
+    padding: 2.5rem 1.25rem 4rem;
+    color: var(--ink);
+    font-family: Charter, Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+  }
+  .crumb {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--quiet);
+    margin-bottom: 2rem;
+  }
+  .crumb a { color: var(--quiet); }
+  h1 { font-size: 1.35rem; margin: 0 0 0.25rem 0; }
+  .date {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--quiet);
+    margin: 0 0 1.75rem 0;
+  }
+  p { margin: 0 0 1rem 0; }
+  blockquote {
+    margin: 0 0 1rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--rule);
+    color: var(--quiet);
+  }
+  code, pre {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.85em;
+  }
+  pre { overflow-x: auto; padding: 0.75rem; border: 1px solid var(--rule); }
+  a { color: #0000ee; }
+  a:visited { color: #551a8b; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 1.75rem 0; }
+  sup.fn { font-size: 0.7em; line-height: 0; vertical-align: super; }
+  sup.fn a { text-decoration: none; }
+  .footnotes {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--quiet);
+  }
+  .footnotes ol { padding-left: 1.25rem; margin: 0; }
+  .footnotes li { margin-bottom: 0.5rem; scroll-margin-top: 2rem; }
+  .footnotes p { margin: 0; }
+  .footnotes a.back { text-decoration: none; }
+</style>
+</head>
+<body>
+
+<p class="crumb"><a href="../index.html">&larr; ben sovocool</a></p>
+
+<h1>Thoughts on AI Practice of Law, or &ldquo;Why &lsquo;Legal Judgment&rsquo; Won&rsquo;t Save You&rdquo;</h1>
+<p class="date">2026-08-24</p>
+
+<p>I note on my homepage that I&rsquo;m not very interested in &ldquo;Legal AI.&rdquo; I wanted to briefly explain why and provide a small amount of context for what I hope will become a more common position in the legal industry.</p>
+
+<!-- TODO: when part two is published, link "here" to its URL. -->
+<p>This is the first part of that argument, discussing why I think AI can and will automate the substantial majority of the practice of law and why &ldquo;judgment&rdquo; is not a barrier to that. The second part, discussing why I don&rsquo;t like the term &ldquo;Legal AI&rdquo; or the general industry of legal-specific AI products, is forthcoming.</p>
+
+<p><u>1. AI and the Practice of Law; Judgment</u></p>
+
+<p>I use AI all the time, both in the practice of law and in my personal life. At work, I use Harvey and Copilot. In my personal life, I use Claude, ChatGPT, and (occasionally) other models like Kimi, Gemini, Grok, etc.</p>
+
+<p>I am not opposed to &ldquo;legal AI&rdquo; because I think that using AI is bad for the practice of law, or that AI can&rsquo;t or will not be able to do some meaningful percentage of my job. In fact, I&rsquo;m very confident that AI can and will do the substantial majority of my job, if not all of it, within the near future. I also think it will do my job better and at lower net cost. I&rsquo;m a junior associate, so it&rsquo;s not controversial to say that anymore, but I don&rsquo;t think this is a phenomenon that stops with junior associates. This post isn&rsquo;t intended to be a top-level argument about how susceptible (or not) the practice of law is to automation, although if you stick around I&rsquo;m sure I&rsquo;ll write that as well. Instead, I want to talk about the specific question of &ldquo;legal judgment&rdquo; and whether it presents a cap on the automation of the practice of law, independent from other secular factors. I do not believe that it does in any meaningful sense.</p>
+
+<p>I talk to coworkers and others all the time who believe that there is some ineffable quality of &ldquo;legal judgment&rdquo; that is exclusively possessed by human lawyers, and that cannot be automated. On LinkedIn, Xitter, etc., lawyers talk a lot about how &ldquo;judgment is the moat,&rdquo; or how we must create AI systems that allow for the exercise of &ldquo;human judgement.&rdquo; I have a lot of respect for these people, and I am open to the possibility that this is true, but so far I haven&rsquo;t seen any evidence of it at all. Moreover, I don&rsquo;t think that there is a very strong argument for this conceptually.</p>
+
+<p>As an initial note, when I read <i>Situational Awareness</i> in law school, I was skeptical of the idea that a machine built on what seemed like deductive reasoning would be capable of complex inductive reasoning. But it seems that they are (which to me remains the most fascinating fact about them), and if you find yourself attached to a model of reasoning that sets aside certain categories of thought as structurally inaccessible to LLMs, you should be skeptical of the soundness of that model.</p>
+
+<p>But even if we consider &ldquo;judgment&rdquo; to be a salient property of thinking things, I think the anti-LLM view is on weak footing. If we look at what people call &ldquo;judgment&rdquo; generally, we could describe it as having a technical component and a teleological component. The technical component says &ldquo;for this desired outcome, do X.&rdquo; The teleological component says &ldquo;the correct desired outcome is Y.&rdquo;</p>
+
+<p>AI clearly is capable of technical judgment in the practice of law. While legal work does not compile like code, by definition the practice of law is not arbitrary. Many of our rules of interpretation are aimed at making natural language more code-like (take <i>ejusdem generis</i>, which is a rule that prevents general terms from swallowing specific lists &mdash; this is a very code-like concern). We critique statutes, regulations, and contracts, or interpretations thereof, where they lead to illogical or incoherent results. These are all things that are amenable to reason! You might throw your hands up and say &ldquo;well, ultimately the law is socially constituted and can&rsquo;t be reduced to code-reading,&rdquo; but (a) this seems to be straightforwardly untrue, and, (b) even if it were true, there might still be rational bases to understanding the social functions that determine law in this world.<sup class="fn" id="fnref1"><a href="#fn1">1</a></sup> You can have AI that assists or performs the practice of law in some meaningful sense without having to commit to a specific jurisprudential framework.</p>
+
+<p>As to teleological or ends-based judgment, my intuition is that this is in fact a very small percentage of the practice of law. Most of what we might initially consider ends-based questions are in fact disguised technical questions. For example &mdash; a client comes in and says that they want to do an acquisition. You look at the proposed target and identify that they have certain assets that are valuable to your client (say, a drug candidate that fits into their pipeline) and other assets that are less valuable to your client but that competitors might value highly. Knowing that a competitive bid might drive up prices for the candidate that you <i>do</i> care about, and that a back-end sale of less valuable candidates would have meaningful antitrust/competition overhang, you might propose to license the candidate instead of buying outright. This is a very sophisticated process that involves a lot of judgment, but it&rsquo;s still really a technical problem that can be addressed in a rational way. You could make this argument technically, by doing an NPV analysis of each transaction form over an agreed timespan, and I don&rsquo;t think anyone would seriously dispute that AI can or could at least conceivably do NPV analysis.<sup class="fn" id="fnref2"><a href="#fn2">2</a></sup></p>
+
+<p>When we hit true ends-based judgment questions, we tend to call them &ldquo;business questions&rdquo; and punt them to the client, because we (correctly) understand that these tasks are fundamental to the operation of the business and that lawyers external to the business itself should not be making them.</p>
+
+<p>Now, it is true that negotiating an agreement often involves the lawyers making many decisions that are not expressly directed by the client but may be consequential. But we do this as a fiduciary of the client, and again this is a technical task of trying to implement the client&rsquo;s prerogatives.</p>
+
+<p>True ends-based judgment is really only involved where lawyers are saying &ldquo;no&rdquo; to their client in a more fundamental way. You want to do X, X would be good for your business, but X would be contrary to my obligations as a lawyer and therefore I won&rsquo;t do it. Or X would be contrary to the well-being of society (or your immortal soul, or whatever) and therefore I won&rsquo;t do it. There are not a lot of instances (in my limited experience) where this seems to happen, at least in part because in a well-ordered society things that are bad for society should also be bad for business. Dumping toxic waste in the county pond could be good for business in the immediate future because the waste is gone, but it creates huge enforcement risks and the risk-adjusted cost of doing so works out to be more than just disposing of it properly.</p>
+
+<p>So even if you accept that AI is incapable of ends-based judgment (which I think is untrue), the vast, vast majority of legal work is not protected by this magic hurdle.</p>
+
+<div class="footnotes">
+<ol>
+  <li id="fn1"><p>Critiques of AI in law often are trying to have it both ways &mdash; LLMs are &ldquo;stochastic parrots&rdquo; who can only reason probabilistically, but also LLMs can&rsquo;t operate in domains where results can&rsquo;t be formally verified. <a class="back" href="#fnref1">&#8617;</a></p></li>
+  <li id="fn2"><p>You might dispute that any AI would be adequately provisioned with information as to the odds of enforcement, the likelihood of other market participants to get into a competitive process, and so on, but these are fixable issues around information provisioning (to the extent that the information that you are using to make the decision as a human lawyer is not improperly derived from your relationship with another client-competitor&hellip;) rather than a real technical barrier. <a class="back" href="#fnref2">&#8617;</a></p></li>
+</ol>
+</div>
+
+</body>
+</html>
