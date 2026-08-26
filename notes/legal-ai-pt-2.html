@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>what i don't like about "legal ai" &mdash; Ben Sovocool</title>
+<style>
+  :root { --ink:#1a1a1a; --quiet:#6b6b6b; --rule:#e3e3e3; }
+  html { font-size: 17px; }
+  body {
+    background: #fff;
+    margin: 0 auto;
+    max-width: 36rem;
+    padding: 2.5rem 1.25rem 4rem;
+    color: var(--ink);
+    font-family: Charter, Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+  }
+  .crumb {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--quiet);
+    margin-bottom: 2rem;
+  }
+  .crumb a { color: var(--quiet); }
+  h1 { font-size: 1.35rem; margin: 0 0 0.25rem 0; }
+  .date {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--quiet);
+    margin: 0 0 1.75rem 0;
+  }
+  p { margin: 0 0 1rem 0; }
+  ul { padding-left: 1.5rem; margin: 0 0 1rem 0; }
+  li { margin-bottom: 0.5rem; }
+  blockquote {
+    margin: 0 0 1rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--rule);
+    color: var(--quiet);
+  }
+  code, pre {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.85em;
+  }
+  pre { overflow-x: auto; padding: 0.75rem; border: 1px solid var(--rule); }
+  a { color: #0000ee; }
+  a:visited { color: #551a8b; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 1.75rem 0; }
+  sup.fn { font-size: 0.7em; line-height: 0; vertical-align: super; }
+  sup.fn a { text-decoration: none; }
+  .footnotes {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--quiet);
+  }
+  .footnotes ol { padding-left: 1.25rem; margin: 0; }
+  .footnotes li { margin-bottom: 0.5rem; scroll-margin-top: 2rem; }
+  .footnotes p { margin: 0; }
+  .footnotes a.back { text-decoration: none; }
+</style>
+</head>
+<body>
+
+<p class="crumb"><a href="../index.html">&larr; ben sovocool</a></p>
+
+<h1>What I Don&rsquo;t Like About &ldquo;Legal AI&rdquo; Specifically</h1>
+<p class="date">2026-08-25</p>
+
+<p>In my <a href="ai-practice-of-law.html">previous post</a>, I discussed why I&rsquo;m skeptical of the idea of &ldquo;legal judgment.&rdquo; This idea is at the core of why I&rsquo;m skeptical of &ldquo;Legal AI&rdquo; as a specific product class, and why I hope other lawyers will be too.</p>
+
+<p>At a high level, my views haven&rsquo;t changed since this post: <a href="https://x.com/BenSovocool/status/2061932455351689501">https://x.com/BenSovocool/status/2061932455351689501</a>.</p>
+
+<p>I&rsquo;ve tried to expand a little below, because that post was a statement of beliefs without much reasoning behind it.</p>
+
+<p>We previously discussed that AI does seem to be capable of &ldquo;legal judgment&rdquo; as necessary for at least the substantial majority of legal work. In that post I used the phrases &ldquo;legal judgment&rdquo; and &ldquo;judgment&rdquo; somewhat interchangeably. In addition to me blasting these posts out by hand with no copy-editing, I use the two interchangeably because I think that they <i>are</i> interchangeable. This idea of legal-specific reasoning or judgment is essentially a category error &mdash; what you are generally describing is general reasoning implicated in the practice of law. The fact that you wear a wig while you do it doesn&rsquo;t really change the situation. So &ldquo;legal reasoning&rdquo; becomes a contingent description of who is doing the reasoning &mdash; essentially an artifact of human specialization rather than a property of the thought itself.</p>
+
+<p>A few things follow from this.</p>
+
+<p>Firstly, I am immediately very skeptical of any company that intends to challenge big models with smaller, specialized models <i>in the field of general reasoning</i> (which, as discussed above, includes lawyering generally). There are some steelman cases for this business model, which I&rsquo;ll discuss below, but the overwhelming rule so far has been that the frontier models get better as they get bigger, and they get better in weird, emergent ways. Importantly, and as noted before, they are now way better at legal reasoning and analysis than they were even six months ago, and with near-zero investment in legal specifically (at least to my knowledge).<sup class="fn" id="fnref1"><a href="#fn1">1</a></sup></p>
+
+<p><u>Value propositions</u></p>
+
+<p>When &ldquo;legal AI&rdquo; is offered by companies that are not model providers, it&rsquo;s difficult to identify the value-add. Instead of paying one company for inference, you are paying a company to re-sell inference to you. It is impossible, from a business perspective, for that company to give you a cheaper price per token. They can give you better <i>value</i> on a net basis in roughly three ways, ranked in order of how interesting I think they are:</p>
+
+<p><i>1. Industry-specific compliance needs:</i> Law firms have lots of compliance requirements, as you would expect for entities that are dealing with sensitive information belonging to other companies. It&rsquo;s reasonable to expect a layer of compliance services (auditing, monitoring of lawyer interactions with the system, enforcing matter-level permissions) will best be served by an intermediary rather than the labs. This is a perfectly good business model, but the benchmark is legal IT spend rather than legal labor spend, and these are at least an OOM apart.</p>
+
+<p><i>2. Better routing</i>: The argument here is that legal AI platforms will intermediate between model providers and users, routing queries to the best models for the task to reduce total cost. This is an appealing business model for multiple reasons. The first is that model capabilities are still jagged, and critically heterogenous between models. As long as that is true, there&rsquo;s space for trading even between price-competitive models. Labs can&rsquo;t do this because they currently only directly capture revenue via inference.<sup class="fn" id="fnref2"><a href="#fn2">2</a></sup></p>
+
+<p>Model routing is sometimes presented by reference to the principal-agent problem that arises from the fact that labs want you to use more tokens and you want to use less. But principal-agent problems don&rsquo;t get solved by introducing another agent. A legal AI wrapper that charges on a per-seat basis has an incentive to reduce token spend, but it also has an incentive to do so by routing you to a dumber, cheaper model. That slippage in quality is the agency cost recurring in a new form. In fact, this is a more insidious agency cost than the labs, because the lab agency cost is transparent (you spent a bazillion dollars on tokens), while wrapper agency costs are discernible only by counterfactual (here&rsquo;s how the work would have looked if you weren&rsquo;t routed to a crappy model). If the wrapper gives the user a model selector, then (a) routing gains diminish or vanish, and (b) because of the flat price, users are incentivized to keep that model selector pegged to the SOTA model. If the platform switches to usage-based pricing, routing gains can only reenter as a service (you pay a premium for us to save you money on the back end), which is a weaker value proposition.</p>
+
+<p>It shouldn&rsquo;t be surprising that agency costs aren&rsquo;t eliminated by adding agents, even if it alters their form. What we know reduces agency costs are monitoring and bonding. Monitoring is cheap in verifiable domains, but expensive in legal. And bonding won&rsquo;t work, because router slippage is counterfactual (as noted above). So the same property that makes legal work really interesting and valuable as a long-horizon RL task also makes third-party routing structurally unviable. Routing is still a good <i>task</i> &mdash; law firms route work between attorneys, and better routing drives better outcomes &mdash; but it&rsquo;s not necessarily a good <i>business</i>.</p>
+
+<p><i>3. Better legal output:</i> This is really the prize pig of all &ldquo;legal AI&rdquo; &mdash; the idea that it will improve output quality over competition (however defined). At one point, the idea was that there would be legal-specific pretrains. Those failed, for predictable Bitter-Lesson-shaped reasons. Now, the flavor of the month is posttrains. Posttraining is a legitimately valuable thing, but we should be clearer about what posttraining can and can&rsquo;t do.</p>
+
+<p>Posttraining of the kind that wrappers do (fine-tuning on domain data) is mostly eliciting and steering latent capabilities in the base model, not developing new reasoning.<sup class="fn" id="fnref3"><a href="#fn3">3</a></sup> This is why the pitch recently has been posttraining on firm or domain-specific knowledge, rather than general reasoning capabilities. There are a lot of issues with the idea that domain-specific posttraining is going to meaningfully displace general models. The critical point is what we&rsquo;ve been discussing &mdash; legal reasoning <i>is</i> general reasoning. The primary value driver here is the reasoning capability, not its capability to write in a particular memorandum form.<sup class="fn" id="fnref4"><a href="#fn4">4</a></sup><sup class="fn" id="fnref5"><a href="#fn5">5</a></sup> It&rsquo;s difficult for me to look at the market for legal talent, where firms regularly are knife-fighting to get the best and most prestigious law students, and walk away with the conclusion that general reasoning is not supremely valuable.<sup class="fn" id="fnref6"><a href="#fn6">6</a></sup></p>
+
+<p>As an aside, ideally we would want to amortize institutional knowledge over time, but posttrains are depreciating assets! It&rsquo;s not fair to say &ldquo;we posttrained Crappybot and now we get great results for Crappybot prices&rdquo; without pricing the posttrain into the amortized cost. The only scenario that makes sense is for narrow &ldquo;worker ant&rdquo; models where you are relatively indifferent to intelligence but really want some posttrained capability &mdash; but again, skeptical that this category of work is a huge value driver.<sup class="fn" id="fnref7"><a href="#fn7">7</a></sup> Maybe I&rsquo;m wrong? Please reach out if you disagree.</p>
+
+<p><u>What&rsquo;s up next</u></p>
+
+<ul>
+  <li>Organizational Cargo-Culting and &ldquo;Lawyer Hats&rdquo;</li>
+  <li>Every Post-Train a Five Year Plan</li>
+</ul>
+
+<div class="footnotes">
+<ol>
+  <li id="fn1"><p>To be fair, they have spent a lot of time on coding, and it turns out that coding and lawyering are actually very similar (and the areas where they aren&rsquo;t similar are where all models right now are weak &mdash; i.e., the marginal economics of legal drafting are different than code, which is why AI makes big changes to contracts sometimes, and it doesn&rsquo;t have a great theory of mind or process, which is the root of a host of problems. I&rsquo;m confident that these are eminently fixable problems.). <a class="back" href="#fnref1">&#8617;</a></p></li>
+  <li id="fn2"><p>As we will discuss more in the future, this is not a permanent state of affairs. <a class="back" href="#fnref2">&#8617;</a></p></li>
+  <li id="fn3"><p>This is a high-level statement and I&rsquo;m writing quickly, so I&rsquo;m not going to get into the weeds on RLVR and capabilities until I understand better. <a class="back" href="#fnref3">&#8617;</a></p></li>
+  <li id="fn4"><p>Here, as with everywhere, proxies can be deceptive. Because the true reasoning capability of a model (legal or otherwise) is resistant to quantification, we have to approach it by proxies. Benchmarks are cheap proxies for expensive tasks, and where the gap between proxy and task is widest (as in legal, where verification costs are comparatively high) the Goodhart pressure is the strongest. The gap between proxy performance and true task performance is what people colloquially call &ldquo;big model smell&rdquo; &mdash; there is something about a big, general model that is greater than the sum of its individual benchmark scores. So we should be skeptical of the notion that posttraining on a non-frontier model, even if it produces good results on a bench, is producing a model that is good to use or interact with for legal work. <a class="back" href="#fnref4">&#8617;</a></p></li>
+  <li id="fn5"><p>And note that we see Goodharting in regular lawyers/law firms/consumers of legal services as well, precisely because the same verification gap exists. <a class="back" href="#fnref5">&#8617;</a></p></li>
+  <li id="fn6"><p>I know I&rsquo;m opening a can of worms here. I know that we&rsquo;re talking about the Pareto <a class="back" href="#fnref6">&#8617;</a></p></li>
+  <li id="fn7"><p>The world where posttrains make sense is one where the pace of releases slows or stops entirely and there&rsquo;s no internal deployment gap, such as a true pause. In that world, the depreciation curve of your posttrain would (barring technical advances) look much better. <a class="back" href="#fnref7">&#8617;</a></p></li>
+</ol>
+</div>
+
+</body>
+</html>
