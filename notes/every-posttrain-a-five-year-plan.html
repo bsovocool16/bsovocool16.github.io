@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>every posttrain a five-year plan &mdash; Ben Sovocool</title>
+<style>
+  :root { --ink:#1a1a1a; --quiet:#6b6b6b; --rule:#e3e3e3; }
+  html { font-size: 17px; }
+  body {
+    background: #fff;
+    margin: 0 auto;
+    max-width: 36rem;
+    padding: 2.5rem 1.25rem 4rem;
+    color: var(--ink);
+    font-family: Charter, Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+  }
+  .crumb {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--quiet);
+    margin-bottom: 2rem;
+  }
+  .crumb a { color: var(--quiet); }
+  h1 { font-size: 1.35rem; margin: 0 0 0.25rem 0; }
+  .date {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--quiet);
+    margin: 0 0 1.75rem 0;
+  }
+  p { margin: 0 0 1rem 0; }
+  blockquote {
+    margin: 0 0 1rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--rule);
+    color: var(--quiet);
+  }
+  code, pre {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.85em;
+  }
+  pre { overflow-x: auto; padding: 0.75rem; border: 1px solid var(--rule); }
+  a { color: #0000ee; }
+  a:visited { color: #551a8b; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 1.75rem 0; }
+  sup.fn { font-size: 0.7em; line-height: 0; vertical-align: super; }
+  sup.fn a { text-decoration: none; }
+  .footnotes {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--quiet);
+  }
+  .footnotes ol { padding-left: 1.25rem; margin: 0; }
+  .footnotes li { margin-bottom: 0.5rem; scroll-margin-top: 2rem; }
+  .footnotes p { margin: 0; }
+  .footnotes a.back { text-decoration: none; }
+</style>
+</head>
+<body>
+
+<p class="crumb"><a href="../index.html">&larr; ben sovocool</a></p>
+
+<h1>Every Posttrain a Five-Year Plan</h1>
+<p class="date">2026-08-28</p>
+
+<p>In the previous posts, we discussed why I&rsquo;m not a fan of &ldquo;legal AI,&rdquo; even if I really love the application of AI to the legal space. Towards the tail end of the <a href="legal-ai-pt-2.html">latest post</a>, I gave a pretty hand-wave-y dismissal of posttraining in legal applications. For today&rsquo;s post, I wanted to give a more fulsome perspective on why I think heavily posttrained models are probably not the path forward for legal work, even if they are a rational choice for current providers of legal services.</p>
+
+<p>I&rsquo;ll lead out with a caveat that I have zero background in machine learning or computer science, and a pretty weak background in math.<sup class="fn" id="fnref1"><a href="#fn1">1</a></sup> I also don&rsquo;t work for or have any meaningful affiliation with a lab or other AI model provider. This is solely my perspective as a lawyer trying to piece things together in a non-math-y, conceptual way. If you&rsquo;re looking for a deep technical discussion around posttraining or RL or similar, this is not intended to be that. However, I hope to provide a perspective on the practice of law and on management science which may be novel for a reader with a CS background. We are also talking about the notion of posttraining on &ldquo;firm knowledge,&rdquo; not on general-knowledge posttrains, for reasons that will be clear below.</p>
+
+<p>I&rsquo;ll start with an initial assumption that the relevant comparison isn&rsquo;t &ldquo;posttrain vs. no posttrain,&rdquo; but rather &ldquo;posttrain vs. memory.&rdquo; I&rsquo;ll use &ldquo;memory&rdquo; and &ldquo;deployed learning&rdquo; interchangeably because they are in fact the same thing. For memory, at minimum this is in-context learning. From there, we have cross-context memory through individual or collective note-taking, and on the far end we have persistent updates to weights. These aren&rsquo;t exclusive &mdash; a model that has cross-context memory through updated weights (presumably LoRA) will also have note-taking and will also have in-context learning, similar to how we learn. It could also be that written notes are sufficient (although I don&rsquo;t think they are; more on that in another post).</p>
+
+<p>Looking at this spectrum makes clear that pre-deployment and deployed learning are kind of the same thing in a salient sense, and that the optimal mix involves both. The relevant distinction is that posttraining is a fixed cost amortized against the forecast task distribution, while deployed learning is a running cost that tracks the realized distribution. Posttraining is a bet that task composition and distribution are predictable in advance. Deployed learning is the contrary bet &mdash; that task composition is not sufficiently predictable ex ante and that in situ learning is necessary to close the gap. The value of deployed learning is literally just the divergence between the forecast task distribution and the realized task distribution.</p>
+
+<p>The debate over law firm posttraining versus deployed learning (to the extent such a debate really exists and is not imagined by me) is therefore a new variation on an older discussion, and one that sits at the roots of both economics and management science &mdash; the socialist calculation problem and the issue more broadly of complex adaptive systems and what they actually do.</p>
+
+<p>I would bet, with very high confidence, that most people who manage businesses have an incomplete mental model of what their businesses do <i>right now</i>!<sup class="fn" id="fnref2"><a href="#fn2">2</a></sup> This is especially true for law firms, which are in fact less hierarchical (and thus less amenable to abstraction and central control) than other organizations.</p>
+
+<p>We should therefore expect that many tasks currently performed by lawyers are not known to the organization <i>ex ante</i>. And more than this, tasks that are known and are susceptible to routinization are ultimately lower-margin, because they are amenable to routinization (you can view posttrainability as a rising organic composition of capital, if you&rsquo;re of a Marxist bent). The value of the organization concentrates in the marginal fringes of the task distribution which involve complex, out-of-distribution reasoning and tasking.</p>
+
+<p>Big, fixed posttrains on &ldquo;law firm information&rdquo; are committing the central error of central planning generally, which is mistaking the legible traces of organizational activity for the activity itself. And, critically, because these big posttrains are expensive (contingent, but true for now), they demand amortization. The only way to amortize the posttrain is to feed it in-distribution work, which means that the posttrain that was supposed to encode your &ldquo;unique firm knowledge&rdquo; ends with you voluntarily walking down-margin.</p>
+
+<p>Moreover, if posttrain N is trained on firm corpus, and the intake mix is shifting towards tasks that are in-distribution for <i>N</i>, <i>N+1</i> is trained on a corpus generated under the influence of <i>N</i>! You are creating a mechanism for model collapse within your organization. At each point, doing so looks great &mdash; utilization rises, amortization strong, throughput up &mdash; but ultimately you become an extremely efficient producer of commoditized, low-margin work. The failure of Soviet central planning system wasn&rsquo;t just that it had an incomplete model of how the economy worked, but that it reshaped the economy to fit its incomplete model. Memory is structurally immune to this pathology, because its cost structure is marginal.<sup class="fn" id="fnref3"><a href="#fn3">3</a></sup></p>
+
+<p>As applied to superintelligence, the posttraining bet looks even worse. There are good reasons to assume that (a) sample efficiency will rise, reducing the value of posttrains, and (b) your organizational tasking and structure are contingent on the current distribution and properties of labor, which will be wildly different in a world with infinitely replicable and recombinable agents of superhuman intelligence.</p>
+
+<p>Despite all the above, you might still rationally choose to posttrain as a law firm instead of accepting deployed learning. Why? Well, as it stands, you are stuck in a prisoner&rsquo;s dilemma of a nasty sort. You are a buyer of cognition, and labs are selling cognition. As it stands now, you buy on a commodity basis and resell with your value-add. That value-add is your firm knowledge, viewed expansively. But if you accept a superintelligent deployed learner into your organization, that deployed learner will <i>become</i> your organization in a means that no human employee ever could.<sup class="fn" id="fnref4"><a href="#fn4">4</a></sup> You have embodied your entire value proposition in an asset that you don&rsquo;t actually own. This is not a novel observation &mdash; in fact, as I went to publish this I noticed that Herbie Bradley today published an excellent piece covering much of the same terrain: <a href="https://pathways.org/p/coasean-economics-of-agent-swarms">pathways.org/p/coasean-economics-of-agent-swarms</a>.</p>
+
+<p>If you think of learning agents as a means of turning labor into capital, and deployed learning in the organization as a means of turning <i>your</i> labor into capital, you can likely hear the vicious sucking sound that is the entire economy collapsing into a central node or nodes. In this scenario, you can either (a) accept temporary superprofits and then platform enclosure, or (b) refuse to cooperate, in which case you must posttrain or develop your own internal memory system.</p>
+
+<p>We&rsquo;ll discuss this idea of firm ownership of the engram further in an upcoming post.</p>
+
+<div class="footnotes">
+<ol>
+  <li id="fn1"><p>I actually had to retake our precalculus/trigonometry class over the summer because I could not pay attention for the life of me. It wasn&rsquo;t some &ldquo;I&rsquo;m too smart for this&rdquo; thing either &mdash; I had no clue what was going on. Don&rsquo;t do as I did. <a class="back" href="#fnref1">&#8617;</a></p></li>
+  <li id="fn2"><p>The notion of &ldquo;people who manage businesses&rdquo; is almost a category error &mdash; it&rsquo;s like saying &ldquo;the neurons that manage the body.&rdquo; In a sufficiently complex organization, <i>nobody</i> understands what the business does in a full sense. And that&rsquo;s OK! We have to take a cybernetics/systems view. <a class="back" href="#fnref2">&#8617;</a></p></li>
+  <li id="fn3"><p>In a world where posttrain cost falls drastically, you maybe have some <a class="back" href="#fnref3">&#8617;</a></p></li>
+  <li id="fn4"><p>This is why Claude Tag is brilliant &mdash; you leap instantly from replicating one employee to replicating the organization. <a class="back" href="#fnref4">&#8617;</a></p></li>
+</ol>
+</div>
+
+</body>
+</html>
