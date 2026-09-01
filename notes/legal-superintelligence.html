@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>legal superintelligence and volatility harvesting &mdash; Ben Sovocool</title>
+<style>
+  :root { --ink:#1a1a1a; --quiet:#6b6b6b; --rule:#e3e3e3; }
+  html { font-size: 17px; }
+  body {
+    background: #fff;
+    margin: 0 auto;
+    max-width: 36rem;
+    padding: 2.5rem 1.25rem 4rem;
+    color: var(--ink);
+    font-family: Charter, Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+  }
+  .crumb {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--quiet);
+    margin-bottom: 2rem;
+  }
+  .crumb a { color: var(--quiet); }
+  h1 { font-size: 1.35rem; margin: 0 0 0.25rem 0; }
+  .date {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--quiet);
+    margin: 0 0 1.75rem 0;
+  }
+  p { margin: 0 0 1rem 0; }
+  blockquote {
+    margin: 0 0 1rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--rule);
+    color: var(--quiet);
+  }
+  figure { margin: 0 0 1.5rem 0; }
+  img { max-width: 100%; height: auto; }
+  figcaption { font-size: 0.8rem; color: var(--quiet); margin-top: 0.4rem; }
+  code, pre {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.85em;
+  }
+  pre { overflow-x: auto; padding: 0.75rem; border: 1px solid var(--rule); }
+  a { color: #0000ee; }
+  a:visited { color: #551a8b; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 1.75rem 0; }
+  sup.fn { font-size: 0.7em; line-height: 0; vertical-align: super; }
+  sup.fn a { text-decoration: none; }
+  .footnotes {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--quiet);
+  }
+  .footnotes ol { padding-left: 1.25rem; margin: 0; }
+  .footnotes li { margin-bottom: 0.5rem; scroll-margin-top: 2rem; }
+  .footnotes p { margin: 0; }
+  .footnotes a.back { text-decoration: none; }
+</style>
+</head>
+<body>
+
+<p class="crumb"><a href="../index.html">&larr; ben sovocool</a></p>
+
+<h1>Legal Superintelligence and Litigation Funding as Volatility Harvesting</h1>
+<p class="date">2026-08-31</p>
+
+<p>About a month ago, Mark Zuckerberg wrote a piece in WSJ titled &ldquo;The AI Future is for Everyone,&rdquo; which you can read without paywall <a href="https://about.fb.com/news/2026/08/the-future-is-for-everyone/">here</a>.</p>
+
+<p>It&rsquo;s a very interesting piece and worth reading in full. In discussing alignment, he proposes the following thought experiment:</p>
+
+<blockquote><p>As a thought experiment, imagine only one person had a superintelligent lawyer. He would have an unfair advantage in court&mdash;even if his position was wrong on the merits. That would lead to a worse society. But now imagine everyone has a superintelligent lawyer. Justice would be carried out much more fairly and efficiently than it is today. When people are empowered, they naturally check and balance each other and the power of larger institutions.</p></blockquote>
+
+<p>Naturally, this generated some interesting discussion.<sup class="fn" id="fnref1"><a href="#fn1">1</a></sup><sup class="fn" id="fnref2"><a href="#fn2">2</a></sup><sup class="fn" id="fnref3"><a href="#fn3">3</a></sup> I&rsquo;m net-Zuck on this one, but let&rsquo;s use this as an excuse to talk about two things close to my heart: law and market dynamics.</p>
+
+<p>Let&rsquo;s take a step back. Litigation is a social means of fixing the value of harm done to someone and compelling redress. You get hurt, you demand payment to compensate for your harm, you dispute the sum or refuse to pay, you sue. Every form of litigation is a variation of this. We&rsquo;ll focus implicitly on civil litigation between private parties here because it is the most straightforward mental model.</p>
+
+<p>Note that if two parties agree on the obligation to pay and the amount, there&rsquo;s no need to sue. If litigation is the means of fixing the value of harm done and compelling redress, and you don&rsquo;t need either of those, you don&rsquo;t go to court (which is universally acknowledged to be a pain in the ass).</p>
+
+<figure>
+  <img src="../assets/litigation-convergence.png" alt="Line chart across filing, motions, discovery and pretrial. The plaintiff's expected value falls from about $9.5m to $5.7m while the defendant's rises from about $1.2m to $5.4m; the gap between them shrinks to nearly nothing at pretrial, where a marker labels the settlement and the case never reaches trial.">
+  <figcaption>Expectations converge and the parties settle before trial.</figcaption>
+</figure>
+
+<p>The parties start far apart on the expected value of the claim. As they move through the adjudication process, the expected values change in response to the behavior of the court, counterparties, and through new information produced in the discovery process. Ideally, the expected values converge as we move through the process. In this simplified model, parties settle when expected values converge (net of litigation costs, not factored here).</p>
+
+<p>You can imagine a case where that never happens, and instead the value of the claim is determined by the court, as below:</p>
+
+<figure>
+  <img src="../assets/litigation-no-convergence.png" alt="Line chart across filing through trial. The plaintiff's expected value drifts down only slightly from about $9.5m to $7.8m and the defendant's rises only slightly from about $1.2m to $2.8m, leaving a wide gap at trial, where a black marker at about $4.6m shows the judgment fixing the value.">
+  <figcaption>Expectations stay apart, and the court prints a price.</figcaption>
+</figure>
+
+<p>A better model also captures each party&rsquo;s expectations as to the potential distribution of prices:</p>
+
+<figure>
+  <img src="../assets/priest-klein-distributions.png" alt="Two overlapping bell curves over claim value. The defendant's distribution is centered near $3.9m and the plaintiff's near $6.6m, with the shaded overlap between them marked as the settlement range and a dotted line marking the true value of the claim at about $5.25m.">
+  <figcaption>Each side holds a distribution rather than a point; the overlap is the settlement range.</figcaption>
+</figure>
+
+<p>That&rsquo;s the Priest-Klein model, more or less.<sup class="fn" id="fnref4"><a href="#fn4">4</a></sup></p>
+
+<p>One important value of litigation as price-discovery is that the outcomes are public. The public value of precedent and the negative impact of settlement is a well-worn subject of debate.<sup class="fn" id="fnref5"><a href="#fn5">5</a></sup> Certainly we do not want all (or most) disputes to go to trial. Roughly 1% of federal civil cases reach one today, and nobody serious thinks that&rsquo;s too few. The issue is what the other 99% are settling against. A settlement is a trade at a price both sides took from somewhere, and the somewhere is the stock of public outcomes. If we think of trials as the prints, settlements are marks off those prints.</p>
+
+<p>Now add superintelligent lawyers. In the model above, a better lawyer does two things: narrows your distribution and moves its center toward the true value of the claim. Give both sides the best possible lawyer and both distributions narrow around the same number. Convergence happens at filing, or before filing. Fewer trials, faster settlements, cheaper justice. This is Zuck&rsquo;s point, and it&rsquo;s right as far as it goes.</p>
+
+<p>But what are the two lawyers converging on? The best available estimate of how this court would decide, built from the public record of precedent. That estimate is the same for everyone because it&rsquo;s built from the same public history,<sup class="fn" id="fnref6"><a href="#fn6">6</a></sup> and it gets more identical as it gets more accurate: disagreement between two good estimators is just error one of them shouldn&rsquo;t have, so the pressure to be right is also pressure to agree. (Note: it&rsquo;s tempting to call this model monoculture, but accuracy is the optimization pressure. You&rsquo;d get the same convergence with a hundred vendors.)</p>
+
+<p>Thus we have a neat problem, where as the lawyers get better the court system actually gets worse. The estimate is only as good as the prints, the prints come from trials, and trials come from disagreement. Better prediction means less disagreement and fewer prints. This also means that the precedent pool becomes increasingly stale, and thus increasingly brittle. There&rsquo;s a classic result in finance that a fully efficient market is impossible: if prices reflected all information, nobody would be paid to gather any, so nothing would get reflected.<sup class="fn" id="fnref7"><a href="#fn7">7</a></sup> Same structure here. Somebody has to be paid to go to trial.</p>
+
+<p>It&rsquo;s actually worse than the market version, because settlements are private! When a stock is mispriced, you can at least watch the price. Here, everyone is marking to model with no tape. The right finance analogue is a Level 3 asset: valued by model because nothing trades, everyone&rsquo;s model agrees, and the error only shows up when something forces a real print.</p>
+
+<p><u>Volatility harvesting</u></p>
+
+<p>So who forces prints? This is where the litigation-funding half of the title comes in.</p>
+
+<p>A legal claim has something an asset doesn&rsquo;t &mdash; you can force a price. You don&rsquo;t need a willing buyer; the court has to show up. Every claim comes with an option to compel resolution, and options are worth more when the outcome is uncertain. So in a world of good prediction, the parties who go to trial aren&rsquo;t the ones who disagree about value, because nobody disagrees anymore. They&rsquo;re the ones whose payoff is convex enough that the remaining variance is worth harvesting. Judgment-proof defendants. Plaintiffs with tail-heavy damages. And above all, diversified litigation funders, who are close to risk-neutral across a portfolio of trials and can hold variance nobody else can.</p>
+
+<p>That makes funders the information-gatherers in the Grossman-Stiglitz sense. They pick the claims where the consensus mark is least reliable, because that&rsquo;s where the variance is, they force a print, and everyone&rsquo;s estimate updates.</p>
+
+<p>Courts don&rsquo;t enjoy being harvested, and we&rsquo;ve already watched one respond. Delaware appraisal arbitrage was exactly this trade: buy into a deal, exercise appraisal rights, force Chancery to print a valuation, collect the spread between the court&rsquo;s DCF and the deal price. The court&rsquo;s answer was to defer to the deal price<sup class="fn" id="fnref8"><a href="#fn8">8</a></sup> and the legislature narrowed the remedy, which is to say the court compressed its own variance until there was nothing left to harvest.</p>
+
+<p><u>Drift</u></p>
+
+<p>Was that good? In Delaware, I think yes. The deal price was a better estimate than the court&rsquo;s, so the variance being harvested was the court&rsquo;s own methodological error, and squashing it cost nothing. But that&rsquo;s the exception, not the rule. In most of the common law, the court is the best estimate available of a target that moves: what &ldquo;reasonable&rdquo; means this decade, what a duty of care looks like for a technology that didn&rsquo;t exist when the doctrine was written. There, the court&rsquo;s variance is search, not error. Squash it and the public, private-ordering layer of the law becomes stale. The tracking error doesn&rsquo;t go away; it accumulates and discharges later, all at once.<sup class="fn" id="fnref9"><a href="#fn9">9</a></sup> That&rsquo;s strictly worse for anyone who wrote contracts against the old regime. Small continuous vol or occasional big vol. You get to pick, but you don&rsquo;t get zero.</p>
+
+<p>So whether harvesting is welfare-positive comes down to a ratio: how fast is the world drifting under the court, relative to how fast the court can drift with it. Where a better external estimate exists, defer and kill the vol. Where the court is the frontier, some vol is the price of a law that moves. I don&rsquo;t have a clean answer for where that line sits, but it would be fun to try and estimate this over time.</p>
+
+<p><u>Testing</u></p>
+
+<p>If any of this is right, it shows up in the data. After a doctrinal shock, the share of cases going to judgment should spike and then decay as the new regime gets priced, and as prediction improves the spikes should get sharper. Patent litigation after <i>Alice</i> is the obvious first test. That&rsquo;s the next post.</p>
+
+<div class="footnotes">
+<ol>
+  <li id="fn1"><p><a href="https://x.com/MattZeitlin/status/2082177707924758601">https://x.com/MattZeitlin/status/2082177707924758601</a> <a class="back" href="#fnref1">&#8617;</a></p></li>
+  <li id="fn2"><p><a href="https://x.com/curl_justin/status/208256786538813865">https://x.com/curl_justin/status/208256786538813865</a> <a class="back" href="#fnref2">&#8617;</a></p></li>
+  <li id="fn3"><p><a href="https://x.com/ChrisKercher_/status/2083005986881626456">https://x.com/ChrisKercher_/status/2083005986881626456</a> <a class="back" href="#fnref3">&#8617;</a></p></li>
+  <li id="fn4"><p><a href="https://www.rand.org/pubs/reports/R3032.html">https://www.rand.org/pubs/reports/R3032.html</a>. <a class="back" href="#fnref4">&#8617;</a></p></li>
+  <li id="fn5"><p>Fiss, <i>Against Settlement</i>, 93 Yale L.J. 1073 (1984); Galanter, <i>The Vanishing Trial</i>, 1 J. Empirical Legal Stud. 459 (2004). <a class="back" href="#fnref5">&#8617;</a></p></li>
+  <li id="fn6"><p>Private information is possible but converts from alpha into precedent. <a class="back" href="#fnref6">&#8617;</a></p></li>
+  <li id="fn7"><p>Grossman &amp; Stiglitz, <i>On the Impossibility of Informationally Efficient Markets</i>, 70 Am. Econ. Rev. 393 (1980). <a class="back" href="#fnref7">&#8617;</a></p></li>
+  <li id="fn8"><p><i>DFC Global v. Muirfield Value Partners</i> (Del. 2017); <i>Dell v. Magnetar</i> (Del. 2017). <a class="back" href="#fnref8">&#8617;</a></p></li>
+  <li id="fn9"><p>If you&rsquo;re a real #nutjob like me, you may recall echoes of Blake LeBaron&rsquo;s work on agent-based finance models and the great Michael Mauboussin memo &ldquo;Who&rsquo;s On the Other Side?,&rdquo; both of which are worth reading. <a class="back" href="#fnref9">&#8617;</a></p></li>
+</ol>
+</div>
+
+</body>
+</html>
