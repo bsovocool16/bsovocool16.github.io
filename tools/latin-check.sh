@@ -10,7 +10,7 @@ found=0
 for f in notes/*.html index.html; do
   [ -e "$f" ] || continue
   # strip italicized instances, then look for what remains
-  if hits=$(perl -pe 's{<i>(.*?)</i>}{}gs' "$f" | grep -o -i -E "$PHRASES" | sort -u); then
+  if hits=$(perl -pe 's{<i>(.*?)</i>}{}gs' "$f" | grep -o -i -E "\b($PHRASES)\b" | sort -u); then
     if [ -n "$hits" ]; then
       echo "$f:"
       echo "$hits" | sed 's/^/  not italicized: /'
