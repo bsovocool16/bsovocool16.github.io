@@ -28,7 +28,7 @@ ADMIN = [0, 1, 10, 11, 16, 18, 19, 20]
 
 frames = []
 for f in sorted(glob.glob(os.path.join(IDB, "cv1*.sas7bdat"))):
-    frames.append(pd.read_sas(f, encoding="latin-1")[["NOS", "DISP", "TERMDATE"]])
+    frames.append(pd.read_sas(f, encoding="latin-1")[["NOS", "DISP", "TERMDATE", "DISTRICT"]])
 d = pd.concat(frames).dropna(subset=["TERMDATE", "DISP", "NOS"])
 d = d[(d.TERMDATE >= "2011-01-01") & (d.TERMDATE < "2020-01-01")]
 d = d[~d.DISP.isin(ADMIN)]
@@ -49,7 +49,20 @@ w = panel.pivot(index="quarter", columns="patent",
 qs = w.index.to_timestamp()
 alice = pd.Timestamp("2014-06-19")
 
-fig, (a1, a2) = plt.subplots(2, 1, figsize=(7, 6.4), sharex=True)
+# NOTE: the headline national pattern is a composition effect, not a doctrinal
+# one. E.D. Texas (DISTRICT "40") codes far more terminations as "dismissed -
+# other" than other districts, its share of the patent docket roughly tripled
+# into 2015-16, and TC Heartland (May 2017) then collapsed it. Excluding that
+# one district, the patent-minus-control swing across Alice is ~+1 pp, i.e.
+# nothing. The third panel below shows why.
+ex = d[d.DISTRICT != "40"]
+wex = (ex.groupby(["quarter", "patent"]).dism_other.mean().unstack())
+gap_ex = (wex[True] - wex[False]) * 100
+pt = d[d.patent]
+edt_share = pt.groupby("quarter").apply(
+    lambda x: (x.DISTRICT == "40").mean() * 100, include_groups=False)
+
+fig, (a1, a2, a3) = plt.subplots(3, 1, figsize=(7, 8.6), sharex=True)
 a1.plot(qs, w[("dism_other", True)] * 100, marker="o", ms=3, label="patent (NOS 830)")
 a1.plot(qs, w[("dism_other", False)] * 100, marker="o", ms=3, label="all other civil")
 a1.axvline(alice, color="gray", linestyle=":")
@@ -60,11 +73,21 @@ a1.legend(loc="upper left")
 
 gap = (w[("dism_other", True)] - w[("dism_other", False)]) * 100
 a2.axhline(0, color="black", lw=0.8)
-a2.plot(qs, gap, marker="o", ms=3, color="C2")
+a2.plot(qs, gap, marker="o", ms=3, color="C2", label="all districts")
 a2.axvline(alice, color="gray", linestyle=":")
 a2.fill_between(qs, 0, gap, where=(gap > 0), alpha=0.15, color="C2")
+a2.plot(qs, gap_ex, marker="o", ms=3, color="C3", label="excluding E.D. Tex.")
 a2.set_ylabel("percentage points")
-a2.set_title("Patent minus control: spike, then decay")
+a2.set_title("Patent minus control: the swing is entirely E.D. Texas")
+a2.legend(loc="upper left", fontsize=8)
+
+a3.plot(qs, edt_share, marker="o", ms=3, color="C4")
+a3.axvline(alice, color="gray", linestyle=":")
+a3.axvline(pd.Timestamp("2017-05-22"), color="gray", linestyle="--")
+a3.annotate("TC Heartland", xy=(pd.Timestamp("2017-05-22"), 42),
+            xytext=(pd.Timestamp("2017-07-01"), 42), color="gray", fontsize=8)
+a3.set_ylabel("% of patent terminations")
+a3.set_title("E.D. Texas share of the patent docket")
 fig.tight_layout()
 fig.savefig("assets/alice-dismissal-gap.png", dpi=150)
 plt.close(fig)
