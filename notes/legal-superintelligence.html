@@ -83,8 +83,8 @@
 <p>Note that if two parties agree on the obligation to pay and the amount, there&rsquo;s no need to sue. If litigation is the means of fixing the value of harm done and compelling redress, and you don&rsquo;t need either of those, you don&rsquo;t go to court (which is universally acknowledged to be a pain in the ass).</p>
 
 <figure>
-  <img src="../assets/litigation-convergence.png" alt="Line chart across filing, motions, discovery and pretrial. The plaintiff's expected value falls from about $9.5m to $5.7m while the defendant's rises from about $1.2m to $5.4m; the gap between them shrinks to nearly nothing at pretrial, where a marker labels the settlement and the case never reaches trial.">
-  <figcaption>Expectations converge and the parties settle before trial.</figcaption>
+  <img src="../assets/litigation-convergence.png" alt="Line chart across filing, motions, discovery and pretrial. The plaintiff's expected value falls from about $9.5m to $5.7m and the defendant's rises from about $1.2m to $5.4m, both moving little between filing and the motion ruling, then sharply through discovery before flattening; a marker at pretrial labels the settlement.">
+  <figcaption>Expectations converge and the parties settle before trial. The paths are stylized: expectations move at discrete information events (the motion ruling, the close of discovery) rather than at a constant rate.</figcaption>
 </figure>
 
 <p>The parties start far apart on the expected value of the claim. As they move through the adjudication process, the expected values change in response to the behavior of the court, counterparties, and through new information produced in the discovery process. Ideally, the expected values converge as we move through the process. In this simplified model, parties settle when expected values converge (net of litigation costs, not factored here).</p>
@@ -99,8 +99,13 @@
 <p>A better model also captures each party&rsquo;s expectations as to the potential distribution of prices:</p>
 
 <figure>
+  <img src="../assets/litigation-forecast-boxes.png" alt="Box-and-whisker chart of each side's forecast at filing, motions, discovery and pretrial. The plaintiff's boxes sit high and the defendant's low, both wide at filing; the boxes narrow and their medians move toward each other, nearly meeting near $5.5m at pretrial.">
+  <figcaption>The same path, with each side holding a spread at every stage rather than a point.</figcaption>
+</figure>
+
+<figure>
   <img src="../assets/priest-klein-distributions.png" alt="Two overlapping bell curves over claim value. The defendant's distribution is centered near $3.9m and the plaintiff's near $6.6m, with the shaded overlap between them marked as the settlement range and a dotted line marking the true value of the claim at about $5.25m.">
-  <figcaption>Each side holds a distribution rather than a point; the overlap is the settlement range.</figcaption>
+  <figcaption>Overlapping forecasts at time <i>t</i> create settlement opportunities.</figcaption>
 </figure>
 
 <p>That&rsquo;s the Priest-Klein model, more or less.<sup class="fn" id="fnref4"><a href="#fn4">4</a></sup></p>
