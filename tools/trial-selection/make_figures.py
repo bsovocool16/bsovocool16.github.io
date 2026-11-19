@@ -2,8 +2,8 @@
 
 Plain matplotlib defaults, matching the other figures on the site.
 Run from the repo root:  python tools/trial-selection/make_figures.py
-Reads results/*.json (written by experiments.py, shock.py, trickle.py) and
-alice_rulings.csv; writes four PNGs into assets/.
+Reads results/*.json (written by experiments.py, shock.py, trickle.py,
+claims_test.py, blind_score.py) and alice_rulings.csv; writes four PNGs into assets/.
 """
 import json, os, sys
 import numpy as np
@@ -62,25 +62,31 @@ fig.tight_layout(); fig.savefig(OUT + "quiet-change.png", dpi=150); plt.close(fi
 sys.path.insert(0, HERE)
 import alice_test as AT
 res = AT.results()
-fig, axes = plt.subplots(2, 1, figsize=(7, 7.2))
+fig = plt.figure(figsize=(7, 7.8))
+axes = [fig.add_axes([0.13, 0.565, 0.84, 0.385]), fig.add_axes([0.37, 0.075, 0.60, 0.385])]
 ax = axes[0]; yrs = [v["year"] for v in res["years"]]
 ax.plot(yrs, [100 * v["won"] for v in res["years"]], marker="o", lw=2, color="C0")
 for v in res["years"]: ax.text(v["year"], 100 * v["won"] + 3.5, str(v["clear"]), ha="center", fontsize=8, color="gray")
-ax.axvline(2019.55, color="gray", ls=":"); ax.text(2019.7, 93, "CourtListener's coverage changes:\npublished opinions before, all posted rulings after", fontsize=8, color="gray", va="top")
+ax.axvline(2019.55, color="gray", ls=":"); ax.text(2019.7, 93, "CourtListener's coverage changes here:\nonly published opinions before this line", fontsize=8, color="gray", va="top")
 ax.axhline(50, color="gray", lw=0.8); ax.set_ylim(30, 100); ax.set_xticks(yrs); ax.tick_params(axis="x", labelsize=9)
 ax.set_ylabel("% of clear rulings the\nchallenger won"); ax.grid(alpha=0.25)
 ax.set_title("Challengers won nine rulings in ten after Alice, and about six in ten since 2019", fontsize=11)
 ax.text(0.01, 0.03, "gray numbers: clear rulings that year", transform=ax.transAxes, fontsize=8, color="gray")
-ax = axes[1]; sc = res["scores"]
-names = [("posted", "court", "which court"), ("posted", "lawsuit", "court, stage, kind of\nplaintiff, number of patents"), ("posted", "patent", "patent issue dates\nand title words")]
-vals = [100 * sc[c, f]["score"] for c, f, _ in names]
-err = [[100 * (sc[c, f]["score"] - sc[c, f]["lo"]) for c, f, _ in names], [100 * (sc[c, f]["hi"] - sc[c, f]["score"]) for c, f, _ in names]]
-ax.errorbar(range(3), vals, yerr=err, fmt="o", ms=8, capsize=5, color="C0", ecolor="C0", lw=2)
-for i, v in enumerate(vals): ax.text(i + 0.07, v, f"{v:.0f}%", va="center", fontsize=10)
-ax.axhline(50, color="gray", ls=":"); ax.text(-0.42, 50.5, "guessing", color="gray", fontsize=8)
-ax.set_xlim(-0.45, 2.45); ax.grid(axis="y", alpha=0.25)
-ax.set_xticks(range(3)); ax.set_xticklabels([n for _, _, n in names], fontsize=9); ax.set_ylim(44, 72)
-ax.set_ylabel("how often the model picks\nthe ruling the challenger won")
-ax.set_title(f"Rulings since mid-2019: the court predicts the outcome, the patent does not", fontsize=11)
-fig.tight_layout(); fig.savefig(OUT + "alice.png", dpi=150); plt.close(fig)
+ax = axes[1]; sc = res["scores"]; cl = load("claims"); bl = load("blind")
+rows = [("which court", sc["posted", "court"]),
+        ("court, stage, kind of plaintiff,\nnumber of patents", sc["posted", "lawsuit"]),
+        ("patent issue dates and title words", sc["posted", "patent"]),
+        ("patent class, examining unit,\nclaim length and type, dates", cl["posted_patent_facts"]),
+        ("word counts from the claims", cl["posted_claim_text"]),
+        ("Claude reading one claim\n(80 rulings)", bl["reader"])]
+ypos = np.arange(len(rows))[::-1]
+vals = np.array([100 * r["score"] for _, r in rows])
+err = [vals - np.array([100 * r["lo"] for _, r in rows]), np.array([100 * r["hi"] for _, r in rows]) - vals]
+ax.errorbar(vals, ypos, xerr=err, fmt="o", ms=7, capsize=4, color="C0", ecolor="C0", lw=2)
+for v, yy_, hi in zip(vals, ypos, vals + err[1]): ax.text(hi + 0.8, yy_, f"{v:.0f}%", va="center", fontsize=9)
+ax.axvline(50, color="gray", ls=":"); ax.text(50.4, len(rows) - 0.42, "guessing", color="gray", fontsize=8)
+ax.set_yticks(ypos); ax.set_yticklabels([n for n, _ in rows], fontsize=9); ax.set_xlim(44, 88); ax.set_ylim(-0.6, len(rows) - 0.2)
+ax.set_xlabel("how often the model picks the ruling the challenger won, %"); ax.grid(axis="x", alpha=0.25)
+fig.text(0.5, 0.472, "Rulings since mid-2019: reading the claim predicts best, dates and titles not at all", ha="center", fontsize=11)
+fig.savefig(OUT + "alice.png", dpi=150); plt.close(fig)
 print("wrote 4 figures")
