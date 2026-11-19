@@ -1,0 +1,758 @@
+cluster_id,case_name,date,court,collection,stage,outcome,filed_year,npe_like_plaintiff,n_patents,patents,newest_issue,oldest_issue,has_title,title_commerce,title_data,title_network,title_security,title_media,title_physical,title_life
+7307666,Dietgoal Innovations LLC v. Bravo Media LLC,2014-07-08,nysd,published,summary_judgment,ineligible,,1,1,6585516,2003-06-30,2003-06-30,1,0,0,0,0,0,0,0
+7309470,"Comcast IP Holdings I, LLC v. Sprint Communications Co.",2014-07-16,ded,published,summary_judgment,ineligible,2012,1,1,6873694,2005-04-05,2005-04-05,0,0,0,0,0,0,0,0
+7309091,"CMG Financial Services, Inc. v. Pacific Trust Bank, F.S.B.",2014-08-29,cand,published,summary_judgment,ineligible,2011,0,1,7627509,2009-12-06,2009-12-06,1,1,0,0,0,0,0,0
+7310461,"Walker Digital, LLC v. Google, Inc.",2014-09-03,ded,published,summary_judgment,,2011,1,2,5884270;5884272,1999-03-16,1999-03-16,1,0,1,1,0,0,0,0
+7310480,"Loyalty Conversion Systems Corp. v. American Airlines, Inc.",2014-09-03,txed,published,pleading,ineligible,2013,0,2,8313023;8511550,2013-08-15,2012-11-17,1,1,0,1,0,1,0,0
+7308978,"McRO, Inc. v. Naughty Dog, Inc.",2014-09-22,cacd,published,pleading,,2012,0,2,6307576;6611278,2003-08-26,2001-10-23,1,0,0,1,0,0,0,0
+7309511,"McRO, Inc. v. Sony Computer Entertainment America, LLC",2014-09-22,cacd,published,pleading,,2014,0,2,6307576;6611278,2003-08-26,2001-10-23,1,0,0,1,0,0,0,0
+7310803,"Cogent Medicine, Inc. v. Elsevier Inc.",2014-09-30,cand,published,pleading,ineligible,2013,0,1,7133879,2006-11-17,2006-11-17,1,0,1,0,0,0,0,0
+7309579,"Amdocs (Israel) Ltd. v. Openet Telecom, Inc.",2014-10-24,vaed,published,pleading,ineligible,2010,0,3,6836797;6947984;7631065,2009-12-14,2005-01-12,0,0,0,0,0,0,0,0
+7310912,Genetic Technologies Ltd. v. Bristol-Myers Squibb Co.,2014-10-30,ded,published,pleading,eligible,2012,1,2,5612179;5851762,,,0,0,0,0,0,0,0,0
+7309607,"Enfish, LLC v. Microsoft Corp.",2014-11-03,cacd,published,summary_judgment,ineligible,2012,1,2,6151604;6163775,2000-12-07,2000-11-10,0,0,0,0,0,0,0,0
+7309882,California Institute of Technology v. Hughes Communications Inc.,2014-11-03,cacd,published,summary_judgment,,2013,0,3,7116710;7916781;8284833,2012-10-08,2006-10-09,0,0,0,0,0,0,0,0
+7311194,"Joao Bock Transaction Systems, LLC v. Jack Henry & Associates, Inc.",2014-12-15,ded,published,pleading,,2012,1,0,,,,1,1,0,0,1,0,1,0
+7311223,"OpenTV, Inc. v. Netflix Inc.",2014-12-16,cand,published,summary_judgment,,2014,0,2,7055169;8332268,2012-12-15,2006-05-23,1,0,1,1,0,1,1,0
+7311195,"IpLearn, LLC v. K12 Inc.",2014-12-17,ded,published,summary_judgment,ineligible,2011,1,1,6688888,2004-02-11,2004-02-11,0,0,0,0,0,0,0,0
+7311196,Intellectual Ventures I LLC v. Manufacturers & Traders Trust Co.,2014-12-18,ded,published,pleading,,2013,1,5,6182894;7260587;7603382;7664701;8083137,2011-12-21,2001-01-20,0,0,0,0,0,0,0,0
+7311197,"Cloud Satchel, LLC v. Amazon.com, Inc.",2014-12-18,ded,published,summary_judgment,,2013,1,2,5862321;6144997,2000-10-26,1999-01-22,1,0,1,0,0,0,0,0
+7311060,Kombea Corp. v. Noguar L.C.,2014-12-23,utd,published,summary_judgment,,2013,0,4,7640510;7933387;8438494;8503619,2013-08-05,2010-01-03,0,0,0,0,0,0,0,0
+7311315,"Morsa v. Facebook, Inc.",2014-12-23,cacd,published,pleading,ineligible,,0,2,7904337;8341020,2012-12-27,2011-03-07,1,1,0,0,0,0,1,0
+7311134,"Morales v. Square, Inc.",2014-12-30,txwd,published,pleading,ineligible,2013,0,1,5872589,1999-02-17,1999-02-17,1,0,0,0,0,0,0,0
+7311307,"Bascom Research, LLC v. Linkedin, Inc.",2015-01-05,cand,published,summary_judgment,ineligible,2012,1,1,7139974,2006-12-01,2006-12-01,1,0,1,1,0,0,0,0
+7312240,"Mortgage Grader, Inc. v. Costco Wholesale Corp.",2015-01-12,cacd,published,summary_judgment,,,0,2,7366694;7680728,2010-03-11,2008-04-29,1,1,0,0,0,0,0,0
+10695666,East Coast Sheet Metal Fabricating Corp. v. Autodesk,2015-01-15,nhd,published,summary_judgment,ineligible,2012,0,3,7449839;7917340;8335667,2012-12-19,2008-11-04,1,0,1,0,0,0,1,0
+7311364,"Synopsys, Inc. v. Mentor Graphics Corp.",2015-01-20,cand,published,summary_judgment,,2012,0,1,5530841,,,0,0,0,0,0,0,0,0
+7311372,"Open Text S.A. v. Box, Inc.",2015-01-20,cand,published,pleading,ineligible,2013,0,1,6223177,2001-04-21,2001-04-21,0,0,0,0,0,0,0,0
+7314085,"Certusview Technologies, LLC v. S & N Locating Services, LLC",2015-01-21,vaed,published,pleading,ineligible,2013,1,5,8265344;8290204;8340359;8407001;8532341,2013-09-10,2012-09-11,1,0,1,1,0,1,1,0
+7311356,"Vehicle Intelligence & Safety LLC v. Mercedes-Benz USA, LLC",2015-01-29,ilnd,published,pleading,ineligible,,1,1,7394392,2008-07-01,2008-07-01,1,0,0,0,0,0,0,0
+7312057,In re TLI Communications LLC Patent Litigation,2015-02-06,vaed,published,pleading,,2014,1,1,6038295,2000-02-27,2000-02-27,1,0,0,0,0,0,1,0
+7312146,"Ameritox, Ltd. v. Millennium Health, LLC",2015-02-19,wiwd,published,summary_judgment,,2013,0,2,7585680;7785895,2010-08-28,2009-09-06,0,0,0,0,0,0,0,0
+7311563,"Intellectual Ventures I, LLC v. Motorola Mobility LLC",2015-02-24,ded,published,summary_judgment,,2011,1,6,6412953;6557054;6658464;7120462;7409450;7810144,2010-10-06,2002-06-13,1,0,1,1,0,0,0,0
+7311702,"Priceplay.com, Inc. v. AOL Advertising, Inc.",2015-03-18,ded,published,pleading,ineligible,2014,0,2,8050982;8494917,2013-07-25,2011-10-30,0,0,0,0,0,0,0,0
+7314742,"Carfax, Inc. v. Red Mountain Technologies",2015-03-30,vaed,published,pleading,,2014,0,3,8255243;8255244;8731977,2014-05-20,2012-08-27,1,1,1,0,0,0,1,0
+7313238,"Genetic Veterinary Sciences, Inc. v. Canine EIC Genetics, LLC",2015-03-31,mnd,published,summary_judgment,ineligible,2014,0,1,8178297,2012-05-10,2012-05-10,1,0,0,0,0,0,0,0
+7313131,"Wireless Media Innovations, LLC v. Maher Terminals, LLC",2015-04-20,njd,published,pleading,ineligible,2014,1,2,5712789;6148291,2000-11-02,2000-11-02,1,0,0,0,0,0,0,0
+7313130,Intellectual Ventures I LLC v. Symantec Corp.,2015-04-22,ded,published,post_trial,,2010,1,3,5987610;6073142;6460050,2002-09-25,1999-11-05,1,0,1,1,1,0,0,0
+7313734,"BASCOM Global Internet Services, Inc. v. AT & T Mobility LLC",2015-05-15,txnd,published,pleading,ineligible,2014,0,1,5987606,1999-11-05,1999-11-05,0,0,0,0,0,0,0,0
+7313736,"Kroy IP Holdings, LLC v. Safeway, Inc.",2015-05-29,txed,published,summary_judgment,ineligible,2012,1,1,7054830,2006-05-22,2006-05-22,0,0,0,0,0,0,0,0
+7314077,"Source Search Technologies, LLC v. Kayak Software Corp.",2015-07-01,njd,published,summary_judgment,ineligible,2011,1,1,5758328,,,1,0,0,0,0,0,0,0
+7314290,"StoneEagle Services, Inc. v. Pay-Plus Solutions, Inc.",2015-07-01,flmd,published,summary_judgment,eligible,2013,0,1,7792686,2010-09-07,2010-09-07,0,0,0,0,0,0,0,0
+7313916,"Affinity Labs of Texas, LLC v. DirecTV, LLC",2015-07-07,txwd,published,pleading,ineligible,2015,1,1,7970379,2011-06-22,2011-06-22,1,0,1,0,0,1,0,0
+7314342,"Chamberlain Group, Inc. v. Linear LLC",2015-07-07,ilnd,published,pleading,eligible,2014,0,4,6998977;7489923;7852212;7876218,2011-01-21,2006-01-15,1,0,0,1,0,0,1,0
+7314313,"Pragmatus Telecom, LLC v. Genesys Telecommunications Laboratories, Inc.",2015-07-09,ded,published,pleading,,2014,1,4,6311231;6668286;7159043;8438314,2013-05-06,2001-10-31,0,0,0,0,0,0,0,0
+7314360,"Netflix, Inc. v. Rovi Corp.",2015-07-15,cand,published,summary_judgment,ineligible,2011,0,5,6898762;7065709;7103906;7945929;7974962,2011-06-29,2005-06-01,0,0,0,0,0,0,0,0
+7314676,MicroStrategy Inc. v. Apttus Corp.,2015-07-17,vaed,published,pleading,ineligible,2015,0,0,,,,0,0,0,0,0,0,0,0
+7315420,"Becton, Dickinson & Co. v. Baxter International, Inc.",2015-08-03,txwd,published,summary_judgment,ineligible,2014,0,0,,,,0,0,0,0,0,0,0,0
+7315034,"Joao Bock Transaction Systems, LLC v. Fidelity National Information Services, Inc.",2015-08-10,flmd,published,summary_judgment,,2013,1,3,6047270;6529725;7096003,2006-08-23,2000-03-19,1,1,0,0,1,0,1,0
+7318284,"Personalized Media Communications, LLC v. Amazon.Com, Inc.",2015-08-10,ded,published,pleading,ineligible,2013,1,8,5887243;7801304;7805749;7827587;7864956;7883252;7940931;8046791,2011-10-23,1999-03-23,1,0,0,0,0,0,1,0
+7315071,"Inventor Holdings, LLC v. Bed Bath & Beyond Inc.",2015-08-21,ded,published,pleading,ineligible,2014,1,1,5862582,1999-01-23,1999-01-23,0,0,0,0,0,0,0,0
+2831578,"Encyclopedia Britannica, Inc. v. Dickstein Shapiro, LLP",2015-08-27,dcd,published,pleading,ineligible,,0,2,7051018;7082437,2006-07-24,2006-05-13,0,0,0,0,0,0,0,0
+7315411,Intellectual Ventures I LLC v. Capital One Financial Corp.,2015-09-02,mdd,published,summary_judgment,,,1,4,6314409;6546002;6715084;7984081,2011-07-14,2001-11-07,1,0,1,1,0,0,0,0
+7315400,Gammino v. American Telephone & Telegraph Co.,2015-09-08,ded,published,pleading,ineligible,2012,0,1,5359643,,,1,0,0,1,0,0,1,0
+7315779,"Exergen Corp. v. Thermomedics, Inc.",2015-09-15,mad,published,summary_judgment,ineligible,2013,0,1,7787938,2010-08-31,2010-08-31,0,0,0,0,0,0,0,0
+7315762,"Concaten, Inc. v. AmeriTrak Fleet Solutions, LLC",2015-09-23,cod,published,pleading,,2014,0,2,7355509;7714705,2010-05-06,2008-04-04,1,0,0,0,0,0,1,0
+7315974,Intellectual Ventures I LLC v. Erie Indemnity Co.,2015-09-25,pawd,published,pleading,ineligible,2014,1,4,6510434;6519581;6546002;7757298,2010-07-15,2003-01-15,1,0,1,1,0,0,1,0
+7316118,"Simpleair, Inc. v. Google Inc.",2015-09-25,txed,published,summary_judgment,,2014,0,2,8572279;8601154,2013-12-06,2013-10-30,0,0,0,0,0,0,0,0
+7316071,"Broadband ITV, Inc. v. Oceanic Time Warner Cable, LLC",2015-09-29,hid,published,summary_judgment,,2015,0,1,7631336,2009-12-14,2009-12-14,1,0,1,1,0,1,0,0
+7316148,"Broadband iTV, Inc. v. Hawaiian Telcom, Inc.",2015-09-29,hid,published,summary_judgment,ineligible,2014,0,1,7631336,2009-12-14,2009-12-14,1,0,1,1,0,1,0,0
+7316018,"Inventor Holdings, LLC v. Gameloft, Inc.",2015-09-30,ded,published,pleading,ineligible,2014,1,1,8784198,2014-07-23,2014-07-23,1,0,0,0,0,0,1,0
+7316159,"Veracode, Inc. v. Appthority, Inc.",2015-09-30,mad,published,post_trial,,,0,2,5854924;7752609,2010-07-08,1999-01-02,1,0,0,0,0,0,0,0
+7316602,"Contentguard Holdings, Inc. v. Amazon.com, Inc.",2015-10-05,txed,published,pleading,eligible,2013,1,1,8393007,2013-03-10,2013-03-10,0,0,0,0,0,0,0,0
+7316218,"Evolutionary Intelligence, LLC v. Sprint Nextel Corp.",2015-10-06,cand,published,pleading,ineligible,,1,2,7010536;7702682,2010-04-16,2006-02-10,1,0,1,0,0,0,0,0
+7316184,"Cyberfone Systems, LLC v. Lexmark International, Inc.",2015-10-08,ded,published,pleading,ineligible,2014,1,3,6044382;7603382;7818399,2010-10-19,2000-03-12,1,1,1,1,0,0,1,0
+7316185,"Parus Holdings, Inc. v. Sallie Mae Bank",2015-10-08,ded,published,pleading,,2014,1,3,7818399;8098600;8838074,2014-09-21,2010-10-19,1,0,0,1,0,0,0,0
+7316186,"YYZ, LLC v. Hewlett-Packard Co.",2015-10-08,ded,published,summary_judgment,ineligible,2013,1,3,7062749;7603674;7818399,2010-10-19,2006-06-09,1,0,0,1,0,0,1,0
+7316436,"Neochloris, Inc. v. Emerson Process Management LLLP",2015-10-13,ilnd,published,summary_judgment,ineligible,,0,1,6845336,2005-01-31,2005-01-31,0,0,0,0,0,0,0,0
+7316680,"Intellectual Ventures I, LLC v. Canon Inc.",2015-11-09,ded,published,summary_judgment,,2013,1,6,5444728;5712870;6435686;6650432;6977944;7817914,2010-10-18,2002-08-02,1,0,0,0,0,0,1,0
+7316802,"Listingbook, LLC v. Market Leader, Inc.",2015-11-13,ncmd,published,summary_judgment,ineligible,2013,1,1,7454355,2008-11-14,2008-11-14,1,0,1,1,0,0,0,0
+7317475,"Epic Technology, LLC v. Fitnow, Inc.",2015-12-07,utd,published,pleading,ineligible,2015,1,1,8275633,2012-09-25,2012-09-25,0,0,0,0,0,0,0,0
+7317448,"01 Communique Laboratory, Inc. v. Citrix Systems, Inc.",2015-12-21,ohnd,published,summary_judgment,,2006,0,1,6928479,2005-08-08,2005-08-08,0,0,0,0,0,0,0,0
+7317673,"Network Apparel Group, LP v. Airwave Networks Inc.",2015-12-30,txwd,published,pleading,ineligible,2015,0,2,6258540;7631079,2009-12-14,2001-07-08,1,0,1,1,1,0,0,0
+7317670,"Motio, Inc. v. BSP Software LLC",2016-01-04,txed,published,summary_judgment,eligible,2012,0,1,8285678,2012-10-10,2012-10-10,1,0,0,0,0,0,0,0
+7317834,"C. R. Bard, Inc. v. Angiodynamics, Inc.",2016-01-12,ded,published,pleading,,2015,0,4,7818399;8475417;8545460;8805478,2014-08-16,2010-10-19,1,0,0,0,0,1,1,0
+7317835,"Motivation Innovations, LLC v. Petsmart, Inc.",2016-01-12,ded,published,pleading,ineligible,2013,1,1,5612527,,,1,0,0,0,0,0,0,0
+7319030,"Secure Mail Solutions LLC v. Universal Wilde, Inc.",2016-02-16,cacd,published,pleading,ineligible,2015,1,6,7814032;7818268;8073787;8429093;8910860;9105002,2015-08-11,2010-10-12,1,1,0,0,1,0,0,0
+7322166,"Williamson v. Citrix Online, LLC",2016-02-17,cacd,published,summary_judgment,ineligible,2011,0,0,,,,1,0,0,0,0,0,0,0
+7318736,"TNS Media Research, LLC v. Tivo Research & Analytics, Inc.",2016-02-22,nysd,published,summary_judgment,,,1,2,8000993;8112301,2012-02-07,2011-08-10,1,1,1,0,0,1,0,0
+7317268,"O2 Media, LLC v. Narrative Science Inc.",2016-02-25,ilnd,published,pleading,ineligible,,1,3,7856390;8494944;8676691,2014-03-11,2010-12-20,1,0,1,0,0,0,0,1
+7317245,"A Pty Ltd. v. Facebook, Inc.",2016-02-29,txwd,published,pleading,,2015,1,0,,,,0,0,0,0,0,0,0,0
+7317247,"A Pty Ltd. v. Homeaway, Inc.",2016-02-29,txwd,published,pleading,,2015,1,0,,,,0,0,0,0,0,0,0,0
+7317248,"A Pty Ltd. v. Google, Inc.",2016-02-29,txwd,published,pleading,,2015,1,0,,,,0,0,0,0,0,0,0,0
+7318852,"Racetech, LLC v. Kentucky Downs, LLC",2016-03-01,kywd,published,pleading,ineligible,2015,1,3,6358150;6450887;9047737,2015-06-02,2002-02-12,0,0,0,0,0,0,0,0
+7318926,Peschke Map Technologies LLC v. Rouse Properties Inc.,2016-03-08,vaed,published,pleading,ineligible,2015,1,1,6397143,2002-05-09,2002-05-09,1,0,0,0,0,0,0,0
+7319078,Intellectual Ventures I LLC v. Ricoh Americas Corp.,2016-03-22,ded,published,pleading,ineligible,2013,1,2,6130761;6435686,2002-08-02,2000-09-24,1,0,0,0,0,1,0,0
+7319079,Improved Search LLC v. AOL Inc.,2016-03-22,ded,published,pleading,,2015,1,2,6604101;7516154,2009-04-04,2003-08-10,1,1,1,1,0,0,0,0
+7319081,Treehouse Avatar LLC v. Valve Corp.,2016-03-22,ded,published,pleading,,2015,1,1,8180858,2012-05-14,2012-05-14,1,0,1,1,0,0,0,0
+7319324,"Joao Control & Monitoring Systems, LLC v. Telular Corp.",2016-03-23,ilnd,published,pleading,,,1,1,6587046,2003-07-03,2003-07-03,1,0,0,0,0,0,1,0
+7319310,"Nexuscard, Inc. v. Kroger Co.",2016-03-24,txed,published,pleading,ineligible,2015,0,1,5924080,1999-06-14,1999-06-14,0,0,0,0,0,0,0,0
+7319364,"Mobile Telecommunications Technologies, LLC v. United Parcel Service, Inc.",2016-03-24,gand,published,pleading,ineligible,2012,1,1,5786748,,,1,0,1,0,0,0,1,0
+7319697,"SkillSurvey, Inc. v. Checkster LLC",2016-03-31,paed,published,pleading,ineligible,,0,1,8894416,2014-11-23,2014-11-23,1,0,0,0,0,0,0,0
+7319782,"SRI International, Inc. v. Cisco Systems, Inc.",2016-04-11,ded,published,summary_judgment,,2013,0,2,6484203;6708212,2004-03-26,2002-11-18,1,0,0,1,0,0,0,0
+7320247,"eResearchTechnology, Inc. v. CRF, Inc.",2016-05-10,pawd,published,pleading,,2015,1,5,6879970;7415447;8065180;8145519;8433605,2013-04-30,2005-04-20,0,0,0,0,0,0,0,0
+7320520,"Device Enhancement LLC v. Amazon.com, Inc.",2016-05-17,ded,published,pleading,,2015,1,2,7747683;7818399,2010-10-19,2010-06-29,1,0,0,0,0,0,1,0
+7320648,"Apollo Finance, LLC v. Cisco Systems, Inc.",2016-06-07,cacd,published,pleading,ineligible,2015,1,1,8435038,2013-05-02,2013-05-02,1,0,0,1,0,1,0,0
+7323585,"Nextpoint, Inc. v. Hewlett-Packard Co.",2016-06-08,ilnd,published,pleading,ineligible,,0,1,8447731,2013-05-20,2013-05-20,0,0,0,0,0,0,0,0
+7320953,Papst Licensing GmbH & Co. KG v. Xilinx Inc.,2016-06-09,cand,published,pleading,ineligible,2016,1,2,6574759;6704891,2004-03-18,2003-06-06,1,0,0,0,1,0,0,0
+7320681,"American Well Corp. v. Teladoc, Inc.",2016-06-13,mad,published,pleading,ineligible,2015,0,1,7590550,2009-09-17,2009-09-17,1,0,0,0,0,0,0,0
+7320790,"Smart Software, Inc. v. Planningedge, LLC",2016-06-17,mad,published,pleading,ineligible,2015,0,1,6205431,2001-03-12,2001-03-12,1,0,0,0,0,0,0,0
+7320963,Interval Licensing LLC v. AOL Inc.,2016-06-17,wawd,published,pleading,ineligible,2010,1,1,6034652,2000-02-19,2000-02-19,0,0,0,0,0,0,0,0
+7321132,"Appistry, Inc. v. Amazon.Com, Inc.",2016-07-19,wawd,published,pleading,ineligible,2015,0,4,8200746;8341209;8682959;9049267,2015-06-04,2012-06-11,1,0,1,1,0,0,0,0
+7323203,Polaris Innovations Ltd. v. Kingston Technology Co.,2016-07-21,cacd,published,pleading,eligible,,1,2,6850414;7315454,2008-01-04,2005-02-12,1,0,0,1,0,0,1,0
+7321209,"Whitepages, Inc. v. Isaacs",2016-07-25,cand,published,pleading,,2016,0,1,8861698,2014-10-17,2014-10-17,1,0,0,1,0,0,0,0
+7321312,"Multimedia Plus, Inc. v. Playerlync, LLC",2016-07-29,nysd,published,pleading,ineligible,,0,1,7293025,2007-11-14,2007-11-14,0,0,0,0,0,0,0,0
+7321480,Intellectual Ventures I LLC v. Erie Indemnity Co.,2016-08-04,pawd,published,pleading,ineligible,2014,1,2,6519581;7757298,2010-07-15,2003-02-04,1,0,1,1,0,0,1,0
+7321722,"Nice Systems Ltd. v. Clickfox, Inc.",2016-09-15,ded,published,pleading,ineligible,2015,0,1,8976955,2015-03-07,2015-03-07,0,0,0,0,0,0,0,0
+7321723,"Callwave Communications, LLC v. AT & T Mobility, LCC",2016-09-15,ded,published,pleading,ineligible,2012,1,1,6771970,2004-08-17,2004-08-17,1,0,0,0,0,0,0,0
+7321768,"Tridim Innovations LLC v. Amazon.com, Inc.",2016-09-19,cand,published,pleading,ineligible,2015,1,2,5838326;5847709,,,1,0,1,0,0,1,0,0
+7322078,Data Engine Technologies LLC v. Google Inc.,2016-09-29,ded,published,pleading,ineligible,2014,1,4,5303146;5416895;5623591;5784545,,,0,0,0,0,0,0,0,0
+7322089,Genband US LLC v. Metaswitch Networks Ltd.,2016-09-29,txed,published,post_trial,eligible,2014,1,7,6791971;6885658;6934279;7047561;7184427;7990984;7995589,2011-08-02,2004-10-02,1,0,1,1,0,0,1,0
+7322417,ORBCOMM Inc. v. CalAmp Corp.,2016-10-19,vaed,published,pleading,,2016,0,5,6292724;6611686;6651001;6735150;8855626,2014-10-11,2001-09-21,1,0,1,1,0,0,1,0
+7322973,"Evolved Wireless, LLC v. Apple Inc.",2016-10-31,ded,published,pleading,eligible,2015,1,2,7746916;8218481,2012-07-06,2010-06-28,0,0,0,0,0,0,0,0
+7322909,"Visual Interactive Phone Concepts, Inc. v. United States Cellular Corp.",2016-11-15,ilnd,published,pleading,,,0,1,5724092,,,1,0,1,0,0,1,0,0
+7323138,"TNS Media Research LLC V. Tivo Research & Analytics, Inc.",2016-11-29,nysd,published,summary_judgment,,2011,1,2,7729940;8112301,2012-02-07,2010-05-31,1,1,1,0,0,0,0,0
+7323027,"Move, Inc. v. Real Estate Alliance Ltd.",2016-12-01,cacd,published,summary_judgment,,,0,2,5032989;6151604,2000-11-10,2000-11-10,0,0,0,0,0,0,0,0
+7323420,"Zkey Investments, LLC v. Facebook Inc.",2016-12-02,cacd,published,summary_judgment,ineligible,2016,1,1,6820204,2004-12-05,2004-12-05,1,0,1,0,0,0,0,0
+7323395,"Technology Development & Licensing, LLC v. General Instrument Corp.",2016-12-06,ilnd,published,summary_judgment,ineligible,,1,0,,,,0,0,0,0,0,0,0,0
+7323449,Verint Systems Inc. v. Red Box Recorders Ltd.,2016-12-07,nysd,published,summary_judgment,eligible,2014,0,2,5790798;6510220,2003-01-14,2003-01-14,0,0,0,0,0,0,0,0
+7323452,"Gust, Inc. v. AlphaCap Ventures, LLC",2016-12-08,nysd,published,pleading,,,0,3,7848976;7908208;8433630,2013-04-30,2010-12-08,0,0,0,0,0,0,0,0
+7323281,Berkheimer v. Hewlett-Packard Co.,2016-12-12,ilnd,published,summary_judgment,ineligible,,0,1,7447713,2008-10-30,2008-10-30,0,0,0,0,0,0,0,0
+7323222,"Automated Tracking Solutions, LLC v. Coca-Cola Co.",2016-12-21,gand,published,pleading,ineligible,2015,1,3,7551089;7834766;8896449,2014-11-25,2009-06-23,1,0,0,0,0,0,1,0
+7323508,"Synchronoss Technologies, Inc. v. Dropbox Inc.",2016-12-22,cand,published,pleading,eligible,2016,1,2,6671757;6757696,2004-07-16,2004-01-04,1,0,1,1,0,1,0,0
+7323512,"West View Research, LLC v. Bayerische Motoren Werke AG",2016-12-30,casd,published,pleading,ineligible,2014,1,2,8301456;8311834,2012-11-16,2012-11-01,1,0,1,0,0,0,1,0
+7324227,Intellectual Ventures I LLC v. AT & T Mobility LLC,2016-12-30,ded,published,pleading,ineligible,2012,1,2,7450957;8078200,2011-12-13,2008-11-06,1,0,0,1,0,0,0,0
+7323560,"Virginia Innovation Sciences Inc. v. Amazon.com, Inc.",2017-01-05,vaed,published,pleading,ineligible,2016,1,9,7899492;8050711;8712471;8903451;8948814;9118794;9286853;9355611;9369844,2016-06-16,2011-02-27,1,1,1,1,1,1,1,0
+7323697,"Capstan AG Systems, Inc. v. Raven Industries, Inc.",2017-01-11,ksd,published,pleading,,2016,0,2,8191795;8523085,2013-08-29,2012-05-30,0,0,0,0,0,0,0,0
+7324066,"Calamp Wireless Networks Corp. v. ORBCOMM, Inc.",2017-02-09,vaed,published,pleading,ineligible,2016,0,1,6850839,2005-02-13,2005-02-13,1,0,0,0,0,0,1,0
+7324087,"Fitbit, Inc. v. AliphCom",2017-02-09,cand,published,pleading,eligible,2015,0,3,9026053;9048923;9106307,2015-08-13,2015-05-06,1,0,0,1,0,0,1,0
+7324142,Intellectual Ventures I LLC v. Symantec Corp.,2017-02-13,ded,published,summary_judgment,,2013,1,1,5537533,,,0,0,0,0,0,0,0,0
+7324120,"Egenera, Inc. v. Cisco Systems, Inc.",2017-02-14,mad,published,pleading,,,0,2,6971044;7178059,2007-02-26,2005-11-13,1,0,0,1,0,0,0,0
+7324300,"Crypto Research, LLC v. Assay Abloy, Inc.",2017-02-17,nyed,published,pleading,eligible,,1,3,8086866;8516262;8990576,2015-03-24,2011-12-27,1,0,0,0,0,1,1,0
+7324483,"Mankes v. Fandango, LLC",2017-02-28,nced,published,pleading,ineligible,2013,0,1,6477503,2002-11-03,2002-11-03,1,0,0,0,0,0,0,0
+8343929,"SCVNGR, Inc. v. DailyGobble, Inc.",2017-03-02,rid,published,pleading,eligible,2016,0,1,8924260,2015-01-01,2015-01-01,0,0,0,0,0,0,0,0
+7324582,"X One, Inc. v. Uber Technologies, Inc.",2017-03-06,cand,published,pleading,eligible,2016,0,2,8798593;8798647,2014-08-08,2014-08-08,1,0,0,1,0,0,1,0
+7324911,"Icon Health & Fitness, Inc. v. Polar Electro Oy",2017-03-10,utd,published,pleading,ineligible,2011,0,2,6701271;7789800,2010-09-03,2004-03-10,0,0,0,0,0,0,0,0
+7324990,"Finjan, Inc. v. Sophos, Inc.",2017-03-14,cand,published,post_trial,eligible,2014,0,1,6092194,2000-06-28,2000-06-28,1,0,1,1,1,0,0,0
+7324882,"Uniloc USA, Inc. v. Amazon.com, Inc.",2017-03-20,txed,published,pleading,,2016,0,1,8566960,2013-10-23,2013-10-23,1,0,0,0,0,0,0,0
+7325040,"Quest Integrity USA, LLC v. Clean Harbors Industrial Services, Inc.",2017-03-28,ded,published,post_trial,,2014,1,1,7542874,2009-06-04,2009-06-04,1,0,0,0,0,1,0,0
+7327197,"P & RO Solutions Group, Inc. v. CiM Maintenance, Inc.",2017-03-31,txed,published,pleading,ineligible,2016,1,1,8209205,2012-06-23,2012-06-23,1,0,0,0,0,0,1,0
+7325362,"Twilio, Inc. v. Telesign Corp.",2017-04-17,cand,published,pleading,,2016,0,4,8306021;8738051;9226217;9270833,2016-02-21,2012-11-07,1,0,1,1,0,0,0,0
+7326475,"Umbanet, Inc. v. Epsilon Data Management, LLC",2017-04-18,txed,published,pleading,,2016,0,0,,,,0,0,0,0,0,0,0,0
+7325531,"Tele-Publishing, Inc. v. Facebook, Inc.",2017-05-11,mad,published,summary_judgment,,,0,0,,,,0,0,0,0,0,0,0,0
+7326196,"SAP America, Inc. v. Investpic, LLC",2017-05-18,txnd,published,pleading,ineligible,2016,0,0,,,,1,1,1,0,0,1,0,0
+7325799,"Maxon, LLC v. Funai Corp.",2017-05-23,ilnd,published,pleading,ineligible,,1,1,8989160,2015-03-22,2015-03-22,0,0,0,0,0,0,0,0
+7326034,"Technology Development & Licensing, LLC v. Comcast Corp.",2017-06-19,ilnd,published,pleading,ineligible,2008,1,0,,,,1,0,0,0,0,1,0,0
+7326049,"Natural Alternatives International, Inc. v. Allmax Nutrition, Inc.",2017-06-26,casd,published,pleading,,2016,0,4,5965596;7504376;7825084;7925084,2011-04-10,1999-09-16,0,0,0,0,0,0,0,0
+7326347,"Comcast Cable Communications, LLC v. Sprint Communications Co.",2017-08-16,paed,published,post_trial,,,1,3,6754907;6757907;6885870,2005-05-03,2004-07-10,1,0,1,0,0,0,0,0
+7327010,Card-Monroe Corp. v. Tuftco Corp.,2017-09-01,tned,published,summary_judgment,,2014,0,3,8141505;8359989;8776703,2014-07-15,2012-03-19,1,0,0,0,0,0,1,0
+7327747,"Broadsoft, Inc. v. Callwave Commc'ns, LLC",2017-10-01,ded,published,pleading,,,0,2,7822188;8351591,2013-01-11,2010-10-25,0,0,0,0,0,0,0,0
+7327875,"Shipping & Transit, LLC v. 1A Auto, Inc.",2017-10-20,flsd,published,pleading,,,1,0,,,,0,0,0,0,0,0,0,0
+7328349,"Int'l Bus. Machs. Corp. v. Groupon, Inc.",2017-11-17,ded,published,pleading,,,0,2,5796967;7072849,2006-07-02,2006-07-02,1,1,0,0,0,0,0,0
+7328550,"Solutran, Inc. v. U.S. Bancorp",2017-11-27,med,published,summary_judgment,,,0,1,8311945,2012-11-16,2012-11-16,0,0,0,0,0,0,0,0
+7328223,"Ancora Techs., Inc. v. HTC Am., Inc.",2017-12-14,wawd,published,pleading,ineligible,,1,1,6411941,2002-06-11,2002-06-11,1,0,0,0,0,0,0,0
+7328293,Procter & Gamble Co. v. QuantifiCare Inc.,2017-12-19,cand,published,pleading,,2017,0,1,6571003,2003-05-29,2003-05-29,1,0,0,0,0,0,0,0
+7328918,"Location Based Servs., LLC v. Niantic, Inc.",2017-12-19,cand,published,pleading,ineligible,2017,1,4,7522996;7860648;8392114;8768610,2014-07-05,2009-04-20,1,0,0,0,0,1,0,0
+9671017,"Gaelco S.A. v. Arachnid 360, LLC",2017-12-21,ilnd,other,pleading,ineligible,2016,0,1,7361083,2008-04-16,2008-04-16,1,0,0,0,0,0,0,0
+7329663,"Agri-Labs Holding LLC v. Taplogic, LLC",2018-01-16,innd,published,summary_judgment,,,1,2,6947866;8286857,2012-10-11,2005-09-21,0,0,0,0,0,0,0,0
+7329669,"Brightedge Techs., Inc. v. Searchmetrics, GMBH.",2018-01-19,cand,published,pleading,,,1,5,8135706;8478700;8478746;8577863;8671089,2014-03-04,2012-03-11,1,0,1,1,0,0,1,0
+7328199,"Certusview Techs., LLC v. S & N Locating Servs., LLC",2018-02-09,vaed,published,pleading,eligible,2013,1,3,8340359;8532341;9183646,2015-11-11,2012-12-26,0,0,0,0,0,0,0,0
+7333940,"Eyetalk365, LLC v. Zmodo Tech. Corp. Ltd.",2018-02-14,nvd,published,pleading,,2017,1,1,9432638,2016-08-30,2016-08-30,1,0,0,1,0,0,0,0
+7328827,Sycamore Ip Holdings LLC v. At & T Corp.,2018-02-16,txed,published,summary_judgment,,2016,1,1,6952405,2005-10-01,2005-10-01,0,0,0,0,0,0,0,0
+7330050,"D & M Holdings Inc. v. Sonos, Inc.",2018-02-20,ded,published,summary_judgment,ineligible,,1,1,7995899,2011-08-02,2011-08-02,0,0,0,0,0,0,0,0
+7330048,"Quantum Stream Inc. v. Charter Commc'ns, Inc.",2018-03-01,ilsd,published,pleading,ineligible,,0,3,9047626;9117228;9349136,2016-05-22,2015-06-02,1,0,1,0,0,0,0,0
+7330460,"Immersion Corp. v. Fitbit, Inc.",2018-03-05,cand,published,pleading,,,0,3,8059105;8351299;8638301,2014-01-21,2011-11-12,1,0,1,0,0,0,1,0
+7330979,"Bridge & Post, Inc. v. Verizon Commc'ns, Inc.",2018-03-15,vaed,published,pleading,,,0,3,7657594;8862747;9659314,2017-05-25,2010-02-01,0,0,0,0,0,0,0,0
+7330464,"MyMail, Ltd. v. ooVoo, LLC",2018-03-16,cand,published,pleading,ineligible,,0,2,8275863;9021070,2015-04-30,2012-09-26,1,0,0,1,0,0,1,0
+7330709,"Smarten LLC v. Samsung Elecs. Am., Inc.",2018-03-16,vaed,published,pleading,ineligible,,1,4,9280640;9378657;9514655;9728102,2017-08-12,2016-03-03,0,0,0,0,0,0,0,0
+7329496,3G Licensing v. Blackberry Ltd.,2018-03-22,ded,published,pleading,ineligible,,1,1,6212662,2001-03-28,2001-03-28,1,0,1,0,0,0,1,0
+7330543,Silver State Intellectual Techs. v. Facebook Inc.,2018-03-23,cand,published,pleading,ineligible,,1,0,,,,0,0,0,0,0,0,0,0
+9729953,"Cardionet, LLC v. Infobionic, Inc.",2018-03-29,mad,other,pleading,,2015,1,2,7212850;7907996,2011-03-13,2007-05-16,1,0,1,0,0,0,0,1
+7329891,"IPA Techs., Inc. v. Amazon.com, Inc.",2018-03-31,ded,published,pleading,,2016,1,3,6523061;6742021;6757718,2004-07-16,2003-02-12,0,0,0,0,0,0,0,0
+7330723,"Cellspin Soft, Inc. v. Fitbit, Inc.",2018-04-03,cand,published,pleading,,2017,0,0,,,,0,0,0,0,0,0,0,0
+9671936,"Xoran Technologies, LLC v. Planmeca USA, Inc.",2018-05-22,ilnd,other,pleading,eligible,2017,1,1,7551711,2009-06-24,2009-06-24,0,0,0,0,0,0,0,0
+7331357,Kaavo Inc. v. Amazon.com Inc.,2018-06-18,ded,published,summary_judgment,,,0,1,8271974,2012-09-20,2012-09-20,1,0,0,0,0,0,0,0
+7331099,"Uniloc USA, Inc. v. Big Fish Games, Inc.",2018-06-19,wawd,published,pleading,,2017,0,2,6110228;6564229,2003-05-14,2000-08-08,1,0,0,0,0,0,1,0
+7331566,"Puget Bioventures, LLC v. Biomet Orthopedics LLC",2018-07-02,innd,published,pleading,,2010,1,1,7344541,2008-03-10,2008-03-10,0,0,0,0,0,0,0,0
+7331851,"Pure Data Sys., LLC v. Ubisoft, Inc.",2018-07-13,cand,published,pleading,,2018,1,2,5999947;6321236,2001-11-22,1999-12-03,0,0,0,0,0,0,0,0
+9672302,"A. Zahner Company v. Hendrick Metal Products, LLC",2018-07-20,ilnd,other,pleading,,2017,0,1,7212688,2007-05-15,2007-05-15,1,0,1,0,0,1,1,0
+7332118,"Xy, LLC v. Trans Ova Genetics, LC",2018-08-09,cod,published,pleading,,2017,1,4,9134220;9145590;9625367;9835541,2017-12-12,2015-09-14,0,0,0,0,0,0,0,0
+7333928,"23andMe, Inc. v. Ancestry.com. DNA, LLC",2018-08-23,cand,published,pleading,,2018,0,0,,,,1,0,1,0,0,0,0,0
+7332263,In re Biogen 755 Patent Litig.,2018-09-07,njd,published,post_trial,ineligible,,1,1,7588755,2009-09-13,2009-09-13,1,0,0,0,0,0,0,1
+7332547,"Align Tech., Inc. v. 3shape",2018-09-07,ded,published,pleading,,2017,1,8,6227850;6514074;7092107;7112065;8734149;9299192;9451873;9510757,2016-12-03,2001-05-01,1,0,0,0,0,1,0,0
+7332692,"Guada Techs. LLC v. Vice Media, LLC",2018-09-17,ded,published,pleading,eligible,2017,1,1,7231379,2007-06-27,2007-06-27,0,0,0,0,0,0,0,0
+7332656,"Huawei Techs., Co. v. Samsung Elecs. Co.",2018-09-25,cand,published,summary_judgment,ineligible,2016,1,11,8228827;8416892;8457588;8483166;8509350;8619726;8644239;8724613;8761130;8885587;9288825,2016-03-13,2012-07-21,1,0,0,1,0,0,1,0
+7333089,"Distefano Patent Trust III, LLC v. Linkedin Corp.",2018-09-28,ded,published,pleading,ineligible,2017,1,1,8768760,2014-07-05,2014-07-05,1,0,0,1,0,0,0,0
+7333090,"Search & Soc. Media Partners, LLC v. Facebook, Inc.",2018-09-28,ded,published,pleading,,2017,1,2,8620828;8719176,2014-05-03,2013-12-30,1,0,1,1,0,0,1,0
+9730476,"Nike, Inc v. PUMA North America, Inc.",2018-10-10,mad,other,pleading,eligible,2018,0,2,8266749;9078488,2015-07-09,2012-09-13,1,0,0,0,0,0,0,0
+7333202,"Cardionet, LLC v. Infobionic, Inc.",2018-10-16,dcd,published,pleading,ineligible,2017,1,1,7941207,2011-05-06,2011-05-06,1,0,0,0,0,0,0,0
+9730549,"Cardionet, LLC v. InfoBionic, Inc",2018-10-16,mad,other,pleading,ineligible,2017,1,1,7941207,2011-05-06,2011-05-06,1,0,0,0,0,0,0,0
+7332691,"Pers. Beasties Grp. LLC v. Nike, Inc.",2018-10-25,ilsd,published,pleading,ineligible,2018,1,1,6769915,2004-08-13,2004-08-13,1,0,0,0,0,0,0,0
+7332657,"Ecoservices, LLC v. Certified Aviation Servs., LLC",2018-10-26,cacd,published,summary_judgment,,2016,1,2,5868860;9162262,2015-10-17,1999-02-09,1,0,0,0,0,0,0,0
+7332862,"Isentium, LLC v. Bloomberg Fin. L.P.",2018-10-29,ilsd,published,pleading,,2017,1,1,8856056,2014-10-11,2014-10-11,1,1,0,0,0,1,0,0
+7332655,Thunder Power New Energy Vehicle Dev. Co. v. Byton N. Am. Corp.,2018-10-31,cand,published,post_trial,ineligible,2018,0,3,9547373;9561724;9563329,2017-02-04,2017-01-16,1,0,1,0,0,1,1,0
+7332873,"Consumer 2.0, Inc. v. Tenant Turner, Inc.",2018-11-01,vaed,published,pleading,ineligible,2018,0,1,9875590,2018-01-26,2018-01-26,1,0,0,0,0,0,0,0
+7333511,"Secure Cam, LLC v. Tend Insights, Inc.",2018-11-14,cand,published,pleading,ineligible,2018,1,4,8350928;8531555;8836819;9363408,2016-06-08,2013-01-10,1,0,0,1,0,1,1,0
+7333485,"Epic IP LLC v. Backblaze, Inc.",2018-11-26,ded,published,pleading,ineligible,,1,1,6434599,2002-07-31,2002-07-31,1,0,0,0,0,0,1,0
+7333930,"Illumina, Inc. v. Ariosa Diagnostics, Inc.",2018-12-24,cand,published,summary_judgment,ineligible,2018,0,2,9580751;9738931,2017-08-24,2017-02-24,1,0,0,0,0,0,0,1
+7333486,"Baggage Airline Guest Servs., Inc. v. Roadie, Inc.",2019-01-07,ded,published,pleading,ineligible,2018,0,1,9659336,2017-05-25,2017-05-25,0,0,0,0,0,0,0,0
+7336754,"Valentine Commc'ns, LLC v. Six Continents Hotels, Inc.",2019-01-09,gand,published,pleading,,2018,1,2,8567672;8590785,2013-11-22,2013-10-24,0,0,0,0,0,0,0,0
+7333543,"IPA Techs., Inc. v. Amazon.com, Inc.",2019-01-18,ded,published,pleading,,2016,1,6,6523061;6742021;6757718;6851115;7036128;7069560,2006-06-24,2003-02-12,0,0,0,0,0,0,0,0
+7334415,Intellectual Ventures II LLC v. Bitco Gen. Ins. Corp.,2019-01-24,txed,published,pleading,eligible,2018,1,1,7516177,2009-04-04,2009-04-04,0,0,0,0,0,0,0,0
+7335983,British Telecommunications PLC v. Iac/Interactive Corp,2019-02-04,ded,published,pleading,,2018,0,6,6240450;6397040;6578079;7243105;7974200;9177297,2015-11-03,2001-05-30,1,0,1,1,1,0,1,0
+7334854,"Specialized Monitoring Solutions, LLC v. ADT LLC",2019-02-07,txed,published,summary_judgment,ineligible,2017,1,1,6657553,2003-12-04,2003-12-04,1,0,0,0,0,0,0,0
+7334497,"Citrix Sys., Inc. v. Avi Networks, Inc.",2019-02-13,ded,published,pleading,,2017,0,2,7720954;8230055,2012-07-23,2010-05-16,1,0,0,1,0,0,0,0
+7335296,"RingCentral, Inc. v. Dialpad, Inc.",2019-03-08,cand,published,pleading,ineligible,2018,0,4,7702669;8355496;8483367;8600363,2013-12-05,2010-04-16,1,0,1,0,0,0,0,0
+7335204,"Dropbox, Inc. v. Synchronoss Techs., Inc.",2019-03-13,cand,published,pleading,ineligible,2018,0,2,6058399;6178505,2001-01-10,2000-04-13,1,0,1,1,1,0,0,0
+7335520,"Voip-Pal.Com, Inc. v. Apple Inc.",2019-03-25,cand,published,pleading,ineligible,2018,0,0,,,,1,0,1,1,0,0,0,0
+7335848,"Orcinus Holdings, LLC v. Synchronoss Techs., Inc.",2019-04-04,cand,published,pleading,ineligible,2018,1,1,7567541,2009-07-29,2009-07-29,1,0,1,1,0,0,0,0
+7335852,Uniloc U.S. Inc. v. LG Elecs. USA Inc.,2019-04-09,cand,published,pleading,ineligible,2018,0,1,6993049,2006-01-02,2006-01-02,1,0,0,1,0,0,0,0
+7335349,"TQ Delta, LLC v. 2Wire, Inc.",2019-04-10,ded,published,summary_judgment,,2013,1,1,7453881,2008-11-13,2008-11-13,1,0,0,0,0,0,0,0
+7335493,"Axcess Int'l, Inc. v. Genetec (Usa) Inc.",2019-04-23,ded,published,pleading,eligible,2018,0,1,7286158,2007-10-29,2007-10-29,0,0,0,0,0,0,0,0
+7336476,"Cisco Sys., Inc. v. Uniloc United States, Inc.",2019-05-06,cand,published,pleading,ineligible,2018,0,1,6980522,2005-12-04,2005-12-04,1,0,0,1,0,0,0,0
+7336181,"Alarm.Com. Inc. v. Ipdatatel, LLC",2019-06-05,txsd,published,pleading,eligible,,0,5,7113090;7633385;7956736;8478871;9141276,2015-09-22,2006-10-01,1,0,0,1,0,0,0,0
+10216598,Simio v. Flexsim Software Products,2019-06-20,utd,other,pleading,ineligible,2018,0,1,8156468,2012-04-10,2012-04-10,0,0,0,0,0,0,0,0
+7336623,Jaguar Land Rover Ltd. v. Bentley Motors Ltd.,2019-06-26,vaed,published,pleading,eligible,2018,0,1,7349776,2008-03-22,2008-03-22,1,0,0,0,0,0,1,0
+7336999,Yanbin Yu v. Apple Inc.,2019-07-02,cand,published,pleading,,2018,0,1,6611289,2003-08-26,2003-08-26,1,0,0,0,0,1,1,0
+7336793,Whitserve LLC v. Donuts Inc.,2019-07-08,ded,published,pleading,ineligible,2018,1,2,5895468;6182078,2001-01-18,1999-04-10,0,0,0,0,0,0,0,0
+7336612,"Cardionet, LLC v. Scottcare Corp.",2019-07-11,paed,published,summary_judgment,ineligible,,1,2,7587237;7941207,2011-05-06,2009-09-10,1,0,0,0,0,0,0,0
+7336700,"First-Class Monitoring, LLC v. United Parcel Serv. of Am., Inc.",2019-07-22,txed,published,pleading,ineligible,2019,1,2,6014089;6150955,2000-11-08,2000-01-04,1,0,1,1,0,0,0,0
+9980937,NetSoc LLC v. Match Group LLC,2019-07-22,txnd,other,pleading,ineligible,2018,1,1,9978107,2018-05-23,2018-05-23,1,0,0,1,0,0,0,0
+9799833,"CBA ENVIRONMENTAL SERVICES, INC v. TOLL BROTHERS INC",2019-07-31,njd,other,pleading,,2018,0,1,7001105,2006-01-20,2006-01-20,0,0,0,0,0,0,0,0
+9812331,"Applied Capital, Inc v. The ADT Corporation",2019-08-07,nmd,posted,summary_judgment,,2016,0,2,8378817;9728082,2017-08-12,2013-02-18,0,0,0,0,0,0,0,0
+9784058,"Ubisoft Entertainment, S.A. v. Yousician Oy",2019-08-09,nced,posted,pleading,ineligible,2018,0,1,9839852,2017-12-17,2017-12-17,1,1,0,0,0,0,0,0
+9612877,"Park Assist, LLC v. San Diego County Regional Airport Authority",2019-08-26,casd,posted,pleading,eligible,2018,1,1,9594956,2017-03-12,2017-03-12,1,0,0,0,0,0,0,0
+10174926,"CG Technology Development, LLC v. William Hill U.S. Holdco, Inc.",2019-08-28,ded,posted,pleading,,2018,1,4,9076305;9269224;9875608;10096207,2018-10-04,2015-07-07,0,0,0,0,0,0,0,0
+9594923,"Smart Authentication IP, LLC v. Electronic Arts Inc.",2019-09-11,cand,posted,pleading,ineligible,2019,1,1,8082213,2011-12-20,2011-12-20,1,0,0,0,1,0,0,0
+9633264,"CoolTVNetwork.com, Inc. v. Facebook, Inc.",2019-09-16,ded,posted,pleading,eligible,2019,0,1,7162696,2007-01-22,2007-01-22,1,0,0,1,0,0,0,0
+10174945,"Sunoco Partners Marketing & Terminals L.P. v. Powder Springs Logistics, LLC",2019-09-18,ded,posted,pleading,,2017,1,5,6679302;7032629;9207686;9494948;9606548,2017-03-25,2004-01-20,1,0,0,0,0,0,0,0
+9595075,"Windy City Innovations, LLC v. Facebook, Inc.",2019-09-24,cand,posted,summary_judgment,ineligible,2016,1,1,8458245,2013-06-04,2013-06-04,1,0,0,1,0,0,0,0
+9674774,"FYF-JB, LLC v. Pet Factory, Inc.",2019-09-24,ilnd,posted,pleading,eligible,2019,1,1,9681643,2017-06-20,2017-06-20,1,0,0,0,0,0,0,0
+10211701,Charles Shamoon v. City of San Antonio,2019-09-26,txwd,posted,pleading,eligible,2018,0,2,8064935;9602655,2017-03-21,2011-11-22,1,0,0,0,0,0,0,0
+10232876,PTP OneClick LLC v. Avalara Inc,2019-09-27,wawd,posted,pleading,,2019,1,1,9760915,2017-09-18,2017-09-18,0,0,0,0,0,0,0,0
+9975636,T-Rex Property AB v. Regal Entertainment Group,2019-09-27,txed,posted,summary_judgment,,2016,0,2,6430603;7382334,2008-06-04,2002-07-22,0,0,0,0,0,0,0,0
+9674826,"CheckSum Ventures, LLC v. Dell Inc.",2019-09-30,ilnd,posted,pleading,,2018,1,1,8301906,2012-11-02,2012-11-02,0,0,0,0,0,0,0,0
+9699090,"TENSTREET, LLC v. DRIVERREACH, LLC",2019-09-30,insd,posted,pleading,ineligible,2018,1,1,8145575,2012-03-25,2012-03-25,1,0,1,0,0,0,0,0
+9851571,"Western Express Bancshares, LLC v. Green Dot Corporation",2019-10-02,nysd,posted,pleading,ineligible,2019,1,1,8498932,2013-07-30,2013-07-30,1,1,0,0,0,0,0,0
+9975705,"United Services Automobile Association v. Wells Fargo Bank, N.A.",2019-10-28,txed,posted,summary_judgment,eligible,2018,0,3,8977571;9336517;9818090,2017-11-22,2015-03-08,0,0,0,0,0,0,0,0
+9633368,"Roku, Inc. v. Free Stream Media Corp.",2019-11-01,ded,posted,pleading,eligible,2018,0,3,8171030;9066114;9479831,2016-10-26,2012-04-30,1,0,1,0,0,1,1,0
+9595497,Semicaps PTE Ltd v. Hamamatsu Corporation,2019-11-06,cand,posted,pleading,eligible,2017,0,2,6897664;7623982,2009-11-28,2005-05-30,1,0,0,0,0,0,1,0
+10221065,Trustees of Columbia University in the City of New York v. Gen Digital Inc.,2019-11-19,vaed,posted,pleading,,2013,0,7,7448084;7487544;7913306;7979907;8074115;8549643;8601322,2013-12-06,2008-10-31,0,0,0,0,0,0,0,0
+9731600,"KCG Technologies, LLC v. CarMax Auto Superstores, Inc.",2019-11-27,mad,posted,pleading,ineligible,2019,1,1,9671955,2017-06-09,2017-06-09,1,0,0,0,0,0,0,0
+9633476,"Blue Spike LLC v. Charter Communications, Inc.",2019-12-18,ded,posted,pleading,ineligible,2019,1,3,7287275;8739295;9104842,2015-08-11,2007-11-01,0,0,0,0,0,0,0,0
+9633466,Wildcat Licensing WI LLC v. Faurecia S.A.,2019-12-23,ded,posted,pleading,,2019,1,0,,,,0,0,0,0,0,0,0,0
+9820826,"Linksmart Wireless Technology, LLC v. Caesars Entertainment Corporation",2019-12-23,nvd,posted,pleading,,2018,1,0,,,,1,0,1,0,0,0,0,0
+9633484,Smart Locking Technologies LLC v. Igloohome Inc.,2020-01-02,ded,posted,pleading,,2019,1,3,7917843;7921356;8306993,2012-11-09,2011-03-29,0,0,0,0,0,0,0,0
+9633489,"Tenaha Licensing LLC v. Vocera Communications, Inc.",2020-01-02,ded,posted,pleading,ineligible,2019,1,1,8238869,2012-08-04,2012-08-04,1,0,1,0,0,0,1,0
+9633497,Tenaha Licensing LLC v. Ascom (US) Inc.,2020-01-02,ded,posted,pleading,ineligible,2019,1,1,8238869,2012-08-04,2012-08-04,1,0,1,0,0,0,1,0
+9633479,"Upaid Systems, Ltd. v. Alliance Laundry Systems LLC",2020-01-06,ded,posted,pleading,,2019,0,2,8976947;10127555,2018-11-09,2015-03-07,0,0,0,0,0,0,0,0
+9633495,"Blackbird Tech LLC v. Uber Technologies, Inc.",2020-01-06,ded,posted,pleading,eligible,2019,1,1,6754580,2004-07-09,2004-07-09,0,0,0,0,0,0,0,0
+9821090,"Curb Mobility, LLC v. Kaptyn, Inc.",2020-01-21,nvd,posted,pleading,ineligible,2018,1,1,6347739,2002-01-20,2002-01-20,0,0,0,0,0,0,0,0
+9633564,"Sunoco Partners Marketing & Terminals L.P. v. Powder Springs Logistics, LLC",2020-01-22,ded,posted,summary_judgment,ineligible,2017,1,3,6679302;7032629;9606548,2017-03-25,2004-01-20,1,0,0,0,0,0,0,0
+9853740,"NetSoc, LLC v. Oath Inc.",2020-01-24,nysd,posted,pleading,ineligible,2018,1,2,9218591;9978107,2018-05-23,2015-12-22,1,0,0,1,0,0,0,0
+9596276,"NetSoc, LLC v. Quora, Inc.",2020-01-27,cand,posted,pleading,ineligible,2019,1,0,,,,0,0,0,0,0,0,0,0
+9596278,PersonalWeb Technologies LLC v. EMC Corporation,2020-01-29,cand,posted,pleading,ineligible,2013,1,2,6415280;7949662,2011-05-19,2002-06-18,0,0,0,0,0,0,0,0
+9633600,Fast 101 Pty Ltd. v. Citigroup Inc.,2020-01-30,ded,posted,pleading,,2019,1,1,8515867,2013-08-20,2013-08-20,0,0,0,0,0,0,0,0
+9596307,PersonalWeb Technologies LLC v. Google LLC.,2020-01-31,cand,posted,pleading,ineligible,2013,1,3,6415280;7802310;7949662,2011-05-19,2002-06-18,0,0,0,0,0,0,0,0
+9633553,"Pebble Tide LLC v. Arlo Technologies, Inc.",2020-01-31,ded,posted,pleading,ineligible,2019,1,2,9128981;10261739,2019-04-10,2015-09-08,0,0,0,0,0,0,0,0
+10174961,NICE Ltd. v. CallMiner Inc.,2020-02-03,ded,posted,pleading,eligible,2018,0,9,6246752;6252946;6785370;6937706;8023639;8553872;8611523;9942400;10021248,2018-07-11,2001-06-12,0,0,0,0,0,0,0,0
+10233857,vPersonalize Inc v. Magnetize Consultants Ltd,2020-02-03,wawd,posted,pleading,,2018,0,2,9345280;9661886,2017-05-28,2016-05-18,1,0,0,0,0,0,0,0
+10178190,"J.R. Simplot Company v. McCain Foods USA, Inc.",2020-02-20,idd,posted,pleading,,2016,0,1,6821540,2004-12-08,2004-12-08,0,0,0,0,0,0,0,0
+9570512,Vaporstream Inc v. Snap Inc,2020-02-28,cacd,posted,summary_judgment,ineligible,2017,0,9,8886739;8935351;9306885;9306886;9313155;9313156;9313157;9338111;9413711,2016-08-07,2014-11-14,0,0,0,0,0,0,0,0
+9633649,"CAP-XX, Ltd. v. Ioxus, Inc.",2020-03-02,ded,posted,pleading,eligible,2018,0,2,6920034;7383600,2008-06-06,2005-07-20,0,0,0,0,0,0,0,0
+9633630,"CG Technology Development, LLC v. FanDuel, Inc.",2020-03-05,ded,posted,pleading,ineligible,2017,1,1,8771058,2014-07-08,2014-07-08,0,0,0,0,0,0,0,0
+9854752,"Ghaly Devices LLC v. Humor Rainbow, Inc.",2020-03-06,nysd,posted,pleading,ineligible,2019,1,1,6685479,2004-02-03,2004-02-03,0,0,0,0,0,0,0,0
+9854974,Grecia v. The Bank of New York Mellon Corporation,2020-03-13,nysd,posted,pleading,ineligible,2019,0,1,8887308,2014-11-15,2014-11-15,1,0,0,0,0,0,0,0
+9596811,"Stormborn Technologies, LLC v. Topcon Positioning Systems, Inc.",2020-03-17,cand,posted,pleading,,2019,1,0,,,,1,0,0,1,0,0,0,0
+9596821,"Rothschild Digital Confirmation, LLC v. Skedulo Holdings Inc.",2020-03-19,cand,posted,pleading,,2019,1,1,7456872,2008-11-20,2008-11-20,0,0,0,0,0,0,0,0
+9766081,"Enco Systems, Inc. v. DaVincia, LLC",2020-03-20,moed,posted,pleading,ineligible,2019,0,1,7047191,2006-05-04,2006-05-04,1,0,0,0,0,0,0,0
+9675793,"Kove IO, Inc. v. Amazon Web Services, Inc.",2020-03-23,ilnd,posted,pleading,eligible,2018,0,3,7103640;7233978;7814170,2010-10-12,2006-09-10,1,0,1,1,0,0,1,0
+9596871,Yu v. Apple Inc.,2020-03-24,cand,posted,pleading,,2018,0,1,6611289,2003-08-26,2003-08-26,0,0,0,0,0,0,0,0
+9633657,"Innovative Global Systems, LLC v. Keep Truckin, Inc.",2020-03-24,ded,posted,pleading,eligible,2019,1,2,8032277;10157384,2018-12-12,2011-09-30,0,0,0,0,0,0,0,0
+9633662,"Rondevoo Technologies, LLC v. Aernos, Inc.",2020-03-24,ded,posted,pleading,ineligible,2019,1,2,9453814;9927391,2018-03-26,2016-09-23,1,0,0,0,0,0,1,0
+9675824,BerkeleyIEOR v. W.W. Grainger Inc.,2020-03-25,ilnd,posted,pleading,eligible,2017,0,3,7596521;7882137;8612316,2013-12-20,2009-09-30,1,0,0,0,0,0,0,0
+9633688,NICE Ltd. v. CallMiner Inc.,2020-03-30,ded,posted,pleading,,2018,0,9,6246752;6252946;6785370;6937706;8023639;8553872;8611523;9942400;10021248,2018-07-11,2001-06-12,0,0,0,0,0,0,0,0
+9855392,"VeriPath, Inc. v. Didomi",2020-03-30,nysd,posted,pleading,ineligible,2019,0,1,10075451,2018-09-10,2018-09-10,1,0,1,0,1,0,0,0
+9633690,"Sunoco Partners Marketing & Terminals L.P. v. Powder Springs Logistics, LLC",2020-03-31,ded,posted,pleading,,2017,1,1,6679302,2004-01-20,2004-01-20,0,0,0,0,0,0,0,0
+9633696,"Thompson v. TCT Mobile, Inc.",2020-03-31,ded,posted,pleading,ineligible,2019,0,2,8806053;9473629,2016-10-18,2014-08-17,1,0,0,1,0,0,1,0
+9941896,"Savvy Dog Systems, LLC. v. Pennsylvania Coin, LLC",2020-04-01,pamd,posted,pleading,eligible,2019,1,1,7736233,2010-06-11,2010-06-11,0,0,0,0,0,0,0,0
+9633715,"Sound View Innovations, LLC v. Delta Air Lines, Inc.",2020-04-03,ded,posted,pleading,eligible,2019,1,3,6502133;6725456;7426715,2008-09-12,2002-12-27,0,0,0,0,0,0,0,0
+9855853,"Sportvision, Inc v. MLB Advanced Media L.P.",2020-04-23,nysd,posted,pleading,eligible,2018,0,1,7341530,2008-03-03,2008-03-03,1,0,0,0,0,0,0,0
+9855885,Grecia v. The Bank of New York Mellon Corporation,2020-04-24,nysd,posted,pleading,ineligible,2019,0,1,8887308,2014-11-15,2014-11-15,1,0,0,0,0,0,0,0
+9597281,"MyMail, Ltd. v. ooVoo, LLC",2020-05-07,cand,posted,pleading,ineligible,2017,0,2,8275863;9021070,2015-04-30,2012-09-26,1,0,0,1,0,0,1,0
+9623978,"SecureNet Solutions Group, LLC v. Senstar Corporation",2020-05-20,cod,posted,pleading,eligible,2019,1,5,7737837;8013738;8130098;8354926;8730040,2014-05-17,2010-06-13,1,0,1,0,1,0,1,0
+9732066,"Palomar Technologies, Inc. v. MRSI Systems, LLC",2020-05-28,mad,posted,summary_judgment,,2018,1,1,6776327,2004-08-27,2004-08-27,1,0,0,0,0,0,0,0
+9856640,Island Intellectual Property LLC v. Stonecastle Cash Management LLC,2020-05-29,nysd,posted,pleading,,2019,1,5,8150766;8359267;8655689;8712911;8719157,2014-05-03,2012-04-01,0,0,0,0,0,0,0,0
+9597551,Bot M8 LLC v. Sony Corporation Of America,2020-06-10,cand,posted,summary_judgment,,2019,1,1,7338363,2008-02-25,2008-02-25,0,0,0,0,0,0,0,0
+9634009,"CosmoKey Solutions GmbH & Co. KG v. Duo Security, Inc.",2020-06-24,ded,posted,pleading,ineligible,2018,1,1,9246903,2016-01-24,2016-01-24,0,0,0,0,0,0,0,0
+9732163,Singular Computing LLC v. Google LLC,2020-06-25,mad,posted,pleading,eligible,2019,1,3,8407273;9218156;10416961,2019-09-18,2013-03-27,1,0,0,0,0,0,0,0
+9789323,"Global Locating Systems LLC v. ShadowTrack 247, LLC",2020-06-29,ncwd,posted,pleading,eligible,2019,1,1,10165052,2018-12-21,2018-12-21,0,0,0,0,0,0,0,0
+9633886,Universal Secure Registry LLC v. Apple Inc.,2020-06-30,ded,posted,pleading,,2017,1,4,8577813;8856539;9100826;9530137,2016-12-27,2013-11-06,0,0,0,0,0,0,0,0
+9633869,"Peloton Interactive, Inc. v. Echelon Fitness Multimedia LLC",2020-07-06,ded,posted,pleading,eligible,2019,0,3,10022590;10322315;10486026,2019-11-27,2018-07-12,0,0,0,0,0,0,0,0
+9633911,"Aegis 11 S.A. v. Belkin International, Inc.",2020-07-20,ded,posted,pleading,ineligible,2019,0,1,6839553,2005-01-18,2005-01-18,1,0,0,1,0,0,0,0
+9633978,"Aegis 11 S.A. v. TTE Technology, Inc.",2020-07-20,ded,posted,pleading,ineligible,2019,0,1,6839553,2005-01-18,2005-01-18,1,0,0,1,0,0,0,0
+9633925,"Kaleasy Tech LLC v. Slack Technologies, Inc.",2020-07-23,ded,posted,pleading,ineligible,2019,1,1,7899479,2011-02-27,2011-02-27,1,0,1,0,0,0,1,0
+9858084,"Personalized Media Communications, LLC v. Netflix, Inc.",2020-07-28,nysd,posted,pleading,eligible,2020,1,3,7747217;7769344;8601528,2013-12-06,2010-06-29,0,0,0,0,0,0,0,0
+9633934,"APS Technology, Inc. v. Vertex Downhole, Inc.",2020-07-29,ded,posted,pleading,eligible,2019,0,1,6714138,2004-04-08,2004-04-08,0,0,0,0,0,0,0,0
+10217365,AlexSam v. HealthEquity,2020-08-07,utd,posted,pleading,eligible,2019,0,1,6000608,1999-12-04,1999-12-04,0,0,0,0,0,0,0,0
+9634044,"Sensormatic Electronics, LLC v. Wyze Labs, Inc.",2020-09-03,ded,posted,pleading,ineligible,2019,1,6,7730534;7936370;7954129;8208019;8610772;9407877,2016-07-31,2010-06-01,0,0,0,0,0,0,0,0
+9859086,"Gabara v. Facebook, Inc.",2020-09-04,nysd,posted,pleading,ineligible,2019,0,5,8532919;8706400;8836698;8930131;9299348,2016-03-25,2013-09-10,1,0,1,1,0,1,1,0
+9634023,B On Demand LLC v. Spotify Technology S.A.,2020-09-08,ded,posted,pleading,ineligible,2019,1,6,7877412;8832149;9031985;9330242;9553880;9900323,2018-02-23,2011-01-23,0,0,0,0,0,0,0,0
+9598459,"Software Rights Archive, LLC v. Facebook, Inc.",2020-09-09,cand,posted,pleading,,2012,1,2,5544352;6233571,2001-05-14,2001-05-14,0,0,0,0,0,0,0,0
+9802589,"EAGLE VIEW TECHNOLOGIES, INC. v. XACTWARE SOLUTIONS, INC.",2020-09-09,njd,posted,post_trial,eligible,2015,0,3,8078436;8170840;9129376,2015-09-08,2011-12-14,1,0,0,0,0,1,0,0
+9598458,"FullView, Inc. v. Polycom, Inc.",2020-09-10,cand,posted,pleading,ineligible,2018,0,2,6128143;6700711,2004-03-09,2000-09-18,1,0,0,0,0,0,0,0
+9925814,Adasa Inc. v. Avery Dennison Corporation,2020-09-14,ord,posted,summary_judgment,,2017,0,2,8857221;9798967,2017-10-31,2014-10-12,0,0,0,0,0,0,0,0
+9634058,"VB Assets, LLC v. Amazon.com Services LLC",2020-09-16,ded,posted,pleading,eligible,2019,1,6,7818176;8073681;8886536;9015049;9269097;9626703,2017-04-18,2010-10-19,0,0,0,0,0,0,0,0
+9634076,"Aqua Connect, Inc. v. TeamViewer US, Inc.",2020-09-16,ded,posted,pleading,eligible,2018,0,1,8924502,2015-01-02,2015-01-02,0,0,0,0,0,0,0,0
+9634066,"SynKloud Technologies, LLC v. Microsoft Corporation",2020-09-29,ded,posted,pleading,,2019,1,4,7879225;8694590;9098526;10015254,2018-07-04,2011-01-26,1,0,1,1,0,0,1,0
+9902222,Cybergenetics Corp. v. Institute of Environmental Science and Research,2020-09-29,ohnd,posted,pleading,ineligible,2019,0,2,8898021;9708642,2017-07-21,2014-11-27,1,0,0,0,0,0,0,0
+10174974,"Ameranth, Inc. v. Olo Inc.",2020-10-13,ded,posted,pleading,,2020,0,1,10523492,2020-01-04,2020-01-04,0,0,0,0,0,0,0,0
+9634101,InterDigital Technology Corporation v. Lenovo Holding Co. Inc.,2020-10-13,ded,posted,pleading,ineligible,2019,0,1,6636965,2003-10-21,2003-10-21,0,0,0,0,0,0,0,0
+9599055,"Fortinet, Inc. v. Forescout Technologies, Inc.",2020-11-02,cand,posted,pleading,eligible,2020,0,3,8458314;9369299;9948662,2018-04-19,2013-06-04,1,0,0,1,1,0,1,0
+9599063,"Google LLC v. Sonos, Inc.",2020-11-02,cand,posted,pleading,ineligible,2020,1,0,,,,1,0,1,0,0,1,0,1
+9677044,Karamelion LLC v. Intermatic Incorporated,2020-11-06,ilnd,posted,pleading,ineligible,2020,1,2,6275166;6873245,2005-04-04,2001-08-13,1,0,0,1,0,0,0,0
+9599193,"Synopsys, Inc. v. Siemens Industry Software Inc.",2020-11-12,cand,posted,pleading,,2020,0,3,7103863;8407640;8407655,2013-03-28,2006-09-10,1,0,0,0,0,0,1,0
+9838767,"Interactive Wearables, LLC v. Polar Electro Oy",2020-11-19,nyed,posted,pleading,ineligible,2019,1,2,9668016;10264311,2019-04-13,2017-06-04,0,0,0,0,0,0,0,0
+9634197,"ZapFraud, Inc. v. FireEye, Inc.",2020-11-20,ded,posted,pleading,ineligible,2019,0,2,10277628;10609073,2020-03-31,2019-04-28,1,0,0,0,0,0,0,0
+9634199,"ID Image Sensing LLC v. Omnivision Technologies, Inc.",2020-11-24,ded,posted,pleading,,2020,1,1,7333145,2008-02-13,2008-02-13,1,0,0,0,0,1,0,0
+9634206,Blix Inc. v. Apple Inc.,2020-11-30,ded,posted,pleading,,2019,0,0,,,,1,1,0,1,0,0,0,0
+9677267,The Trustees of Purdue University v. Omron Corporation,2020-12-04,ilnd,posted,pleading,eligible,2020,0,1,7014611,2006-02-20,2006-02-20,0,0,0,0,0,0,0,0
+10174990,"SmileDirectClub, LLC v. Candid Care Co.",2020-12-07,ded,posted,pleading,ineligible,2020,1,1,10636522,2020-05-01,2020-05-01,0,0,0,0,0,0,0,0
+9634240,Arendi S.A.R.L. v. HTC Corp.,2020-12-15,ded,posted,pleading,,2012,0,3,7917843;8306993;8549410,2013-10-01,2011-03-29,0,0,0,0,0,0,0,0
+9634256,"Management Science Associates, Inc. v. Datavant, Inc.",2020-12-30,ded,posted,pleading,ineligible,2020,0,2,9292707;9614814,2017-04-04,2016-03-17,1,0,1,0,0,0,0,1
+9557749,Vineyard Investigations v. E. & J. Gallo Winery,2021-01-04,caed,posted,pleading,eligible,2019,0,2,6947810;8528834,2013-09-05,2005-09-21,1,0,1,0,0,0,1,0
+9599699,"NantWorks, LLC v. Niantic, Inc.",2021-01-04,cand,posted,pleading,ineligible,2020,1,1,10614477,2020-04-06,2020-04-06,1,0,0,0,0,0,0,0
+9634241,"Route Guidance Systems LLC v. INRIX, Inc.",2021-01-04,ded,posted,pleading,eligible,2020,1,1,6917876,2005-07-15,2005-07-15,0,0,0,0,0,0,0,0
+9679366,"Atos, LLC v. AllState Insurance Co.",2021-01-12,ilnd,posted,pleading,,2020,1,3,8527140;9152609;9846174,2017-12-24,2013-09-03,0,0,0,0,0,0,0,0
+9634282,Ficep Corporation v. Peddinghaus Corporation,2021-01-26,ded,posted,pleading,eligible,2019,0,1,7974719,2011-06-29,2011-06-29,1,0,0,0,0,0,1,0
+9599995,"Teradata US, Inc. v. SAP SE",2021-02-01,cand,posted,pleading,,2020,0,1,7185000,2007-03-13,2007-03-13,1,0,0,0,0,0,1,0
+9977123,"Bright Data Ltd. v. code200, UAB",2021-02-09,txed,posted,pleading,,2019,0,2,10484511;10637968,2020-05-03,2019-11-25,0,0,0,0,0,0,0,0
+9977283,"Bright Data Ltd. v. Teso LT, UAB",2021-02-16,txed,posted,pleading,eligible,2019,0,3,10257319;10469614;10484510,2019-11-25,2019-04-05,0,0,0,0,0,0,0,0
+9634417,"Kajeet, Inc. v. Gryphon Online Safety, Inc.",2021-03-01,ded,posted,pleading,ineligible,2019,0,2,7899438;8667559,2014-02-27,2011-02-27,0,0,0,0,0,0,0,0
+9749236,Horizon Global Americas Inc. v. Continental AG,2021-03-02,mied,posted,pleading,eligible,2020,0,3,8789896;9758138;10040437,2018-08-02,2014-07-30,1,0,0,0,0,0,0,0
+9634463,Blix Inc. v. Apple Inc.,2021-03-18,ded,posted,pleading,,2019,0,1,10079737,2018-09-15,2018-09-15,0,0,0,0,0,0,0,0
+9634454,Arunachalam v. Kronos Incorporated,2021-03-29,ded,posted,pleading,,2014,0,4,8108492;8244833;8346894;9587500,2017-03-04,2012-02-01,0,0,0,0,0,0,0,0
+9634480,"ViaTech Technologies, Inc. v. Adobe Inc.",2021-03-30,ded,posted,pleading,,2020,1,1,6920567,2005-07-21,2005-07-21,0,0,0,0,0,0,0,0
+9977353,"Repifi Vendor Logistics, Inc. v. Intellicentrics, Inc.",2021-03-30,txed,posted,pleading,ineligible,2020,0,1,10304268,2019-05-27,2019-05-27,1,0,0,0,0,0,0,0
+9977722,"AR Design Innovations LLC v. Ashley Furniture Industries, Inc.",2021-03-30,txed,posted,pleading,eligible,2020,1,1,7277572,2007-10-10,2007-10-10,1,0,0,0,0,0,0,0
+9967716,"Procon Analytics, LLC v. Spireon, Inc. (PLR2)",2021-04-06,tned,posted,pleading,ineligible,2019,1,2,7134087;10089598,2018-09-26,2006-11-18,1,0,0,0,0,0,1,0
+9616919,"RICMIC LLC v. Salient Networks, Inc.",2021-04-07,casd,posted,pleading,,2020,1,2,9305450;10380873,2019-08-12,2016-04-01,1,0,0,1,0,0,0,0
+10207640,"Epic Tech, LLC v. Fusion Skill, Inc.",2021-04-13,txsd,posted,summary_judgment,,2019,1,0,,,,0,0,0,0,0,0,0,0
+9600785,"Cellspin Soft, Inc. v. Fitbit LLC",2021-04-14,cand,posted,summary_judgment,,2017,0,3,8738794;8892752;9749847,2017-09-05,2014-05-28,1,0,1,0,0,1,0,0
+9600910,"FullView, Inc. v. Polycom, Inc.",2021-04-28,cand,posted,pleading,eligible,2018,0,4,6128143;6219090;6356397;6700711,2004-03-09,2000-09-18,1,0,0,0,0,0,1,0
+9732824,"Worlds, Inc. v. Activision Blizzard, Inc.",2021-04-30,mad,posted,summary_judgment,ineligible,2012,0,5,7181690;7493558;7945856;8082501;8145998,2012-03-26,2007-03-06,0,0,0,0,0,0,0,0
+9920045,"Ubiquitous Connectivity, LP v. Central Security Group - Nationwide, Inc.",2021-05-17,oknd,posted,pleading,,2018,0,2,8064935;9602655,2017-03-21,2011-11-22,0,0,0,0,0,0,0,0
+9977604,"Innovation Sciences, LLC v. Amazon.Com, Inc.",2021-05-24,txed,posted,post_trial,eligible,2018,1,2,9912983;9942798,2018-04-13,2018-03-10,0,0,0,0,0,0,0,0
+9678058,"Peoplechart Corporation v. Wintrust Bank, N.A.",2021-06-09,ilnd,posted,pleading,ineligible,2021,0,1,8869249,2014-10-26,2014-10-26,0,0,0,0,0,0,0,0
+9601404,"Fortinet, Inc. v. Forescout Technologies, Inc.",2021-06-14,cand,posted,pleading,,2020,0,5,8458314;9369299;9503421;9894034;9948662,2018-04-19,2013-06-04,1,0,1,1,1,0,1,0
+9866214,"RDPA, LLC v. Geopath, Inc.",2021-06-15,nysd,posted,pleading,,2020,1,4,6970131;7038619;7176834;7215280,2007-05-21,2005-11-10,1,0,0,0,0,1,0,0
+9678155,"Trading Technologies International, Inc. v. BGC Partners, Inc.",2021-06-17,ilnd,posted,summary_judgment,,2010,1,1,7813996,2010-10-12,2010-10-12,0,0,0,0,0,0,0,0
+9601506,"Cooperative Entertainment, Inc. v. Kollective Technology, Inc.",2021-06-21,cand,posted,pleading,ineligible,2020,0,1,9432452,2016-08-30,2016-08-30,1,0,1,1,0,0,0,0
+9634664,F45 Training Pty Ltd. v. Body Fit Training USA Inc.,2021-07-02,ded,posted,pleading,,2020,1,3,10143890;10672092;10953002,2021-03-19,2018-11-27,1,0,0,1,0,0,1,0
+9826239,NEXRF Corp. v. Playtika Ltd.,2021-07-07,nvd,posted,pleading,eligible,2020,0,5,8506406;8506407;8747229;9373116;9646454,2017-05-10,2013-08-08,0,0,0,0,0,0,0,0
+9634685,"RideShare Displays, Inc. v. Lyft, Inc.",2021-07-12,ded,posted,pleading,,2020,0,3,9892637;10169987;10559199,2020-02-09,2018-02-15,1,0,0,0,0,0,1,0
+9866827,"Perry Street Software, Inc. v. Jedi Technologies, Inc.",2021-07-13,nysd,posted,pleading,,2020,0,5,7885977;8417729;8930406;9432315;10164918,2018-12-21,2011-02-05,1,0,1,1,0,0,0,0
+10237603,International Business Machines Corporation v. Zillow Group Inc,2021-07-15,wawd,posted,pleading,,2020,0,5,7187389;7631346;7970674;9158789;9245183,2016-01-22,2007-03-19,0,0,0,0,0,0,0,0
+9733094,Content Square SAS v. Decibel Insight Limited,2021-07-23,mad,posted,pleading,,2020,0,6,5258855;7941525;9508081;9792365;10063645;10079737,2018-09-15,2011-05-06,1,0,1,0,0,0,1,1
+9617449,"Indect USA Corp. v. Park Assist, LLC",2021-07-28,casd,posted,pleading,,2018,0,1,9594956,2017-03-12,2017-03-12,0,0,0,0,0,0,0,0
+9867198,Weisner v. Google LLC,2021-07-28,nysd,posted,pleading,,2020,0,4,10380202;10394905;10642910;10642911,2020-05-09,2019-08-12,0,0,0,0,0,0,0,0
+9804796,"CATALYST PHARMACEUTICALS, INC. v. JACOBUS PHARMACEUTICALS COMPANY, INC.",2021-07-31,njd,posted,pleading,eligible,2020,0,1,10793893,2020-10-02,2020-10-02,0,0,0,0,0,0,0,0
+9634732,"Zyrcuits IP LLC v. Acuity Brands, Inc.",2021-08-02,ded,posted,pleading,ineligible,2020,1,1,6671307,2004-01-03,2004-01-03,1,0,1,0,0,0,0,0
+9733034,Philips North America LLC v. Fitbit LLC,2021-08-10,mad,posted,pleading,eligible,2019,1,4,6013007;6976958;7088233;8277377,2012-09-28,2000-01-01,1,0,0,1,0,0,1,1
+9634849,"SynKloud Technologies, LLC v. Microsoft Corporation",2021-08-12,ded,posted,pleading,ineligible,2019,1,2,9098526;10015254,2018-07-04,2015-08-03,0,0,0,0,0,0,0,0
+10187991,Ocado Innovation Ltd. v. AutoStore AS,2021-08-13,nhd,posted,pleading,eligible,2021,1,4,9796080;10901404;10913602;10961051,2021-03-29,2017-10-28,1,0,1,0,0,0,1,0
+10693540,"Ocado Innovation, Ltd., et al., v. AutoStore AS, et al.",2021-08-13,nhd,other,pleading,eligible,2021,1,4,9796080;10901404;10913602;10961051,2021-03-29,2017-10-28,1,0,1,0,0,0,1,0
+9867695,Jewell Pathway LLC v. Polar Electro Inc,2021-08-16,nysd,posted,pleading,ineligible,2020,1,1,8818711,2014-08-31,2014-08-31,1,0,0,0,0,0,0,0
+11016542,"Chewy, Inc. v. International Business Machines Corporation",2021-08-23,nysd,posted,pleading,,2021,0,4,6704034;7076433;7496831;9569414,2017-02-11,2004-03-16,0,0,0,0,0,0,0,0
+9634813,Realtime Data LLC v. Array Networks Inc.,2021-08-23,ded,posted,pleading,ineligible,2017,1,7,7415530;8717203;8933825;9054728;9116908;9667751;10019458,2018-07-09,2008-08-17,1,0,1,0,0,0,0,0
+9804763,"TOBII TECHNOLOGY, INC. v. LEE S. WEINBLATT",2021-08-30,njd,posted,pleading,,2020,0,1,7641341,2010-01-05,2010-01-05,0,0,0,0,0,0,0,0
+9602307,"Contour IP Holding, LLC v. GoPro, Inc.",2021-09-13,cand,posted,pleading,,2017,1,2,8890954;8896694,2014-11-25,2014-11-19,0,0,0,0,0,0,0,0
+9602336,"Broadcom Corporation v. Netflix, Inc.",2021-09-14,cand,posted,pleading,,2020,0,4,6341375;7266079;8270992;8959245,2015-02-13,2002-01-06,0,0,0,0,0,0,0,0
+9602344,"Linquet Technologies, Inc. v. Tile, Inc.",2021-09-15,cand,posted,pleading,,2020,1,1,10163318,2018-12-19,2018-12-19,0,0,0,0,0,0,0,0
+9977864,"Mad Dogg Athletics, Inc. v. Peloton Interactive, Inc.",2021-09-15,txed,posted,pleading,ineligible,2020,0,2,9694240;10137328,2018-11-20,2017-07-04,0,0,0,0,0,0,0,0
+9634870,"NexStep, Inc. v. Comcast Cable Communications, LLC",2021-09-17,ded,posted,summary_judgment,,2019,0,1,8280009,2012-10-02,2012-10-02,0,0,0,0,0,0,0,0
+10222226,Nomula v. Iancu,2021-09-20,vaed,posted,pleading,,2020,0,0,,,,1,0,1,0,0,0,0,0
+9532839,Swarm Technology LLC v. Amazon.com Incorporated,2021-09-20,azd,posted,pleading,ineligible,2021,1,2,9852004;10592275,2020-03-14,2017-12-31,0,0,0,0,0,0,0,0
+9634864,"ChromaDex, Inc. v. Elysium Health, Inc.",2021-09-21,ded,posted,summary_judgment,ineligible,2018,0,2,8197807;8383086,2013-02-25,2012-06-07,0,0,0,0,0,0,0,0
+9634883,WiTricity Corporation v. Momentum Dynamics Corporation,2021-09-27,ded,posted,pleading,,2020,0,0,,,,1,0,0,1,0,0,1,0
+9634937,"CareDx, Inc. v. Natera, Inc.",2021-09-28,ded,posted,summary_judgment,ineligible,2019,0,3,8703652;9845497;10329607,2019-06-21,2014-04-14,1,0,0,0,0,0,0,1
+9977893,"Communication Interface Technologies, LLC v. Albertson's LLC",2021-09-29,txed,posted,pleading,ineligible,2020,1,3,6574239;8266296;8291010,2012-10-17,2003-06-05,1,0,0,1,0,0,1,0
+9634892,"Wrinkl, Inc. v. Meta Platforms, Inc.",2021-09-30,ded,posted,pleading,,2020,0,2,9860198;10728192,2020-07-31,2018-01-09,0,0,0,0,0,0,0,0
+9750574,"Zak v. Facebook, Inc.",2021-09-30,mied,posted,summary_judgment,,2015,0,2,8713134;9141720,2015-09-23,2014-04-26,1,0,1,1,0,0,0,0
+9678918,Northwestern University v. KUKA AG,2021-10-08,ilnd,posted,pleading,eligible,2021,0,3,6907317;6928336;7120508,2006-10-18,2005-06-21,0,0,0,0,0,0,0,0
+9533094,USADATA Incorporated v. DataWidget LLC,2021-11-01,azd,posted,pleading,,2021,0,0,,,,1,0,1,1,0,0,0,0
+10218400,CR Bard v. Medical Components,2021-11-03,utd,posted,summary_judgment,ineligible,2012,0,3,7947022;7959615;8021324,2011-09-12,2011-05-15,0,0,0,0,0,0,0,0
+9618151,"Impact Engine, Inc. v. Google LLC",2021-11-10,casd,posted,pleading,,2019,0,3,7870497;10565618;10572898,2020-02-23,2011-01-11,0,0,0,0,0,0,0,0
+10218443,Eagle View Technologies v. Nearmap US,2021-11-15,utd,posted,pleading,eligible,2021,1,2,8209152;9135737,2015-09-16,2012-06-23,0,0,0,0,0,0,0,0
+9977997,Gravel Rating Systems LLC v. Broadcom Inc.,2021-11-15,txed,posted,pleading,eligible,2021,1,1,7590636,2009-09-17,2009-09-17,0,0,0,0,0,0,0,0
+9978030,United Services Automobile Association v. PNC Bank N.A.,2021-11-18,txed,posted,pleading,,2020,0,1,8682754,2014-03-18,2014-03-18,1,1,0,0,0,0,0,0
+9603083,"Fortinet, Inc. v. Forescout Technologies, Inc.",2021-11-29,cand,posted,pleading,eligible,2020,0,3,6363489;10652116;10652278,2020-05-18,2002-02-24,0,0,0,0,0,0,0,0
+9635007,eBuddy Technologies B.V. v. LinkedIn Corporation,2021-11-29,ded,posted,pleading,eligible,2020,1,4,8230135;8402179;8510395;9584453,2017-02-28,2012-07-23,1,0,1,1,0,1,0,0
+9634990,"Consumeron, LLC v. MapleBear Inc.",2021-11-30,ded,posted,pleading,,2021,1,3,7917680;8244594;10604799,2020-03-26,2011-03-29,0,0,0,0,0,0,0,0
+9635006,"Altair Logix LLC v. Netgear, Inc.",2021-12-06,ded,posted,pleading,eligible,2020,1,1,6289434,2001-09-13,2001-09-13,1,0,1,1,0,0,1,0
+9978073,"Infernal Technology, LLC v. Sony Interactive Entertainment America, LLC",2021-12-07,txed,posted,pleading,,2019,1,2,6362822;7061488,2006-06-06,2002-02-22,0,0,0,0,0,0,0,0
+9635019,"Sober-Eye Inc. v. Brightlamp, Inc.",2021-12-10,ded,posted,pleading,eligible,2020,0,1,9888845,2018-02-10,2018-02-10,0,0,0,0,0,0,0,0
+9603222,"People.ai, Inc. v. Clari Inc.",2021-12-13,cand,posted,pleading,ineligible,2021,0,7,10496634;10503783;10565229;10657129;10657132;10872106;10922345,2021-02-13,2019-12-08,1,0,1,0,0,0,0,1
+9927509,Adasa Inc. v. Avery Dennison Corporation,2021-12-15,ord,posted,summary_judgment,,2017,0,1,9798967,2017-10-31,2017-10-31,0,0,0,0,0,0,0,0
+9603290,"Hantz Software, LLC v. Sage Intacct, Inc.",2021-12-20,cand,posted,pleading,,2021,1,2,8055559;8055560,2011-11-07,2011-11-07,0,0,0,0,0,0,0,0
+9635151,Nevro Corp. v. Boston Scientific Corporation,2021-12-20,ded,posted,pleading,,2021,0,5,8792988;8892209;9333357;10556112;10576286,2020-02-26,2014-08-02,0,0,0,0,0,0,0,0
+9968087,Xodus Medical Inc v. Prime Medical LLC,2021-12-22,tned,posted,summary_judgment,,2018,0,3,8464720;8511314;9161876,2015-10-16,2013-06-13,1,0,0,0,1,0,1,1
+10213574,Health Discovery Corporation v. Intel Corporation,2021-12-27,txwd,posted,pleading,,2020,0,4,6212662;6349291;7117188;7941207,2011-05-06,2001-03-28,0,0,0,0,0,0,0,0
+9603454,"Riggs Technology Holdings, LLC v. Vagaro, Inc.",2022-01-07,cand,posted,pleading,,2021,1,1,7299067,2007-11-28,2007-11-28,0,0,0,0,0,0,0,0
+9871176,"Bytemark, Inc. v. Xerox Corp.",2022-01-10,nysd,posted,pleading,,2017,0,4,8494967;9239993;10346764;10360567,2019-07-23,2013-07-25,1,0,1,0,1,1,0,0
+9635100,"LiTL LLC v. Lenovo(United States), Inc.",2022-01-21,ded,posted,pleading,eligible,2020,1,6,8289688;8577957;8612888;8624844;9880715;10289154,2019-05-11,2012-10-15,1,0,1,1,0,0,0,0
+9695472,"Westwood One, LLC v. Local Radio Networks, LLC",2022-01-21,innd,posted,pleading,eligible,2021,1,2,7412203;7860448,2010-12-26,2008-08-10,0,0,0,0,0,0,0,0
+10213721,"Mirror Imaging, LLC v. PNC Bank, N.A.",2022-01-26,txwd,posted,pleading,eligible,2021,1,6,9141612;9161612;9928275;10013435;10262009;10402447,2019-09-03,2015-09-23,1,0,1,0,0,0,0,0
+9635093,Barry v. SeaSpine Holdings Corp.,2022-01-26,ded,posted,pleading,eligible,2021,0,1,9668787,2017-06-05,2017-06-05,1,0,0,0,0,0,0,0
+9635103,"Reputation.com, Inc. v. Birdeye, Inc.",2022-01-31,ded,posted,pleading,ineligible,2021,0,4,8918312;10180966;10354296;10445794,2019-10-17,2014-12-25,1,0,0,0,0,0,0,0
+9635191,"ClearDoc, Inc. v. RiversideFM, Inc.",2022-02-22,ded,posted,pleading,ineligible,2021,0,1,10560500,2020-02-10,2020-02-10,1,0,1,0,0,1,0,0
+9635210,Ficep Corporation v. Peddinghaus Corporation,2022-02-28,ded,posted,summary_judgment,,2019,0,1,7974719,2011-06-29,2011-06-29,1,0,0,0,0,0,1,0
+9679688,"Quartz Auto Technologies LLC v. Grubhub Holdings, Inc.",2022-02-28,ilnd,posted,pleading,,2021,1,3,6446004;7370085;7958215,2011-06-02,2002-08-25,0,0,0,0,0,0,0,0
+9635176,C R Bard Inc. v. AngioDynamics Inc.,2022-03-01,ded,posted,post_trial,,2015,0,3,7785302;7959615;8475417,2013-06-28,2010-08-27,0,0,0,0,0,0,0,0
+9604013,"Contour IP Holding, LLC v. GoPro, Inc.",2022-03-04,cand,posted,summary_judgment,ineligible,2017,1,2,8890954;8896694,2014-11-25,2014-11-19,0,0,0,0,0,0,0,0
+11017034,"Mirror Worlds Technologies, LLC v. Facebook, Inc.",2022-03-08,nysd,posted,summary_judgment,,2017,1,3,6006227;7865538;8255439,2012-08-28,1999-12-17,0,0,0,0,0,0,0,0
+9635208,TaKaDu Ltd. v. Innovyze LLC,2022-03-08,ded,posted,pleading,eligible,2021,0,4,7920983;8341106;9053519;9568392,2017-02-10,2011-04-03,1,0,1,1,0,0,0,0
+10239191,International Business Machines Corporation v. Zillow Group Inc,2022-03-09,wawd,posted,pleading,ineligible,2020,0,3,6778193;6785676;10115168,2018-10-26,2004-09-01,0,0,0,0,0,0,0,0
+9635219,"Trident Holdings, Inc. v. Hubspot, Inc.",2022-03-18,ded,posted,pleading,eligible,2021,1,1,6236977,2001-05-22,2001-05-22,0,0,0,0,0,0,0,0
+11017049,"DigiMedia Tech, LLC v. ViacomCBS Inc., Showtime Networks Inc., CBS Interactive Inc., and Viacom International Inc.",2022-03-21,nysd,posted,pleading,ineligible,2021,1,4,7743399;8087049;8160980;9055328,2015-06-11,2010-06-22,1,0,0,1,0,1,0,0
+9635250,Northwestern University v. Universal Robots A/S,2022-03-28,ded,posted,pleading,eligible,2021,0,3,6907317;6928336;7120508,2006-10-18,2005-06-21,0,0,0,0,0,0,0,0
+9635287,"Reputation.com, Inc. v. Birdeye, Inc.",2022-03-30,ded,posted,pleading,,2021,0,4,8918312;10180966;10354296;10445794,2019-10-17,2014-12-25,0,0,0,0,0,0,0,0
+9873514,"Rady v. Boston Consulting Group, LLC",2022-03-31,nysd,posted,pleading,ineligible,2020,0,1,10469250,2019-11-10,2019-11-10,0,0,0,0,0,0,0,0
+9984889,Magnacross LLC v. OKI Data Americas Inc,2022-03-31,txnd,posted,pleading,,2020,1,1,6917304,2005-07-14,2005-07-14,1,0,1,1,0,0,0,0
+9984752,VidStream LLC v. Twitter Inc,2022-04-01,txnd,posted,pleading,eligible,2016,1,2,8464304;8601506,2013-12-06,2013-06-13,0,0,0,0,0,0,0,0
+10213896,"PM HOLDINGS, LLC v. HEART OF TEXAS SURGERY CENTER, PLLC",2022-04-04,txwd,posted,pleading,eligible,2021,1,2,9322188;9334664,2016-05-05,2016-04-21,0,0,0,0,0,0,0,0
+10213924,"AML IP, LLC v. Bed Bath & Beyond, Inc.",2022-04-11,txwd,posted,pleading,,2021,1,1,6876979,2005-04-13,2005-04-13,1,1,0,0,0,0,0,0
+10256284,"Innovaport LLC v. Lowe's Home Centers, LLC",2022-04-11,wiwd,posted,pleading,eligible,2021,1,1,8775260,2014-07-13,2014-07-13,0,0,0,0,0,0,0,0
+9873807,"Chewy, Inc. v. International Business Machines Corporation",2022-04-11,nysd,posted,summary_judgment,,2021,0,5,6704034;7072849;7076443;7496831;9569414,2017-02-11,2004-03-16,0,0,0,0,0,0,0,0
+9604501,"Broadcom Corporation v. Netflix, Inc.",2022-04-13,cand,posted,pleading,,2020,0,1,8365183,2013-01-30,2013-01-30,0,0,0,0,0,0,0,0
+10208745,"Sunoco Partners Marketing & Terminals L.P. v. U.S. Venture, Inc.",2022-04-14,txsd,posted,summary_judgment,,2019,1,2,6679302;9207686,2015-12-09,2004-01-20,0,0,0,0,0,0,0,0
+9604654,Wisk Aero LLC v. Archer Aviation Inc.,2022-04-19,cand,posted,pleading,ineligible,2021,1,5,10110033;10333328;10364036;10370099;11034441,2021-06-14,2018-10-20,0,0,0,0,0,0,0,0
+9945052,"HLFIP Holding, Inc. v. York County, Pennsylvania",2022-04-25,pamd,posted,pleading,ineligible,2020,1,1,10291617,2019-05-14,2019-05-14,0,0,0,0,0,0,0,0
+9874345,"AuthWallet, LLC v. Block, Inc.",2022-05-03,nysd,posted,pleading,ineligible,2021,1,1,9292852,2016-03-18,2016-03-18,1,1,1,0,0,0,0,0
+9604818,"Google LLC v. EcoFactor, Inc.",2022-05-06,cand,posted,pleading,eligible,2021,1,4,8740100;8751186;9194597;10584890,2020-03-06,2014-05-30,1,0,0,1,0,0,1,0
+9635393,"Sysmex Corporation v. Beckman Coulter, Inc.",2022-06-02,ded,posted,summary_judgment,,2019,0,1,10401351,2019-09-02,2019-09-02,0,0,0,0,0,0,0,0
+9635459,Lazer IP LLC v. Microchip Technology Incorporated,2022-06-02,ded,posted,pleading,eligible,2021,1,1,6701508,2004-03-10,2004-03-10,0,0,0,0,0,0,0,0
+9928197,PASCO Scientific v. Vernier Software & Technology LLC,2022-06-07,ord,posted,pleading,eligible,2021,0,2,10481173;10753957,2020-08-25,2019-11-22,1,0,0,1,0,0,1,0
+9605156,"Ginegar LLC v. Slack Technologies, Inc.",2022-06-08,cand,posted,pleading,ineligible,2022,1,2,9367521;9760865,2017-09-18,2016-06-13,1,0,1,0,0,0,0,0
+9791936,Sycurio Limited v. PCI Pal (U.S.) Inc.,2022-06-22,ncwd,posted,pleading,eligible,2021,0,3,8750471;9858573;11049108,2021-06-30,2014-06-12,1,0,0,0,0,0,0,0
+9806904,"VROOM, INC. v. SIDEKICK TECHNOLOGY, LLC",2022-06-28,njd,posted,pleading,,2021,0,12,8650093;8744925;9123075;9141984;9147216;9460467;9626704;9665897;10140655;10223720;10223722;10796362,2020-10-05,2014-02-05,1,1,0,1,0,0,0,0
+9875815,"Zeta Global Corp. v. Maropost Marketing Cloud, Inc.",2022-07-07,nysd,posted,pleading,,2020,0,3,7536439;8108475;10257672,2019-04-05,2009-05-21,0,0,0,0,0,0,0,0
+10175039,"AI Visualize, Inc. v. Nuance Communications Inc.",2022-07-08,ded,posted,pleading,ineligible,2021,0,3,8701167;9106609;9438667,2016-09-06,2014-04-11,0,0,0,0,0,0,0,0
+9635474,"WSOU Investments, LLC v. Netgear, Inc.",2022-07-14,ded,posted,pleading,eligible,2021,1,1,9338171,2016-05-09,2016-05-09,1,0,0,0,0,0,1,0
+9605564,"Linquet Technologies, Inc. v. Tile, Inc.",2022-07-18,cand,posted,pleading,ineligible,2020,1,1,10163318,2018-12-19,2018-12-19,0,0,0,0,0,0,0,0
+9635475,Diogenes Limited v. DraftKings Inc.,2022-07-18,ded,posted,pleading,,2021,0,2,8721439;11200779,2021-12-14,2014-05-06,1,1,0,0,0,0,1,0
+9605603,"Google LLC v. Sonos, Inc.",2022-07-21,cand,posted,summary_judgment,,2020,1,2,9967615;10848885,2020-11-25,2018-05-11,0,0,0,0,0,0,0,0
+9605740,Juniper Networks Inc. v. Swarm Technology LLC,2022-08-01,cand,posted,pleading,,2020,0,3,9146777;9852004;10592275,2020-03-14,2015-09-29,0,0,0,0,0,0,0,0
+10250838,Innovaport LLC v. IKEA North America Services LLC,2022-08-05,wied,posted,pleading,,2021,1,1,8775260,2014-07-13,2014-07-13,0,0,0,0,0,0,0,0
+9605803,"Broadcom Corporation v. Netflix, Inc.",2022-08-08,cand,posted,pleading,ineligible,2020,0,1,8365183,2013-01-30,2013-01-30,0,0,0,0,0,0,0,0
+10209095,"Plotagraph, Inc. v. Lightricks, Ltd.",2022-08-09,txsd,posted,pleading,ineligible,2021,0,4,10346017;10558342;11182641;11301119,2022-04-08,2019-07-08,1,0,1,0,0,1,0,0
+9635556,"The Nielsen Company (US), LLC v. Hyphametrics, Inc.",2022-08-09,ded,posted,pleading,eligible,2021,1,1,8924994,2015-01-02,2015-01-02,1,0,0,0,0,0,0,0
+9635586,"The Nielsen Company (US), LLC v. TVision Insights, Inc.",2022-08-10,ded,posted,pleading,eligible,2021,1,1,9020189,2015-04-29,2015-04-29,1,0,0,0,0,0,1,0
+9635545,"ClearDoc, Inc. v. RiversideFM, Inc.",2022-08-15,ded,posted,pleading,ineligible,2021,0,1,10560500,2020-02-10,2020-02-10,1,0,1,0,0,1,0,0
+9740697,"Murj, Inc. v. Rhythm Management Group, LLC",2022-08-17,mdd,posted,pleading,ineligible,2021,0,1,10268989,2019-04-18,2019-04-18,0,0,0,0,0,0,0,0
+9534688,Swarm Technology LLC v. Amazon.com Incorporated,2022-08-22,azd,posted,pleading,,2021,1,3,9146777;9852004;10592275,2020-03-14,2015-09-29,0,0,0,0,0,0,0,0
+9635618,Diogenes Limited v. DraftKings Inc.,2022-08-26,ded,posted,pleading,,2021,0,4,8721439;9275516;9424716;11200779,2021-12-14,2014-05-06,0,0,0,0,0,0,0,0
+9660313,"Caselas, LLC v. Verifone, Inc.",2022-08-30,gand,posted,pleading,ineligible,2021,1,5,7529698;7661585;9117206;9117230;9715691,2017-07-29,2009-05-05,0,0,0,0,0,0,0,0
+9635579,"Sunoco Partners Marketing & Terminals L.P. v. Powder Springs Logistics, LLC",2022-08-31,ded,posted,post_trial,,2017,1,3,6679302;7032629;9207686,2015-12-09,2004-01-20,0,0,0,0,0,0,0,0
+9877377,Mira Advanced Technology Systems Inc. v. Google LLC,2022-08-31,nysd,posted,pleading,ineligible,2021,0,1,10594854,2020-03-16,2020-03-16,0,0,0,0,0,0,0,0
+9733877,Philips North America LLC v. Fitbit LLC,2022-09-01,mad,posted,summary_judgment,,2019,1,4,6013007;6976958;7088233;8277377,2012-09-28,2000-01-01,1,0,0,1,0,0,1,0
+9763374,"CellTrust Corporation v. ionLake, LLC",2022-09-02,mnd,posted,summary_judgment,,2019,1,2,9775012;10778837,2020-09-18,2017-10-04,1,0,1,0,0,0,0,0
+10188455,"BETEIRO, LLC v. BETMGM, LLC",2022-09-07,njd,posted,pleading,ineligible,2021,1,4,9965920;10043341;10147266;10255755,2019-04-03,2018-05-09,0,0,0,0,0,0,0,0
+9606141,"Bluebonnet Internet Media Services, LLC v. Pandora Media, LLC",2022-09-07,cand,posted,pleading,ineligible,2021,1,1,9405753,2016-07-29,2016-07-29,0,0,0,0,0,0,0,0
+9945620,"Savvy Dog Systems, LLC. v. Pennsylvania Coin, LLC",2022-09-19,pamd,posted,summary_judgment,ineligible,2019,1,1,7736233,2010-06-11,2010-06-11,1,0,0,0,0,0,0,0
+9734000,"INTEGRATED TECHNOLOGY SOLUTIONS LLC v. iRacing.com Motorsport Simulations, LLC",2022-09-20,mad,posted,pleading,,2021,1,1,10046241,2018-08-08,2018-08-08,1,0,0,0,0,0,0,0
+9985384,XiDrone Systems Inc v. 911 Security Inc,2022-09-27,txnd,posted,pleading,,2021,0,1,10670696,2020-06-05,2020-06-05,0,0,0,0,0,0,0,0
+9878131,"Guvera IP Pty Ltd. v. Spotify, Inc.",2022-09-28,nysd,posted,pleading,ineligible,2021,1,1,8977633,2015-03-08,2015-03-08,1,0,1,0,0,0,0,1
+9985311,Helmerich & Payne International Drilling Co v. Nabors Drilling Technologies USA Inc,2022-09-28,txnd,posted,pleading,,2020,0,3,7823655;7860593;8510081,2013-08-13,2010-10-28,0,0,0,0,0,0,0,0
+9635622,Innovative Memory Systems Inc. v. Micron Technology Inc.,2022-09-29,ded,posted,summary_judgment,,2014,0,3,5235585;6901498;7000063,2006-01-17,2005-06-08,0,0,0,0,0,0,0,0
+10214464,"BROADBAND iTV, INC. v. Amazon.Com, Inc.",2022-09-30,txwd,posted,summary_judgment,ineligible,2020,0,6,7631336;9648388;9973825;10028026;10536750;10536751,2020-01-17,2009-12-14,1,0,1,1,0,1,0,0
+9606447,"Samsung Electronics Co, Ltd. v. Blaze Mobile, Inc.",2022-09-30,cand,posted,pleading,eligible,2021,0,1,9996849,2018-06-13,2018-06-13,1,1,0,1,1,1,1,0
+9971609,"HLFIP Holding, Inc. v. Rutherford County, Tennessee",2022-10-07,tnmd,posted,pleading,ineligible,2019,1,1,10291617,2019-05-14,2019-05-14,1,0,0,0,0,0,0,0
+9606699,"Ginegar LLC v. Slack Technologies, Inc.",2022-10-11,cand,posted,pleading,,2022,1,1,9367521,2016-06-13,2016-06-13,0,0,0,0,0,0,0,0
+9619933,"Vision Works IP Corp. v. Nissan North American, Inc.",2022-10-11,casd,posted,pleading,ineligible,2022,1,3,8315769;8682558;10391989,2019-08-24,2012-11-21,0,0,0,0,0,0,0,0
+10214504,"AML IP, LLC v. J. C. Penney Corporation Inc.",2022-10-18,txwd,posted,pleading,,2021,1,1,6876979,2005-04-13,2005-04-13,0,0,0,0,0,0,0,0
+9807579,"VROOM, INC. v. SIDEKICK TECHNOLOGY, LLC",2022-10-18,njd,posted,pleading,eligible,2021,0,0,,,,0,0,0,0,0,0,0,0
+10214491,"AML IP, LLC v. AMERICAN EAGLE OUTFITTERS, INC.",2022-10-19,txwd,posted,pleading,,2021,1,1,6876979,2005-04-13,2005-04-13,0,0,0,0,0,0,0,0
+9830746,"Teliax Technology LLC v. Affinity Network, Inc.",2022-10-19,nvd,posted,pleading,ineligible,2022,1,1,9807249,2017-11-10,2017-11-10,1,0,0,1,0,0,0,0
+9979168,"Island Intellectual Property LLC v. TD Ameritrade, Inc.",2022-11-17,txed,posted,summary_judgment,ineligible,2021,1,0,,,,0,0,0,0,0,0,0,0
+9635745,International Business Machines Corporation v. Zynga Inc.,2022-11-23,ded,posted,pleading,ineligible,2022,0,1,8315904,2012-11-21,2012-11-21,1,0,0,0,0,0,0,0
+9645089,"Integrated Advertising Labs, LLC v. Revcontent, LLC",2022-12-08,flmd,posted,pleading,,2022,1,3,9286622;9652781;10147121,2018-12-01,2016-03-10,0,0,0,0,0,0,0,0
+10219264,Eagle View Technologies v. GAF Materials LLC,2022-12-12,utd,posted,pleading,,2022,1,0,,,,0,0,0,0,0,0,0,0
+9985647,Rosen Technologies LLC v. Lennox Industries Inc,2023-01-04,txnd,posted,pleading,,2022,1,4,6619555;6789739;7185825;7232075,2007-06-28,2003-09-13,0,0,0,0,0,0,0,0
+10209494,Well Cell Global LLC v. Calvit,2023-01-12,txsd,posted,post_trial,,2022,1,0,,,,0,0,0,0,0,0,0,0
+9620402,"Bell Semiconductor, LLC v. NXP USA, Inc.",2023-01-12,casd,posted,pleading,eligible,2022,1,2,7149989;7260803,2007-09-02,2006-12-24,1,0,0,0,0,0,1,0
+9607417,"Cellwitch Inc. v. Tile, Inc.",2023-01-13,cand,posted,pleading,eligible,2019,0,1,8872655,2014-10-30,2014-10-30,1,0,0,1,0,0,0,0
+9607427,"NantWorks, LLC v. Niantic, Inc.",2023-01-13,cand,posted,pleading,ineligible,2020,1,2,10614477;10664518,2020-05-30,2020-04-06,1,0,0,0,0,0,0,0
+9635853,"Pictometry International Corp. v. Roofr, Inc.",2023-01-19,ded,posted,pleading,,2021,0,3,8170840;9183538;10648800,2020-05-15,2012-04-30,0,0,0,0,0,0,0,0
+9635837,"Aylo Freesites Ltd v. ScorpCast, LLC",2023-01-20,ded,posted,pleading,,2020,0,9,8595057;9703463;9832519;9899063;9965780;10205987;10354288;10506278;10560738,2020-02-11,2013-11-28,0,0,0,0,0,0,0,0
+9831543,"Pure Parlay, LLC v. Stadium Technology Group, Inc.",2023-01-20,nvd,posted,pleading,ineligible,2019,1,1,9773382,2017-10-02,2017-10-02,1,1,0,0,0,0,0,0
+9881507,"EscapeX IP LLC v. Block, Inc.",2023-01-24,nysd,posted,pleading,ineligible,2022,1,1,9009113,2015-04-15,2015-04-15,0,0,0,0,0,0,0,0
+9620467,"Bell Semiconductor, LLC v. NXP USA, Inc.",2023-01-27,casd,posted,pleading,eligible,2022,1,1,7396760,2008-07-06,2008-07-06,1,0,0,0,0,0,1,0
+10175049,"Wireless Discovery LLC v. Eharmony, Inc.",2023-02-06,ded,posted,pleading,,2022,1,4,9264875;9357352;10321267;10334397,2019-06-26,2016-02-14,0,0,0,0,0,0,0,0
+9635921,"Wireless Discovery LLC v. Coffee Meets Bagel, Inc.",2023-02-06,ded,posted,pleading,,2022,1,2,9264875;10321267,2019-06-13,2016-02-14,0,0,0,0,0,0,0,0
+10175051,GeoComply Solutions Inc. v. XPoint Services LLC,2023-02-10,ded,posted,pleading,,2022,1,1,9413805,2016-08-08,2016-08-08,0,0,0,0,0,0,0,0
+9635900,"InQuisient Inc. v. ServiceNow, Inc.",2023-02-17,ded,posted,pleading,eligible,2022,0,3,7979468;8219585;8224855,2012-07-15,2011-07-07,0,0,0,0,0,0,0,0
+11017920,"Realtime Tracker, Inc. v. RELX, Inc., doing business as LexisNexis",2023-03-07,nysd,posted,pleading,ineligible,2021,0,1,8229810,2012-07-22,2012-07-22,1,1,0,0,0,0,1,0
+9584415,"Warn Industries, Inc. v. Agency 6 Inc.",2023-03-08,caed,posted,pleading,eligible,2022,0,2,9388025;11167963,2021-11-06,2016-07-08,1,0,0,0,0,0,1,0
+9882783,"InMusic Brands, Inc. v. Sony Corporation of America",2023-03-13,nysd,posted,pleading,ineligible,2022,0,1,7567498,2009-07-29,2009-07-29,1,0,0,0,0,1,1,0
+9608070,"Splunk Inc. v. Cribl, Inc.",2023-03-17,cand,posted,pleading,,2022,0,9,6683467;9208206;9762443;9838467;10055312;10255312;10805438;10977206;11254206,2022-02-13,2004-01-29,1,0,1,1,0,0,0,1
+9771823,"FaceToFace Biometrics, Inc. v. Apple, Inc.",2023-03-17,moed,posted,pleading,ineligible,2022,0,1,11042623,2021-06-23,2021-06-23,1,0,1,0,0,0,0,0
+9883123,"Diatek Licensing LLC v. AccuWeather, Inc.",2023-03-24,nysd,posted,pleading,ineligible,2021,1,4,7047305;7079752;8195828;10499091,2019-12-10,2006-05-05,1,0,1,1,0,0,0,0
+9734366,"Ocean Semiconductors LLC v. Analog Devices, Inc.",2023-03-28,mad,posted,pleading,ineligible,2020,1,1,6836691,2005-01-11,2005-01-11,1,0,1,0,0,0,1,0
+9635985,"Eos Positioning Systems, Inc. v. ProStar Geocorp, Inc.",2023-03-30,ded,posted,pleading,,2022,0,2,7834806;7978129,2011-07-04,2010-11-15,0,0,0,0,0,0,0,0
+9635988,"Oasis Tooling, Inc. v. Siemens Industry Software, Inc.",2023-03-31,ded,posted,pleading,eligible,2022,0,2,7685545;8266571,2012-09-12,2010-03-19,1,0,0,0,0,0,1,1
+9635989,"Topia Technology, Inc. v. Egnyte, Inc.",2023-03-31,ded,posted,pleading,,2021,0,6,9143561;10067942;10289607;10642787;10754823;11003622,2021-05-13,2015-09-25,1,0,1,1,0,0,0,0
+9627454,"Ivanti, Inc. v. Patch My PC, LLC",2023-04-13,cod,posted,pleading,,2022,0,3,6990660;7823147;8407687,2013-03-28,2005-12-27,0,0,0,0,0,0,0,0
+9636034,"Cirba Inc. (d/b/a Densify) v. VMware, Inc.",2023-04-18,ded,posted,pleading,eligible,2019,0,2,8209687;10951459,2021-03-18,2012-06-24,0,0,0,0,0,0,0,0
+9710414,"Marble VOIP Partners LLC v. Zoom Video Communications, Inc.",2023-04-24,ksd,posted,pleading,eligible,2022,1,0,,,,1,0,0,1,0,0,0,0
+9636119,"Election Systems & Software, LLC v. Smartmatic USA Corporation",2023-04-25,ded,posted,pleading,ineligible,2018,1,3,7080779;7753273;8096471,2012-01-12,2006-07-20,0,0,0,0,0,0,0,0
+10215064,3Shape A/S v. Medit Corp.,2023-05-01,txwd,posted,pleading,,2022,0,3,9626551;10064553;10695151,2020-06-29,2017-04-18,0,0,0,0,0,0,0,0
+9608653,"Samsung Electronics Co, Ltd. v. Blaze Mobile, Inc.",2023-05-16,cand,posted,pleading,,2021,0,7,9378493;9652771;9996849;10339556;10565575;10621612;10699259,2020-07-03,2016-06-26,1,1,0,1,1,1,1,0
+9636081,C R Bard Inc. v. AngioDynamics Inc.,2023-06-01,ded,posted,post_trial,,2015,0,3,8475417;8545460;8805478,2014-08-16,2013-06-28,0,0,0,0,0,0,0,0
+10174240,"SecureNet Solutions Group, LLC v. Arrow Electronics, Inc.",2023-06-05,cod,posted,pleading,eligible,2022,1,1,10862744,2020-12-08,2020-12-08,0,0,0,0,0,0,0,0
+9655409,"AR Design Innovations LLC v. City Furniture, Inc.",2023-06-05,flsd,posted,pleading,,2023,1,1,7277572,2007-10-10,2007-10-10,0,0,0,0,0,0,0,0
+9660510,"Implicit, LLC v. The Home Depot, Inc.",2023-06-06,gand,posted,pleading,ineligible,2022,1,1,8856185,2014-10-11,2014-10-11,0,0,0,0,0,0,0,0
+9608815,Wildseed Mobile LLC v. Google LLC,2023-06-07,cand,posted,pleading,ineligible,2022,1,2,9141960;10959040,2021-03-26,2015-09-23,0,0,0,0,0,0,0,0
+10242374,Datanet LLC v. Microsoft Corporation,2023-06-12,wawd,posted,pleading,,2022,1,3,8473478;9218348;10585850,2020-03-07,2013-06-25,1,0,1,0,0,0,1,0
+9608912,"Broadcom Corporation v. Netflix, Inc.",2023-06-12,cand,posted,pleading,eligible,2020,0,3,7457722;8548976;8572138,2013-10-30,2008-11-22,0,0,0,0,0,0,0,0
+9608928,"Splunk Inc. v. Cribl, Inc.",2023-06-23,cand,posted,pleading,,2022,0,5,9208206;9762443;9838467;10255312;10805438,2020-10-14,2015-12-10,1,0,1,1,0,0,0,1
+9517029,"Implicit, LLC v. Ziff Davis, Inc.",2023-07-03,cacd,posted,pleading,ineligible,2022,1,1,7778966,2010-08-18,2010-08-18,1,0,0,0,0,0,0,0
+9636182,"International Business Machines Corporation v. Rakuten, Inc.",2023-07-05,ded,posted,pleading,,2021,0,3,6697861;7072849;8072968,2011-12-05,2004-03-02,1,0,0,1,0,0,0,0
+9636122,"Topia Technology, Inc. v. Egnyte, Inc.",2023-07-06,ded,posted,pleading,,2021,0,2,9143561;10067942,2018-09-02,2015-09-25,0,0,0,0,0,0,0,0
+9536050,Rich Media Club LLC v. Duration Media LLC,2023-07-12,azd,posted,pleading,eligible,2022,1,2,11195210;11443329,2022-09-17,2021-12-07,1,1,0,1,0,0,0,0
+9682511,"Buffalo Patents, LLC v. Motorola Mobility LLC",2023-07-18,ilnd,posted,pleading,eligible,2022,1,4,7187670;7408915;8611328;9001816,2015-04-07,2007-03-20,0,0,0,0,0,0,0,0
+9682555,"Michigan Motor Technologies, LLC v. Bayerische Motoren Werke AG",2023-07-21,ilnd,posted,pleading,,2022,1,6,6557540;6581565;6581574;6588260;6736122;8909482,2014-12-14,2003-04-29,1,0,0,0,0,0,1,0
+9636237,Cambridge Mobile Telematics Inc. v. Zendrive Inc.,2023-07-28,ded,posted,pleading,ineligible,2022,0,1,10967872,2021-04-05,2021-04-05,1,0,1,0,0,0,1,0
+9609341,"Street Spirit IP LLC v. Meta Platforms, Inc.",2023-07-31,cand,posted,pleading,ineligible,2023,1,1,9282090,2016-03-05,2016-03-05,0,0,0,0,0,0,0,0
+9734721,"Alto Dynamics, LLC v. Wayfair LLC",2023-08-16,mad,posted,pleading,,2023,1,8,6604100;6662190;6691103;6757662;7152018;7392160;7657531;8051098,2011-10-30,2003-08-10,0,0,0,0,0,0,0,0
+10175082,"Aviation Capital Partners, LLC v. SH Advisors, LLC",2023-08-18,ded,posted,pleading,ineligible,2022,1,1,10956988,2021-03-24,2021-03-24,0,0,0,0,0,0,0,0
+9609578,"Valjakka v. Netflix, Inc.",2023-08-22,cand,posted,pleading,ineligible,2022,0,1,10726102,2020-07-29,2020-07-29,0,0,0,0,0,0,0,0
+9887102,"Railware, Inc. v. National Railroad Passenger Corporation",2023-08-23,nysd,posted,pleading,eligible,2022,0,2,9403545;9517782,2016-12-12,2016-07-26,0,0,0,0,0,0,0,0
+9609633,Regents of the University of Minnesota v. LSI Corporation,2023-08-25,cand,posted,pleading,eligible,2018,0,1,5859601,1999-01-15,1999-01-15,1,0,0,0,0,0,1,0
+9682807,"Buffalo Patents, LLC v. Motorola Mobility LLC",2023-09-11,ilnd,posted,pleading,eligible,2022,1,2,6904405;8204737,2012-06-17,2005-06-14,1,0,1,0,0,0,0,0
+9636250,"10X Genomics, Inc. v. Parse Biosciences, Inc.",2023-09-14,ded,posted,pleading,eligible,2022,0,6,10150995;10155981;10240197;10619207;10697013;10738357,2020-08-10,2018-12-05,0,0,0,0,0,0,0,0
+10223479,Geoscope Technologies Pte. Ltd. v. Google LLC,2023-09-18,vaed,posted,pleading,ineligible,2022,1,6,7561104;8320264;8400358;8406753;8786494;9097784,2015-08-02,2009-07-15,0,0,0,0,0,0,0,0
+9636304,"Recentive Analytics, Inc. v. Fox Corporation",2023-09-19,ded,posted,pleading,,2022,0,4,10911811;10958957;11386367;11537960,2022-12-30,2021-02-01,1,0,0,1,0,0,0,1
+10175087,"Validity, Inc. v. Project Bordeaux, Inc.",2023-09-22,ded,posted,pleading,,2023,0,1,8719356,2014-05-04,2014-05-04,1,0,1,0,0,1,0,0
+9636269,"Attentive Mobile Inc. v. 317 Labs, Inc.",2023-09-25,ded,posted,pleading,eligible,2022,0,2,11416887;11416897,2022-08-19,2022-08-19,0,0,0,0,0,0,0,0
+9609949,"directPacket Research, Inc. v. Polycom, LLC",2023-09-26,cand,posted,pleading,,2019,1,1,7773588,2010-08-10,2010-08-10,0,0,0,0,0,0,0,0
+9980030,Pantech Corporation v. LG Electronics Inc,2023-09-26,txed,posted,pleading,,2022,0,2,7283839;9575631,2017-02-18,2007-10-24,0,0,0,0,0,0,0,0
+9636292,Cambridge Mobile Telematics Inc. v. Zendrive Inc.,2023-09-27,ded,posted,pleading,ineligible,2022,0,2,10349219;10967872,2021-04-05,2019-07-11,0,0,0,0,0,0,0,0
+10219977,PowerBlock Holdings v. iFIT,2023-09-29,utd,posted,pleading,,2022,1,1,7578771,2009-08-22,2009-08-22,1,0,0,0,0,0,1,0
+9833890,"SATA GmbH & Co. KG v. Qingdao Hanspray New Material Technology Co., Ltd.",2023-09-29,nvd,posted,pleading,,2022,0,1,7416150,2008-08-19,2008-08-19,0,0,0,0,0,0,0,0
+9682981,Fred Bergman Healthcare Pty Ltd v. Seneca Sense Technologies Inc.,2023-09-30,ilnd,posted,pleading,eligible,2022,1,1,7977529,2011-07-03,2011-07-03,1,0,0,0,0,0,0,0
+9682987,"Consolidated Transaction Processing LLC v. Tapestry, Inc.",2023-09-30,ilnd,posted,pleading,ineligible,2022,1,2,8396743;8712846,2014-04-25,2013-03-14,0,0,0,0,0,0,0,0
+9636298,"KOM Software Inc. v. NetApp, Inc.",2023-10-04,ded,posted,pleading,,2018,0,2,6654864;9361243,2016-06-06,2003-11-28,0,0,0,0,0,0,0,0
+9636305,BNP Holdings LLC v. Intuit Inc.,2023-10-11,ded,posted,pleading,ineligible,2022,1,1,6374229,2002-03-19,2002-03-19,1,1,1,1,0,0,0,0
+9610261,"Haley IP, LLC v. Motive Technologies, Inc.",2023-10-23,cand,posted,pleading,ineligible,2023,1,1,10204261,2019-02-04,2019-02-04,0,0,0,0,0,0,0,0
+9610296,"Longitude Licensing Limited v. Google, LLC",2023-10-27,cand,posted,pleading,ineligible,2023,1,0,,,,0,0,0,0,0,0,0,0
+9636379,"SurgeTech, LLC v. Uber Technologies Inc.",2023-11-01,ded,posted,pleading,ineligible,2022,1,3,11334598;11360999;11475047,2022-10-22,2022-05-17,0,0,0,0,0,0,0,0
+10223585,"Dialect, LLC v. Amazon.Com, Inc.",2023-11-08,vaed,posted,pleading,,2023,1,2,7693720;9031845,2015-05-13,2010-04-01,1,0,0,1,0,0,0,0
+9636362,"BT Americas, Inc. v. Palo Alto Networks, Inc.",2023-11-14,ded,posted,pleading,eligible,2022,0,2,7159237;7895641,2011-02-21,2007-01-14,0,0,0,0,0,0,0,0
+9610514,"Western Digital Technologies, Inc. v. Viasat, Inc.",2023-11-15,cand,posted,pleading,ineligible,2022,1,1,8504834,2013-08-06,2013-08-06,1,0,1,1,0,0,0,0
+9610583,"Automated Pet Care Products, LLC v. PurLife Brands, Inc. d/b/a Smarty Pear, a Delaware corporation",2023-11-21,cand,posted,pleading,,2022,1,1,11399502,2022-07-30,2022-07-30,1,0,0,0,0,0,1,0
+9610592,"Safecast Limited v. Google, LLC",2023-11-22,cand,posted,pleading,ineligible,2023,0,1,9392302,2016-07-13,2016-07-13,0,0,0,0,0,0,0,0
+9627946,"Well Master Corporation v. Flowco Production Solutions, LLC",2023-12-06,cod,posted,pleading,eligible,2021,0,2,7395865;7793728,2010-09-09,2008-07-04,0,0,0,0,0,0,0,0
+9627993,"Well Master Corporation v. Flowco Production Solutions, LLC",2023-12-14,cod,posted,pleading,eligible,2021,0,2,7395865;7793728,2010-09-09,2008-07-04,0,0,0,0,0,0,0,0
+9755307,Beacon Navigation GmbH v. Bayerische Motoren Werke AG,2023-12-28,mied,posted,pleading,,2013,0,1,5862511,1999-01-23,1999-01-23,1,0,0,0,0,0,1,0
+9611037,"Marble VOIP Partners LLC v. Zoom Video Communications, Inc.",2024-01-08,cand,posted,pleading,eligible,2023,1,1,7376129,2008-05-21,2008-05-21,1,0,0,1,0,0,0,0
+10244169,American GNC Corporation v. Nintendo Co Ltd,2024-01-10,wawd,posted,pleading,eligible,2023,0,2,6508122;6671648,2004-01-03,2003-01-10,0,0,0,0,0,0,0,0
+10244281,"US Patent No 7,679,637 LLC v. Google LLC",2024-01-25,wawd,posted,pleading,ineligible,2023,1,1,7679637,2010-03-09,2010-03-09,0,0,0,0,0,0,0,0
+9611261,"B.S.D Crown, Ltd. v. Amazon.com, Inc.",2024-01-29,cand,posted,pleading,,2023,0,1,6389473,2002-04-22,2002-04-22,1,0,0,1,0,1,0,0
+9636517,"ThroughTEK Co., Ltd. v. Reolink Innovation Inc.",2024-02-05,ded,posted,pleading,,2023,0,1,9787498,2017-10-18,2017-10-18,1,0,0,1,0,0,1,0
+10257539,Innovaport LLC v. Target Corporation,2024-02-06,wiwd,posted,summary_judgment,,2022,1,6,7231380;7819315;8775260;8787933;9489690;9990670,2018-06-06,2007-06-27,0,0,0,0,0,0,0,0
+9930403,Adasa Inc. v. Avery Dennison Corporation,2024-02-07,ord,posted,post_trial,eligible,2017,0,1,9798967,2017-10-31,2017-10-31,0,0,0,0,0,0,0,0
+9611435,"Entangled Media, LLC v. Dropbox, Inc.",2024-02-13,cand,posted,pleading,eligible,2023,1,2,8296338;8484260,2013-07-11,2012-10-25,1,0,1,0,0,0,1,0
+9683503,OANDA Corporation v. Stonex Group Inc,2024-02-14,ilnd,posted,pleading,ineligible,2020,0,3,7356504;7702548;7742959,2010-06-22,2008-04-06,0,0,0,0,0,0,0,0
+9683544,BerkeleyIEOR v. W.W. Grainger Inc.,2024-03-07,ilnd,posted,summary_judgment,,2017,0,3,7596521;7882137;8612316,2013-12-20,2009-09-30,0,0,0,0,0,0,0,0
+9849823,"Rensselaer Polytechnic Institute v. Amazon.com, Inc.",2024-03-18,nynd,posted,summary_judgment,,2018,0,1,7177798,2007-02-25,2007-02-25,1,0,0,0,0,1,0,0
+9892486,"SitNet LLC v. Meta Platforms, Inc.",2024-03-19,nysd,posted,pleading,,2023,1,4,8249932;8332454;9877345;11470682,2022-10-17,2012-08-20,0,0,0,0,0,0,0,0
+9611873,"Take2 Technologies Limited v. Pacific Biosciences of California, Inc.",2024-03-25,cand,posted,pleading,eligible,2023,1,2,10370099;11091794,2021-08-14,2019-08-02,1,0,0,0,0,0,0,1
+9683624,"Web 2.0 Technologies, LLC v. 37signals LLC., d/b/a Basecamp",2024-03-25,ilnd,posted,pleading,ineligible,2023,1,2,6845448;8117644,2012-02-15,2005-01-31,1,0,1,0,0,0,0,0
+9628247,Energy Environmental Corporation v. City and County of Denver,2024-03-26,cod,posted,pleading,,2021,0,3,9410752;10072863;10907848,2021-01-28,2016-08-04,1,0,0,0,0,0,0,0
+10220408,Eagle View Technologies v. Nearmap US,2024-03-28,utd,posted,pleading,,2021,1,1,10671648,2020-06-06,2020-06-06,0,0,0,0,0,0,0,0
+9537275,Language Technologies Incorporated v. Microsoft Corporation,2024-03-29,azd,posted,pleading,ineligible,2023,1,2,7069508;7346489,2008-03-14,2006-06-24,0,0,0,0,0,0,0,0
+9683767,"Cascades Branding Innovation LLC v. Aldi, Inc",2024-03-31,ilnd,posted,pleading,ineligible,2021,1,3,7768395;8106766;8405504,2013-03-25,2010-08-03,1,0,0,0,0,0,0,0
+9612002,"10Tales, Inc. v. TikTok, Inc.",2024-04-02,cand,posted,pleading,ineligible,2021,0,1,8856030,2014-10-11,2014-10-11,1,0,0,0,0,1,0,0
+10220440,Polar Electro Oy v. Suunto Oy,2024-04-05,utd,posted,summary_judgment,,2017,0,1,6537227,2003-03-15,2003-03-15,0,0,0,0,0,0,0,0
+9798598,AGI Suretrack LLC v. Farmers Edge Inc.,2024-04-11,ned,posted,summary_judgment,,2022,1,1,11126937,2021-09-20,2021-09-20,0,0,0,0,0,0,0,0
+9636630,"Inmar Brand Solutions, Inc. v. Quotient Technology Inc.",2024-04-18,ded,posted,pleading,,2023,1,3,9070133;9098855;10846729,2020-11-22,2015-06-29,1,1,0,1,0,0,0,0
+10175116,"ThroughTEK Co., Ltd. v. Reolink Innovation Inc.",2024-04-19,ded,posted,pleading,ineligible,2023,0,0,,,,1,0,0,1,0,0,1,0
+9636643,"VideoLabs, Inc. v. Meta Platforms, Inc.",2024-04-22,ded,posted,pleading,,2022,0,2,7266682;7436980,2008-10-05,2007-09-15,1,0,1,0,0,1,0,0
+10205348,VOIP-PAL.com Inc v. Huawei Technologies Co LTD,2024-04-30,txnd,posted,pleading,eligible,2023,0,2,8630234;10880721,2020-12-28,2014-01-11,1,0,0,1,0,0,0,0
+9612289,The Receivership Estate of AudienceScience Inc. v. Google LLC,2024-05-02,cand,posted,pleading,ineligible,2022,0,3,7747676;7882175;8082298,2011-12-20,2010-06-29,0,0,0,0,0,0,0,0
+9636706,"VideoLabs, Inc. v. Netflix Inc.",2024-05-14,ded,posted,pleading,eligible,2022,0,3,7233790;7440559;8605794,2013-12-11,2007-07-02,1,0,1,1,0,0,1,0
+9612411,"Dental Monitoring SAS v. Align Technology, Inc.",2024-05-16,cand,posted,summary_judgment,,2022,0,2,10755409;11049248,2021-06-30,2020-08-26,1,0,0,0,0,1,0,0
+9684082,"Disintermediation Services, Inc. v. LiveAdmins, LLC",2024-05-16,ilnd,posted,pleading,,2022,0,4,11240183;11336597;11349787;11418446,2022-08-20,2022-01-28,0,0,0,0,0,0,0,0
+9636723,"Data Health Partners, Inc. v. Teladoc Health, Inc.",2024-05-20,ded,posted,pleading,,2023,1,3,10061812;11144554;11151142,2021-10-17,2018-08-26,1,0,1,0,0,0,0,0
+9636765,"Staton Techiya, LLC v. Harman International Industries, Incorporated",2024-05-20,ded,posted,pleading,,2023,1,3,8319620;11589329;11610587,2012-11-27,2012-11-27,1,0,1,0,0,0,1,0
+10220564,Total Quality Systems v. Universal Synaptics,2024-05-23,utd,posted,pleading,ineligible,2022,0,2,8103475;10641826,2020-05-07,2012-01-24,0,0,0,0,0,0,0,0
+9612596,"Vilox Technologies, LLC v. Salesforce, Inc.",2024-05-31,cand,posted,pleading,,2023,1,2,6760720;7188100,2007-03-21,2004-07-23,0,0,0,0,0,0,0,0
+9612587,"Scientific Applications & Research Associates (SARA), Inc. v. Zipline International, Inc.",2024-06-04,cand,posted,pleading,,2022,1,1,7606115,2009-10-20,2009-10-20,1,0,0,0,0,0,0,0
+9636779,"Veeva Systems Inc. v. Tact.ai Technologies, Inc.",2024-06-05,ded,posted,pleading,,2023,0,3,9055023;9391937;11501313,2022-11-20,2015-06-11,1,0,1,1,0,1,0,0
+10171900,"Enovsys LLC v. Uber Technologies, Inc.",2024-06-17,cand,posted,pleading,ineligible,2023,1,3,6441752;6756918;7199726,2007-04-16,2002-08-16,1,0,0,1,0,1,1,0
+10171913,"Enovsys LLC v. Lyft, Inc.",2024-06-17,cand,posted,pleading,ineligible,2023,1,3,6441752;6756918;7199726,2007-04-16,2002-08-16,1,0,0,1,0,1,1,0
+10220631,"MarketDial, Inc. v. Applied Predictive Technologies, Inc.",2024-06-20,utd,posted,pleading,,2023,0,1,8571916,2013-10-30,2013-10-30,0,0,0,0,0,0,0,0
+10175117,"Prolitec Inc. v. ScentAir Technologies, LLC",2024-06-24,ded,posted,pleading,,2020,0,1,10838388,2020-11-14,2020-11-14,0,0,0,0,0,0,0,0
+10175158,"Redwood Technologies, LLC v. Netgear, Inc.",2024-06-27,ded,posted,pleading,,2022,1,4,7359457;7983140;8111671;9462536,2016-10-04,2008-04-13,0,0,0,0,0,0,0,0
+10175143,"Game Play Network, Inc. v. Lien Games Racing LLC",2024-06-28,ded,posted,pleading,,2023,0,4,8777735;8992312;9070252;9299218,2016-03-25,2014-07-16,0,0,0,0,0,0,0,0
+10175128,"Oasis Tooling, Inc. v. Siemens Industry Software, Inc.",2024-07-02,ded,posted,summary_judgment,ineligible,2022,0,2,7685545;8266571,2012-09-12,2010-03-19,1,0,1,0,0,0,1,1
+10172117,"NantWorks, LLC v. Niantic, Inc.",2024-07-09,cand,posted,summary_judgment,ineligible,2020,1,1,10403051,2019-09-04,2019-09-04,1,0,0,0,0,0,0,0
+10172275,"Enovsys LLC v. Uber Technologies, Inc.",2024-07-12,cand,posted,pleading,,2023,1,3,6441752;6756918;7199726,2007-04-16,2002-08-16,0,0,0,0,0,0,0,0
+10172279,"Enovsys LLC v. Lyft, Inc.",2024-07-12,cand,posted,pleading,,2023,1,3,6441752;6756918;7199726,2007-04-16,2002-08-16,0,0,0,0,0,0,0,0
+10203942,"Symbology Innovations, LLC v. Dexcom, Inc.",2024-07-25,txed,posted,pleading,ineligible,2023,1,4,7992773;8424752;8651369;8936190,2015-01-16,2011-07-28,1,0,0,0,0,0,0,0
+10909472,"AML IP, LLC v. SALLY BEAUTY SUPPLY, LLC",2024-08-05,txwd,posted,pleading,,2023,1,1,6876979,2005-04-13,2005-04-13,1,1,0,0,0,0,0,0
+10299076,"RFC Lenders of Texas, LLC v. Smart Chemical Solutions, LLC",2024-08-06,txwd,posted,pleading,,2023,1,1,7430471,2008-09-20,2008-09-20,1,0,0,0,0,0,1,0
+10172511,BWB Co Ltd v. Alibaba Group Holding Limited,2024-08-08,cand,posted,pleading,,2023,0,1,10460366,2019-11-01,2019-11-01,0,0,0,0,0,0,0,0
+10203876,"AML IP, LLC v. Bath & Body Works, LLC",2024-08-13,txed,posted,pleading,ineligible,2022,1,1,6876979,2005-04-13,2005-04-13,1,1,0,0,0,0,0,0
+10183193,"Desktop Alert Inc. v. Alertus Technologies, LLC",2024-08-14,mdd,posted,pleading,,2022,0,1,9172765,2015-10-29,2015-10-29,1,0,0,0,0,0,0,0
+10185088,Regents of the University of Minnesota v. AT&T Mobility LLC,2024-08-22,mnd,posted,pleading,,2014,0,0,,,,0,0,0,0,0,0,0,0
+10175218,International Business Machines Corporation v. Zynga Inc.,2024-08-28,ded,posted,pleading,eligible,2022,0,1,7072849,2006-07-02,2006-07-02,1,1,0,0,0,0,0,0
+10175223,"State Farm Mutual Automobile Insurance Co. v. Amazon.com, Inc.",2024-09-06,ded,posted,pleading,eligible,2022,0,5,10825318;11056235;11094180;11114203;11393585,2022-07-24,2020-11-02,1,0,0,0,0,0,0,0
+10203958,"Ollnova Technologies Limited v. Ecobee Technologies, ULC d/b/a/ Ecobee",2024-09-06,txed,posted,post_trial,eligible,2022,1,1,7860495,2010-12-26,2010-12-26,0,0,0,0,0,0,0,0
+10299952,"BitSight Technologies, Inc. v. NormShield Inc.",2024-09-20,mad,posted,pleading,,2023,1,5,9438615;9973524;10805331;11652834;11777976,2020-10-13,2016-09-06,0,0,0,0,0,0,0,0
+10175279,"VB Assets, LLC v. Amazon.com Services LLC",2024-09-30,ded,posted,post_trial,,2019,1,4,7818176;8073681;9269097;9626703,2017-04-18,2010-10-19,1,1,0,0,0,0,0,0
+10175306,Apple Inc. v. Masimo Corporation,2024-10-09,ded,posted,summary_judgment,,2022,0,1,11106352,2021-08-29,2021-08-29,0,0,0,0,0,0,0,0
+10175375,"Optrascan, Inc. v. Morphle Labs, Inc.",2024-10-11,ded,posted,pleading,eligible,2024,0,2,10338365;10586376,2020-03-08,2019-06-30,1,0,1,0,0,0,0,1
+10175346,"Redwood Technologies, LLC v. Netgear, Inc.",2024-10-28,ded,posted,pleading,,2022,1,5,8005165;8654754;9628300;10075272;10341071,2019-07-03,2011-08-17,0,0,0,0,0,0,0,0
+10277071,"EcoFactor, Inc. v. Google LLC",2024-11-18,cand,posted,pleading,,2024,0,3,8423322;8751186;11835394,2014-06-13,2013-04-16,1,0,0,0,0,0,0,0
+10280784,"Rally AG LLC v. Apple, Inc.",2024-11-20,ded,posted,pleading,eligible,2023,1,1,11361107,2022-06-16,2022-06-16,1,0,1,1,1,0,0,0
+10282526,"HYBIR, INC. v. VEEAM SOFTWARE CORPORATION",2024-11-22,mad,posted,pleading,ineligible,2020,0,1,8051043,2011-10-30,2011-10-30,1,0,1,0,0,0,1,0
+10303719,"GESTURE TECHNOLOGY PARTNERS, LLC v. LG ELECTRONICS INC.",2024-12-23,njd,posted,pleading,,2021,1,1,8878949,2014-11-06,2014-11-06,0,0,0,0,0,0,0,0
+11019643,"Linfo IP, LLC v. Trustpilot, Inc.",2025-01-03,nysd,posted,pleading,ineligible,2024,1,1,9092428,2015-07-27,2015-07-27,1,0,1,0,0,0,0,0
+10310732,"Broadcom Corporation v. Netflix, Inc.",2025-01-08,cand,posted,summary_judgment,,2020,0,1,8259121,2012-09-02,2012-09-02,0,0,0,0,0,0,0,0
+10313735,"Progenics Pharmaceuticals, Inc. v. MIM Software Inc.",2025-01-14,mad,posted,pleading,,2024,0,6,10665346;10973486;11657508;11721428;11894141;11941817,2021-04-11,2020-05-31,1,0,0,1,0,1,0,1
+10316308,Glanta Limited v. Soapy Care Ltd.,2025-01-16,ded,posted,pleading,,2024,0,1,8090155,2012-01-02,2012-01-02,1,0,0,0,0,0,0,0
+10319537,"Withrow Networks, Inc. v. Google, LLC",2025-01-21,cand,posted,pleading,eligible,2024,0,1,10771849,2020-09-11,2020-09-11,0,0,0,0,0,0,0,0
+10328790,"Luxer Corporation v. Parcel Pending, Inc.",2025-02-06,ded,posted,pleading,ineligible,2024,0,1,11625675,,,1,0,1,0,0,0,0,0
+10328791,"Luxer Corporation v. ButterflyMX, Inc.",2025-02-06,ded,posted,pleading,ineligible,2024,0,1,11625675,,,1,0,1,0,0,0,0,0
+10331376,Fundamental Innovation Systems International LLC v. Anker Innovations Ltd.,2025-02-11,ded,posted,summary_judgment,,2021,1,2,6936936;8624550,2014-01-04,2005-08-27,1,0,1,1,0,0,0,0
+10355101,Sterling Computers Corporation v. Microsoft Corporation,2025-02-12,txwd,posted,pleading,eligible,2024,0,1,8073911,2011-12-06,2011-12-06,1,0,1,0,0,0,0,0
+10337880,"Robocast, Inc. v. Netflix, Inc.",2025-02-21,ded,posted,summary_judgment,ineligible,2022,0,3,7155451;8606819;8965932,2015-02-22,2007-01-05,0,0,0,0,0,0,0,0
+10339422,Crystal Lagoons US Corp v. Cloward H2O,2025-02-25,utd,posted,summary_judgment,,2019,0,3,8062514;8753520;9708822,2017-07-21,2011-11-18,1,0,0,0,0,0,0,0
+10339533,"Caddo Systems, Inc. v. Jetbrains Americas, Inc.",2025-02-25,ded,posted,pleading,,2022,0,5,7191411;7640517;8352880;10037127;11182053,2021-11-22,2007-03-28,0,0,0,0,0,0,0,0
+10348082,Lightning Fitness Systems LLC v. Precor Incorporated,2025-02-28,ded,posted,pleading,ineligible,2024,1,1,9818285,2017-11-22,2017-11-22,1,0,1,0,0,0,1,0
+10349105,"Audio Pod IP, LLC v. Amazon.Com, Inc. PLEASE FILE IN THIS CASE ONLY! DO NOT FILE IN MEMBER CASE!",2025-03-03,vaed,posted,pleading,,2024,1,1,9729907,2017-08-14,2017-08-14,0,0,0,0,0,0,0,0
+10358607,"G+ Communications, LLC v. Samsung Electronics Co. LTD.",2025-03-14,txed,posted,post_trial,eligible,2022,1,1,10594443,2020-03-16,2020-03-16,1,0,1,0,0,0,0,0
+10368333,"General Electric Company v. LPP Combustion, LLC",2025-03-28,ded,posted,pleading,ineligible,2022,0,2,7435080;7934924,2011-04-26,2008-10-01,0,0,0,0,0,0,0,0
+10369510,Emerging Automotive LLC v. Kia Corporation,2025-03-31,txed,posted,pleading,eligible,2023,1,1,9171268,2015-10-27,2015-10-27,0,0,0,0,0,0,0,0
+10369782,"The Nielsen Company (US), LLC v. VideoAmp, Inc.",2025-03-31,ded,posted,pleading,ineligible,2024,1,2,11856250;11871058,,,0,0,0,0,0,0,0,0
+10369870,"Etison LLC v. HighLevel, Inc.",2025-03-31,ded,posted,pleading,ineligible,2024,1,2,10846357;11361047,2022-06-16,2020-11-22,0,0,0,0,0,0,0,0
+10369897,Language Technologies Incorporated v. Microsoft Corporation,2025-03-31,azd,posted,pleading,,2023,1,1,7069508,2006-06-24,2006-06-24,0,0,0,0,0,0,0,0
+10370163,"Maxell, Ltd. v. TCL ELECTRONICS HOLDINGS LTD., (F/K/A TCL MULTIMEDIA TECHNOLOGY HOLDINGS, LTD.)",2025-03-31,txed,posted,pleading,eligible,2023,0,4,10015558;10219020;10375341;10650780,2020-05-17,2018-07-04,0,0,0,0,0,0,0,0
+10370207,"Cardiacsense LTD v. Garmin International, Inc.",2025-03-31,mied,posted,pleading,,2024,0,1,7980998,2011-07-09,2011-07-09,0,0,0,0,0,0,0,0
+10371807,"Scale Video Coding LLC v. Cisco Systems, Inc.",2025-04-02,txed,posted,pleading,eligible,2023,1,1,11019372,2021-05-29,2021-05-29,1,0,0,1,0,0,0,0
+10373328,"LaVoult.com, LLC v. Meta Platforms, Inc.",2025-04-04,cand,posted,pleading,ineligible,2024,1,1,8751594,2014-06-13,2014-06-13,0,0,0,0,0,0,0,0
+11020127,"Network Apps, LLC, a Washington limited liability company, Kyle Schei, and John Wantz, individuals v. AT&T Mobility LLC, a Delaware limited liability company, and AT&T Services, Inc., a Delaware corporation",2025-04-15,nysd,posted,pleading,,2021,1,2,9438728;9723462,2017-08-07,2016-09-06,1,0,0,0,0,0,1,0
+11020137,"Network Apps, LLC, a Washington limited liability company, KYLE SCHEI, and JOHN WANTZ, individuals v. AT&T MOBILITY LLC, a Delaware limited liability company and AT&T SERVICES, INC., a Delaware corporation",2025-04-15,nysd,posted,pleading,,2021,1,2,9438728;9723462,2017-08-07,2016-09-06,1,0,0,0,0,0,1,0
+10384902,Weple IP Holdings LLC v. Meta Platforms Inc,2025-04-24,wawd,posted,pleading,ineligible,2024,1,3,11734730;11966952;12131356,,,0,0,0,0,0,0,0,0
+10397630,"Globalprivatequity.com, Inc. v. The Debt Exchange, Inc.",2025-04-28,mad,posted,pleading,,2024,0,3,7526444;7877319;8694418,2014-04-02,2009-04-28,1,1,1,0,1,0,0,0
+10415127,Fraud Free Transactions LLC v. Ping Identity Corporation,2025-04-29,ded,posted,pleading,ineligible,2024,1,2,11551215;12093950,2023-01-13,2023-01-13,1,1,0,0,1,0,0,0
+10434069,"BOUNTS TECHNOLOGIES LTD. v. CONNECTIFY, INC, ETAL",2025-04-30,paed,posted,pleading,eligible,2023,0,1,9258309,2016-02-06,2016-02-06,1,0,0,1,0,0,0,0
+10584376,VoiceAge EVS LLC v. HMD Global Oy,2025-05-14,ded,posted,pleading,eligible,2019,1,2,8990073;9852741,2017-12-31,2015-03-23,0,0,0,0,0,0,0,0
+10595881,"OpenSesame, Inc. v. GO1 Pty, Ltd.",2025-05-30,ord,posted,pleading,,2021,0,0,,,,0,0,0,0,0,0,0,0
+10596231,"eChanging Barcode, LLC v. MLB Advanced Media L.P.",2025-05-30,nysd,posted,pleading,eligible,2024,1,1,9047715,2015-06-02,2015-06-02,1,0,0,0,1,0,0,0
+10604984,Carbon Autonomous Robotic Systems Inc. v. Laudando & Assoc.,2025-06-13,caed,posted,post_trial,,2024,0,2,12219948;12240372,,,0,0,0,0,0,0,0,0
+10614727,P2I Ltd. v. Favored Tech USA Corporation,2025-06-20,cand,posted,pleading,ineligible,2023,0,2,8389070;11041087,2021-06-21,2013-03-05,1,0,0,0,0,0,0,0
+10616679,"EcoFactor, Inc. v. Google LLC",2025-06-24,cand,posted,pleading,ineligible,2024,0,1,11835394,,,0,0,0,0,0,0,0,0
+10618313,"LookSmart Group, Inc. v. Google, LLC",2025-06-26,cand,posted,pleading,ineligible,2024,0,1,7356530,2008-04-06,2008-04-06,1,0,1,0,0,0,0,0
+10620534,"Torus Ventures LLC v. Cawley Partners, LLC",2025-06-30,txed,posted,pleading,ineligible,2024,1,1,7203844,2007-04-25,2007-04-25,1,0,0,1,1,0,0,0
+10620668,Linden v. ResMed Inc.,2025-06-30,casd,posted,pleading,ineligible,2024,0,1,9639150,2017-05-02,2017-05-02,1,0,0,1,0,1,1,0
+10621667,"Enovsys LLC v. Uber Technologies, Inc.",2025-06-30,cand,posted,pleading,,2023,1,3,6441752;6756918;7199726,2007-04-16,2002-08-16,0,0,0,0,0,0,0,0
+10621669,"Enovsys LLC v. Lyft, Inc.",2025-06-30,cand,posted,pleading,,2023,1,3,6441752;6756918;7199726,2007-04-16,2002-08-16,0,0,0,0,0,0,0,0
+10624230,Clear Imaging Research LLC v. Google LLC,2025-07-07,casd,posted,pleading,ineligible,2025,1,7,9013587;9800788;9860450;10171740;11165961;11457149;11595583,2022-10-02,2015-04-21,1,0,1,0,0,1,1,0
+10625475,"Arkose Labs Holdings, Inc. v. DataDome",2025-07-08,ded,posted,pleading,,2023,1,6,9148427;9558340;10082954;10147049;10599330;11227232,2022-01-13,2015-10-01,0,0,0,0,0,0,0,0
+10632185,"WINVIEW, INC. v. FANDUEL, INC.",2025-07-11,njd,posted,pleading,eligible,2021,0,4,9878243;9993730;10721543;10806988,2020-10-15,2018-01-29,1,0,0,0,0,0,0,0
+10633928,"Aon Re, Inc. v. Zesty.ai, Inc.",2025-07-15,ded,posted,pleading,eligible,2025,0,4,10529029;10650285;11030491;11195058,2021-12-07,2020-01-10,0,0,0,0,0,0,0,0
+10634987,"Corrigent Corporation v. Cisco Systems, Inc.",2025-07-16,txwd,posted,pleading,ineligible,2022,0,2,6957369;7113485,2006-10-02,2005-10-13,1,0,0,1,0,0,0,0
+10638486,"Yieldmo, Inc. v. Teads, Inc.",2025-07-21,nysd,posted,pleading,ineligible,2025,0,4,10832729;10832730;11604918;12271683,2020-11-09,2020-11-09,1,0,1,0,0,0,0,0
+10638924,"Nielsen Company (US), LLC v. Hyphametrics, Inc.",2025-07-22,ded,posted,summary_judgment,eligible,2023,1,3,10970588;11652901;11893782,2021-04-08,2021-04-08,1,0,0,1,0,1,1,0
+10643009,Media Content Protection LLC v. Realtek Semiconductor Corp.,2025-07-28,ded,posted,pleading,ineligible,2020,1,1,10298564,2019-05-21,2019-05-21,1,0,0,0,1,0,0,0
+10645800,"Daedalus Blue, LLC v. Dropbox, Inc.",2025-07-31,ded,posted,pleading,,2024,1,3,7542957;8131726;8176269,2012-05-08,2009-06-04,1,0,1,1,0,0,0,1
+10648397,"Omnitracs, LLC v. Motive Technologies, Inc.",2025-08-05,cand,posted,post_trial,,2023,1,0,,,,0,0,0,0,0,0,0,0
+10649137,British Telecommunications plc v. IAC/INTERACTIVECORP,2025-08-05,ded,posted,summary_judgment,ineligible,2018,0,1,7243105,2007-07-23,2007-07-23,0,0,0,0,0,0,0,0
+10651342,"Netflix, Inc. v. Broadcom Inc.",2025-08-08,cand,posted,pleading,ineligible,2024,0,5,7779424;7797707;8185893;8799891;8863122,2014-10-19,2010-08-19,1,0,0,0,0,1,1,0
+10651960,Wiesel v. Apple Inc.,2025-08-11,nyed,posted,pleading,ineligible,2019,0,1,7020514,2006-03-05,2006-03-05,0,0,0,0,0,0,0,0
+10656112,Stodge Inc. d/b/a Postscript v. Attentive Mobile Inc.,2025-08-18,ded,posted,summary_judgment,,2023,0,1,11709660,,,0,0,0,0,0,0,0,0
+10666689,"Bootler, LLC v. Google, LLC",2025-09-04,ilnd,posted,pleading,ineligible,2024,1,1,10445683,2019-10-17,2019-10-17,1,0,1,1,0,0,0,0
+10667223,"All Terminal Services, LLC v. Roboflow, Inc.",2025-09-05,ded,posted,pleading,ineligible,2025,1,3,12020148;12217183;12254439,,,0,0,0,0,0,0,0,0
+10668155,"ImagineAR, Inc. v. Niantic, Inc.",2025-09-08,ded,posted,pleading,ineligible,2024,0,5,8579710;8668592;8777746;10946284;12070691,2021-03-12,2013-11-09,1,1,1,0,0,0,0,0
+10669646,"Gamehancement LLC v. FOOTAGE FIRM, INC.",2025-09-10,vaed,posted,pleading,ineligible,2024,1,1,7102643,2006-09-07,2006-09-07,1,0,1,0,0,0,1,0
+10678642,"TEDESCO v. SPOONFLOWER, INC.",2025-09-26,ncmd,posted,pleading,ineligible,2023,0,2,7310885;7409769,2008-08-04,2007-12-24,0,0,0,0,0,0,0,0
+10678957,"Aspen Networks, Inc. v. AT&T Inc.",2025-09-26,txed,posted,pleading,eligible,2023,0,1,8009554,2011-08-24,2011-08-24,0,0,0,0,0,0,0,0
+10688156,"Osseo Imaging, LLC v. Dentsply Sirona Inc.",2025-09-29,nyed,posted,pleading,eligible,2023,1,3,6381301;6944262;8498374,2013-07-29,2002-04-04,0,0,0,0,0,0,0,0
+10690881,"ART Research and Technology LLC v. Google, LLC",2025-09-29,cand,posted,pleading,,2024,1,4,9451001;10084840;10609442;10681103,2020-06-15,2016-09-20,1,0,1,1,0,1,1,1
+11021130,"Linfo IP, LLC v. Aero Global, LLC",2025-10-15,nysd,posted,pleading,,2024,1,1,9092428,2015-07-27,2015-07-27,0,0,0,0,0,0,0,0
+10741795,"Ameranth, Inc. v. DoorDash, Inc.",2025-11-24,ded,posted,pleading,ineligible,2025,0,1,11276130,2022-03-10,2022-03-10,0,0,0,0,0,0,0,0
+10742425,Media Content Protection LLC v. Intel Corp.,2025-11-25,ded,posted,summary_judgment,ineligible,2020,1,2,9436809;10091186,2018-09-28,2016-09-04,1,0,0,0,1,0,0,0
+10743562,"OpenTV, Inc. v. Pinterest, Inc.",2025-11-26,ded,posted,pleading,eligible,2024,0,4,7055169;7669212;9699503;10419817,2019-09-21,2006-05-23,1,0,0,0,0,0,0,0
+10744907,"VirtaMove, Corp. v. Google LLC",2025-11-28,cand,posted,pleading,,2025,0,2,7519814;7784058,2010-08-25,2009-04-13,0,0,0,0,0,0,0,0
+10745590,"HFT Solutions, LLC v. Citadel Securities LLC",2025-12-01,ilnd,posted,pleading,eligible,2024,1,3,10931286;11128305;11575381,2021-09-22,2021-02-23,0,0,0,0,0,0,0,0
+10749030,Clear Imaging Research LLC v. Google LLC,2025-12-04,casd,posted,pleading,ineligible,2025,1,7,9013587;9800788;9860450;10171740;11165961;11457149;11595583,2022-10-02,2015-04-21,1,0,1,0,0,1,1,0
+10758766,"ZoomInfo Technologies LLC v. Zenleads Inc., d/b/a Apollo.IO",2025-12-15,ded,posted,pleading,eligible,2025,1,2,10380609;11392964,2022-07-23,2019-08-12,1,0,0,1,0,0,0,1
+10852280,"Iron Bird, LLC v. Red Cat Holdings, LLC",2026-01-20,nvd,posted,pleading,eligible,2025,1,1,7400950,2008-07-15,2008-07-15,0,0,0,0,0,0,0,0
+10779273,"Cal Bridge, Inc. v. OneCal",2026-01-24,flsd,posted,pleading,,2024,0,1,11461739,2022-10-07,2022-10-07,1,0,0,0,1,0,0,0
+10780207,"Partner One Acquisitions Inc. v. Whatfix Private Limited, Whatfix, Inc.",2026-01-27,ded,posted,pleading,ineligible,2025,0,2,8087007;9285948,2016-03-09,2011-12-28,0,0,0,0,0,0,0,0
+10874540,Internet Payments Patents Ltd. v. PayPal Inc.,2026-01-27,cand,posted,pleading,ineligible,2025,1,1,7483858,2009-01-20,2009-01-20,1,0,0,1,0,0,0,0
+10780980,"OptiMorphix, Inc. v. Akamai Technologies, Inc.",2026-01-28,ded,posted,pleading,,2024,0,7,7099273;7616559;9167021;9275167;9894361;9936040;10412388,2019-09-13,2006-08-31,1,0,0,1,1,0,0,0
+10785789,"Nextcea Inc. v. Lipotype, Inc.; Lipotype GmbH",2026-02-06,mad,posted,pleading,ineligible,2024,0,1,8313949,2012-11-19,2012-11-19,1,0,0,0,0,0,0,0
+10893482,Universal Connectivity Technologies Inc. v. HP Inc.,2026-02-09,cand,posted,pleading,eligible,2024,1,2,7154905;7746798,2010-06-28,2007-01-04,0,0,0,0,0,0,0,0
+11022037,"Bprotocol Foundation, et al. v. Universal Navigation, Inc., et al.",2026-02-10,nysd,posted,pleading,ineligible,2025,0,2,11107049;11574291,2021-08-30,2021-08-30,0,0,0,0,0,0,0,0
+10793047,"The Nielsen Company (US), LLC v. VideoAmp, Inc.",2026-02-12,ded,posted,pleading,ineligible,2025,1,1,12063402,,,1,0,1,0,0,0,1,0
+10813101,"Local Interest, LLC v. PetSmart LLC",2026-02-20,txed,posted,pleading,eligible,2025,1,2,7532899;8774834,2014-07-13,2009-05-12,0,0,0,0,0,0,0,0
+10804690,"Nokia Technologies OY v. Warner Bros. Entertainment Inc., Warner Bros Discovery, Inc., and Home Box Office, Inc.",2026-03-05,ded,posted,pleading,eligible,2025,1,3,6950469;6968005;8050321,2011-10-29,2005-09-27,0,0,0,0,0,0,0,0
+10843074,"Random Chat, LLC v. Altra Federal Credit Union",2026-03-06,txed,posted,pleading,,2025,1,1,8402099,2013-03-21,2013-03-21,0,0,0,0,0,0,0,0
+10918870,"Missed Call, LLC v. Cloudtalk.io, Inc.",2026-03-12,nysd,posted,pleading,ineligible,2025,1,1,9531872,2016-12-29,2016-12-29,1,0,0,1,0,0,1,0
+10874979,"CentralSquare Technologies, LLC v. The National Board of Boiler and Pressure Vessel Inspectors",2026-03-17,ohsd,posted,pleading,,2025,1,1,7181304,2007-03-05,2007-03-05,0,0,0,0,0,0,0,0
+10902418,"Railware, Inc. v. Peninsula Corridor Joint Powers Board",2026-03-23,cand,posted,pleading,,2025,0,1,9517782,2016-12-12,2016-12-12,0,0,0,0,0,0,0,0
+10902687,"Lime Green Lighting, LLC v. Brilliant NextGen Inc.",2026-03-25,cand,posted,pleading,,2025,1,2,9699874;10798798,2020-10-07,2017-07-11,1,0,0,0,0,0,1,0
+10887643,"Micro-Gaming Ventures, LLC v. DraftKings, Inc.",2026-03-30,njd,posted,pleading,ineligible,2025,1,5,8545311;8632392;8734231;11783679;12266244,2014-05-22,2013-09-26,0,0,0,0,0,0,0,0
+10896885,"Pay As You Go, LLC v. Verifone, Inc.",2026-03-30,flmd,posted,pleading,,2025,1,1,7013127,2006-02-16,2006-02-16,0,0,0,0,0,0,0,0
+10905055,"Evolution Malta Limited, et al. v. Light & Wonder, Inc., et al.",2026-03-30,nvd,posted,pleading,ineligible,2024,0,0,,,,0,0,0,0,0,0,0,0
+10838644,"Secure Authentication Technologies LLC v. Plaid, Inc.",2026-04-01,utd,posted,pleading,,2025,1,1,11315090,2022-04-24,2022-04-24,1,1,0,0,0,0,0,0
+10905701,"Evolution Malta Limited, et al. v. Light & Wonder, Inc., et al.",2026-04-06,nvd,posted,pleading,ineligible,2024,0,1,9905074,2018-03-01,2018-03-01,0,0,0,0,0,0,0,0
+10844188,"B.E. Technology, L.L.C. v. Google LLC",2026-04-16,ded,posted,summary_judgment,,2020,1,3,8549410;8549411;8769440,2014-07-06,2013-10-01,1,1,0,0,0,0,0,0
+10892020,"Artec Europe S.À.R.L. v. Shenzhen Creality 3D Technology Co., Ltd., and Shenzhen Jimuyida Technology Co., Ltd.",2026-04-19,nyed,posted,summary_judgment,,2022,0,3,7768656;8488129;10962357,2021-03-30,2010-08-03,0,0,0,0,0,0,0,0
+10852070,"Ricoh Company, Ltd. v. Zoom Communications, Inc.",2026-05-01,ded,posted,pleading,,2025,0,7,10904487;10909059;10931917;11256464;11289093;11516278;11546548,2023-01-08,2021-01-24,1,0,1,1,0,1,1,0
+10904991,"Rich Media Club LLC v. Medianews Group, Inc.",2026-05-22,casd,posted,pleading,ineligible,2025,1,5,9824074;11004090;11468453;11741482;12125051,2022-10-14,2017-11-29,0,0,0,0,0,0,0,0
+10864534,"OnePass Data Technology LLC v. AT&T Mobility LLC and AT&T Services, Inc.",2026-05-26,ded,posted,pleading,eligible,2025,1,2,7376680;8682866,2014-03-19,2008-05-22,1,0,1,0,0,0,0,0
+10864560,OnePass Data Technology LLC v. Verizon Communications Inc. and Cellco Partnership d/b/a Verizon Wireless,2026-05-26,ded,posted,pleading,eligible,2025,1,2,7376680;8682866,2014-03-19,2008-05-22,1,0,1,0,0,0,0,0
+10867554,"The Nielsen Company (US), LLC v. TVISION INSIGHTS, INC.",2026-05-29,ded,posted,summary_judgment,,2022,1,1,7783889,2010-08-25,2010-08-25,0,0,0,0,0,0,0,0
+10867560,"Identitii Limited v. JPMorgan Chase & Co., et al.",2026-05-29,ded,posted,pleading,ineligible,2023,0,1,10984413,2021-04-22,2021-04-22,0,0,0,0,0,0,0,0
+10867575,Densys Ltd. v. Align Technology Inc.; Densys Ltd. v. Medit Corp.,2026-05-29,ded,posted,pleading,,2025,0,3,6402707;8665257;11563929,2014-02-24,2002-05-21,1,0,0,0,0,0,0,0
+10894127,"NEC Corporation v. Anker Innovations Technology Co., Ltd., and Anker Innovations Ltd. (d/b/a “eufy”)",2026-06-04,txed,posted,pleading,eligible,2024,0,4,9953240;10037467;11210526;11537814,2022-12-30,2018-04-25,0,0,0,0,0,0,0,0
+10891767,"Natsoft Corporation and Updraft, LLC v. Hexaware Technologies Limited and Hexaware Technologies, Inc.",2026-06-09,ilnd,posted,pleading,ineligible,2025,1,0,,,,0,0,0,0,0,0,0,0
+10924368,"VE OPENING LLC v. SALESFORCE, INC.",2026-06-09,txwd,posted,pleading,,2025,1,1,9916079,2018-03-13,2018-03-13,0,0,0,0,0,0,0,0
+10908874,"HOT SYSTEMS, LLC v. SAN DIEGO ASSOCIATION OF GOVERNMENTS; NEOLOGY, INC.",2026-06-15,casd,posted,pleading,eligible,2026,1,1,11270182,2022-03-03,2022-03-03,1,1,0,0,0,0,1,0
+10920915,"Ahmad Abu Elreich v. Waymo, LLC and Uber Technologies, Inc.",2026-06-22,caed,posted,pleading,ineligible,2025,0,1,11577691,,,0,0,0,0,0,0,0,0
+10900620,Authentixx LLC v. Pickleball OpCo LLC,2026-06-26,txnd,posted,pleading,ineligible,2025,1,1,10355863,2019-07-18,2019-07-18,1,0,1,0,1,0,0,0
+10955802,"DatRec, LLC v. ADP, Inc.",2026-06-29,txwd,posted,pleading,eligible,2025,1,1,8381309,2013-02-22,2013-02-22,0,0,0,0,0,0,0,0
+11030962,Vineyard Investigations v. E. & J. Gallo Winery,2026-07-02,caed,posted,summary_judgment,ineligible,2019,0,3,6947810;8528834;10645881,2020-05-12,2005-09-21,0,0,0,0,0,0,0,0
+10939713,"Adaptive Avenue Associates, Inc. v. eBay Inc.",2026-07-22,ded,posted,pleading,ineligible,2025,0,2,7171629;7428707,2008-09-16,2007-02-11,0,0,0,0,0,0,0,0
+10940126,"Lab Technology LLC v. Greenlight Financial Technology, Inc.",2026-07-23,ded,posted,pleading,ineligible,2025,1,3,6983313;8903067;9219982,2015-12-23,2005-12-10,0,0,0,0,0,0,0,0
+11023324,"Network-1 Technologies, Inc. v. Google, Inc. and YouTube, LLC",2026-07-24,nysd,posted,summary_judgment,eligible,2014,1,0,,,,0,0,0,0,0,0,0,0
+10958205,"CoStar Realty Information, Inc. v. Modern Font Applications LLC",2026-08-03,cand,posted,pleading,ineligible,2021,0,0,,,,0,0,0,0,0,0,0,0
+10958206,"Duolingo, Inc. v. Modern Font Applications LLC",2026-08-03,cand,posted,pleading,ineligible,2021,0,0,,,,0,0,0,0,0,0,0,0
+10945607,"Haemonetics Corporation v. Terumo BCT, Inc.",2026-08-07,cod,posted,pleading,eligible,2025,0,0,,,,1,0,0,0,0,0,0,0
+10961764,"ShopSee, Inc. v. TikTok Inc.",2026-08-13,cand,posted,pleading,ineligible,2026,0,1,11134316,2021-09-28,2021-09-28,1,1,0,0,0,0,0,0
+10959613,Linfo IP LLC v. ZipRecruiter Incorporated,2026-08-26,azd,posted,pleading,ineligible,2025,1,1,9665641,2017-06-02,2017-06-02,0,0,0,0,0,0,0,0
+10964140,"Audacious Inquiry LLC, et al. v. Chesapeake Regional Information System for Our Patients, et al.",2026-08-31,mdd,posted,pleading,,2025,1,3,10938962;11114194;12047475,2021-09-07,2021-03-04,1,0,1,1,0,0,0,0
+10965564,Range Energy Inc. v. Hyliion Inc.,2026-09-01,cand,posted,pleading,,2026,0,2,10821853;12024029,2020-10-29,2020-10-29,1,0,0,0,0,0,1,0
+10975203,"Concurrent Ventures, LLC, et al. v. Advanced Micro Devices Inc., et al.",2026-09-15,cand,posted,pleading,eligible,2025,1,2,9529767;10944634,2021-03-10,2016-12-27,0,0,0,0,0,0,0,0
+10977623,"I3LOGIX, INC. v. ENHANCED VOTING LLC",2026-09-17,flmd,posted,pleading,,2026,0,2,11670127;12340633,,,1,0,0,0,0,0,0,0
+10983811,"ImageSails, LLC v. Precision Sails",2026-09-24,cand,posted,summary_judgment,,2025,1,2,10196119;10618618,2020-04-11,2019-01-26,1,0,0,0,0,0,0,0
+11045169,Intellectual Ventures I LLC and Intellectual Ventures II LLC v. Southwest Airlines Co.,2026-09-24,txnd,posted,pleading,,2025,1,0,,,,0,0,0,0,0,0,0,0
+11045567,"Modopayments, LLC v. Volvo Financial Services LLC, a division of VFS US LLC",2026-09-25,ded,posted,pleading,,2024,1,1,11216805,2022-01-01,2022-01-01,1,1,0,0,0,0,0,0
+10986232,"Ahmad Abu Elreich v. Waymo, LLC and Uber Technologies, Inc.",2026-09-28,caed,posted,pleading,,2025,0,2,11577691;12432567,,,0,0,0,0,0,0,0,0
+10987989,"Induction Devices LLC v. Dick’s Sporting Goods, Inc.; Induction Devices LLC v. BPS Direct, LLC d/b/a Bass Pro Shops and Cabela’s LLC",2026-09-29,txed,posted,pleading,eligible,2025,1,0,,,,0,0,0,0,0,0,0,0
+11007272,"Sharon Tedesco, et al. v. Spoonflower, Inc., et al.",2026-09-30,ncmd,posted,pleading,,2023,0,2,7310885;7409769,2008-08-04,2007-12-24,0,0,0,0,0,0,0,0
+11007802,"Haemonetics Corporation v. Terumo BCT, Inc.",2026-09-30,cod,posted,pleading,,2025,0,0,,,,0,0,0,0,0,0,0,0
+11007998,Language Technologies Incorporated v. Microsoft Corporation,2026-09-30,azd,posted,pleading,,2023,1,2,7069508;7346489,2008-03-14,2006-06-24,0,0,0,0,0,0,0,0
+11008547,"Samsung Electronics Co., Ltd., et al. v. Blaze Mobile, Inc., et al.",2026-09-30,cand,posted,pleading,,2021,0,0,,,,0,0,0,0,0,0,0,0
+11008791,"Cedar Lane Technologies v. City National Rochdale, LLC",2026-09-30,nysd,posted,pleading,ineligible,2025,1,1,8577782,2013-11-06,2013-11-06,1,1,0,0,0,0,0,0
+11034273,"Bitharmony LLC v. Warner Bros. Discovery, Inc., Warner Bros. Home Entertainment Inc., WarnerMedia Direct, LLC, and Home Box Office, Inc.",2026-10-14,ded,posted,pleading,,2026,1,4,7707485;9258605;9641322;9826259,2017-12-01,2010-04-24,1,0,1,1,0,1,1,0
+11039761,"TQ Delta, LLC v. Dish Network Corporation, Dish Network LLC, Dish DBS Corporation, EchoStar Corporation, and EchoStar Technologies, L.L.C.",2026-10-19,ded,posted,summary_judgment,,2015,1,2,8718158;9014243,2015-04-22,2014-05-02,0,0,0,0,0,0,0,0
+11046695,"Fleet Connect Solutions LLC v. Xirgo Technologies, LLC and Xirgo Holdings, Inc.",2026-10-26,ilnd,posted,pleading,eligible,2026,1,7,6549583;6941223;7206837;7741968;9299044;9747565;10671949,2020-06-06,2003-04-11,0,0,0,0,0,0,0,0
+11051134,"SecureNet Solutions Group, LLC v. Siemens Industry, Inc.",2026-10-30,ilnd,posted,pleading,eligible,2026,1,5,10587460;10862744;11323314;11929870;12375342,2022-05-04,2020-03-09,0,0,0,0,0,0,0,0
+11057417,"DiStefano Website Innovations, LLC v. Bytedance LTD, et al.",2026-11-06,cand,posted,pleading,ineligible,2025,1,1,11763316,,,0,0,0,0,0,0,0,0
+11058169,"Tir Technologies Limited v. Netflix, Inc.",2026-11-09,ded,posted,pleading,eligible,2026,1,3,9800633;10375444;10484442,2019-11-25,2017-11-02,1,0,0,0,0,1,0,0
+11058182,"Mistwood Partnership v. DocuSign, Inc.",2026-11-09,ded,posted,pleading,,2026,1,3,8799385;8799386;8924495,2015-01-02,2014-08-09,0,0,0,0,0,0,0,0
