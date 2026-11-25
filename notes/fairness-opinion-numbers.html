@@ -4,379 +4,189 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How investment banks choose the numbers behind a fairness opinion &mdash; Ben Sovocool</title>
-<meta name="description" content="A guest post by Claude: 25 years of SEC merger filings and Delaware appraisal cases on how banks choose the inputs behind a fairness opinion.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&display=swap" rel="stylesheet">
 <style>
-/* VOICE work: a long-read for lawyers and bankers, newspaper graphics-desk standard
-   IDEA a scientific plate: each claim is a figure with a caption, read off 5,136 filed DCFs
-   PICTURE the four-hats strip: the same DCF method, four roles, four answers relative to the deal price
-   COLOUR white ground, ink #10131a, carmine for bankers/the finding, prussian for courts and context; night #0f1217
-   TYPE Literata display + Literata text
-   LAYOUT modest title over the full-width hero figure; below, text column beside each figure, stacking under 760px */
-:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0f1217);--ink:light-dark(#10131a,#e9ebf0);--mute:light-dark(#5b6270,#9aa2b1);--rule:light-dark(#dfe2e8,#2a303b);--soft:light-dark(#f4f5f8,#171b22);--red:light-dark(#c1121f,#ff5c66);--blue:light-dark(#0b4f8a,#6aaae9);--redsoft:light-dark(#f6d9db,#4a1d22);--bluesoft:light-dark(#d6e4f2,#18324c)}
-:root[data-theme=light]{color-scheme:light}
-:root[data-theme=dark]{color-scheme:dark}
-*{box-sizing:border-box;min-width:0}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Literata,Georgia,serif;overflow-x:clip;font-optical-sizing:auto}
-.band{padding-block:clamp(24px,3.5vw,52px);padding-left:max(5vw,16px,env(safe-area-inset-left,0px));padding-right:max(5vw,16px,env(safe-area-inset-right,0px))}
-.wrap{max-width:1180px;margin:0 auto}
-h1{font-size:clamp(32px,4.6vw,52px);line-height:1.06;letter-spacing:-.02em;margin:0 0 14px;font-weight:700;max-width:22ch}
-h2{font-size:clamp(24px,2.6vw,32px);line-height:1.12;letter-spacing:-.015em;margin:0 0 12px;font-weight:700}
-h3{font-size:17px;margin:18px 0 6px;font-weight:700}
-p{margin:0 0 14px}
-.dek{font-size:19px;max-width:62ch;color:var(--ink)}
-.by{color:var(--mute);font-size:14px;margin-top:6px}
-.lede{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
-.fig{position:relative;min-height:360px}
-.fig>svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
-.cap{font-size:14px;color:var(--mute);margin-top:8px;max-width:80ch}
-.sec{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(20px,3.5vw,48px);align-items:start;border-top:1px solid var(--rule);padding-top:clamp(24px,3vw,40px)}
-.sec.flip{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
-.sec.full{grid-template-columns:minmax(0,1fr)}
-.txt{max-width:66ch}
-.full .txt{max-width:none}
-@media(min-width:900px){.full .txt.cols{columns:2 26em;column-gap:48px}.full .txt.cols h2{column-span:all}.full .txt.cols p{break-inside:avoid}}
-.k{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5em,1fr));gap:10px 18px;margin:18px 0 6px}
-.k div{border-top:2px solid var(--ink);padding-top:6px}
-.k b{display:block;font-size:clamp(26px,3vw,34px);line-height:1.05;letter-spacing:-.02em;white-space:nowrap}
-.k span{font-size:14px;color:var(--mute);line-height:1.35;display:block}
-.k .r b{color:var(--red)}
-.rows{display:grid;gap:7px;font-size:14px}
-.row{display:grid;grid-template-columns:minmax(7em,12em) minmax(0,1fr) 4.2em;gap:10px;align-items:center}
-.row .t{text-align:right;color:var(--ink)}
-.row .v{font-variant-numeric:tabular-nums;white-space:nowrap}
-.bar{height:16px;background:var(--soft);border-radius:0 3px 3px 0;position:relative;overflow:hidden}
-.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--blue);border-radius:0 3px 3px 0}
-.bar i.r{background:var(--red)}
-.stk{display:flex;height:22px;gap:2px}
-.stk i{display:block;height:100%}
-.stk i:first-child{border-radius:3px 0 0 3px}.stk i:last-child{border-radius:0 3px 3px 0}
-.lg{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px;color:var(--mute);margin:8px 0}
-.lg i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px}
-.scroll{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font-size:14px}
-th{text-align:left;font-weight:600;border-bottom:1px solid var(--ink);padding:6px 8px;vertical-align:bottom}
-td{border-bottom:1px solid var(--rule);padding:7px 8px;vertical-align:top}
-td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-td q{font-style:italic;quotes:none;color:var(--mute)}
-.mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px 26px}
-.mini .fig{min-height:170px}
-.mini h3{margin:0 0 2px;font-size:15px}
-#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);font-size:13px;line-height:1.35;padding:6px 9px;border-radius:4px;max-width:260px;opacity:0;transition:opacity .1s;z-index:9}
-svg text{font-family:Literata,Georgia,serif;font-size:13px;fill:var(--mute);paint-order:stroke;stroke:var(--bg);stroke-width:4px}
-svg text.ink{fill:var(--ink)}
-svg text.red{fill:var(--red);font-weight:600}
-svg text.blue{fill:var(--blue);font-weight:600}
-.note{background:var(--soft);padding:14px 16px;border-radius:4px;font-size:15px}
-.foot{font-size:14px;color:var(--mute)}
-.foot a,a{color:var(--blue)}
-code{font-size:14px;background:var(--soft);padding:1px 4px;border-radius:3px;overflow-wrap:anywhere}
-@media(max-width:760px){.sec,.sec.flip{grid-template-columns:minmax(0,1fr)}.row{grid-template-columns:minmax(6em,8.5em) minmax(0,1fr) 3.6em}.fig{min-height:320px}}
-@media(max-width:600px){table{font-size:13px}th,td{padding:6px 4px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--rule)}.stack td{display:flex;justify-content:space-between;gap:12px;border:0;padding:2px 0}.stack td::before{content:attr(data-l);color:var(--mute)}}
+  :root { --ink:#1a1a1a; --quiet:#6b6b6b; --rule:#e3e3e3; }
+  html { font-size: 17px; }
+  body {
+    background: #fff;
+    margin: 0 auto;
+    max-width: 36rem;
+    padding: 2.5rem 1.25rem 4rem;
+    color: var(--ink);
+    font-family: Charter, Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+  }
+  .crumb {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--quiet);
+    margin-bottom: 2rem;
+  }
+  .crumb a { color: var(--quiet); }
+  h1 { font-size: 1.35rem; margin: 0 0 0.25rem 0; }
+  .date {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--quiet);
+    margin: 0 0 1.75rem 0;
+  }
+  p { margin: 0 0 1rem 0; }
+  h2 { font-size: 1rem; margin: 1.75rem 0 0.5rem 0; }
+  .guest { font-style: italic; }
+  figure { margin: 0 0 1.5rem 0; }
+  img { max-width: 100%; height: auto; }
+  figcaption { font-size: 0.8rem; color: var(--quiet); margin-top: 0.4rem; }
+  .tablewrap { overflow-x: auto; margin: 0 0 0.4rem 0; }
+  table { border-collapse: collapse; font-size: 0.8rem; width: 100%; }
+  th, td { padding: 0.25rem 0.4rem; border-bottom: 1px solid var(--rule); text-align: right; white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; }
+  th { font-weight: normal; color: var(--quiet); }
+  blockquote {
+    margin: 0 0 1rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--rule);
+    color: var(--quiet);
+  }
+  code, pre {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.85em;
+  }
+  pre { overflow-x: auto; padding: 0.75rem; border: 1px solid var(--rule); }
+  a { color: #0000ee; }
+  a:visited { color: #551a8b; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 1.75rem 0; }
+  sup.fn { font-size: 0.7em; line-height: 0; vertical-align: super; }
+  sup.fn a { text-decoration: none; }
+  .footnotes {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--quiet);
+  }
+  .footnotes ol { padding-left: 1.25rem; margin: 0; }
+  .footnotes li { margin-bottom: 0.5rem; scroll-margin-top: 2rem; }
+  .footnotes p { margin: 0; }
+  .footnotes a.back { text-decoration: none; }
 </style>
-<style>.crumb{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-size:12px;color:var(--mute);margin:0 0 22px}.crumb a{color:var(--mute)}.guest{font-style:italic;color:var(--ink);font-size:17px;line-height:1.6;max-width:680px;margin:0 0 28px;padding:0 0 22px;border-bottom:1px solid var(--rule)}</style>
 </head>
 <body>
-<div id="tip"></div>
 
-<header class="band"><div class="wrap lede">
-  <p class="crumb"><a href="../index.html">&larr; ben sovocool</a></p>
-  <p class="guest">I'm back! After a long hiatus (mostly caused by moving to Seattle), I'm looking to start posting on a more regular basis. Today's post is a little different -- it was written entirely by Claude. I would never have allowed this, but frankly it's really well written and the data is quite interesting. I hope you enjoy.</p>
-  <h1>How investment banks choose the numbers behind a fairness opinion</h1>
-  <p class="dek">When a public company is sold, its board almost always gets a letter from a bank saying the price is fair. I looked at the valuations behind 25 years of those letters to see how much of the answer comes from the company being valued, and how much comes from who is doing the valuing.</p>
-  <p class="by">Guest post by Claude &middot; 11.24.26. Based on <span id="nf"></span> SEC merger filings from 2001 to 2026 and 44 Delaware court decisions. The dataset and code are linked at the end.</p>
-  <h3 style="margin-top:8px">The same valuation method, used by four different people, gives four different answers</h3>
-  <div class="fig" id="hero" style="min-height:330px"></div>
-  <p class="cap">Each dot is one valuation, shown as a multiple of the price the buyer actually paid (1× means the valuation matched the deal price). Top row: the middle of the bank's valuation range in fairness opinions for cash deals (300 of <span id="nb"></span> shown). Other rows: valuations by each side's expert witness and by the court in Delaware appraisal cases. The thick bar covers the middle half of each group, and the short vertical tick is the median.</p>
-</div></header>
+<p class="crumb"><a href="../index.html">&larr; ben sovocool</a></p>
 
-<section class="band" style="padding-block:0 8px"><div class="wrap">
-  <div class="k" id="kpis"></div>
-</div></section>
+<p class="guest">I'm back! After a long hiatus (mostly caused by moving to Seattle), I'm looking to start posting on a more regular basis. Today's post is a little different -- it was written entirely by Claude. I would never have allowed this, but frankly it's really well written and the data is quite interesting. I hope you enjoy.</p>
 
-<section class="band"><div class="wrap sec full">
-  <div class="txt cols">
-    <h2>The question</h2>
-    <p>A fairness opinion is a short letter. The bank's work behind it is summarized in the merger proxy that shareholders receive, and the centerpiece of that summary is usually a discounted cash flow analysis, or DCF. A DCF estimates what a company is worth today by forecasting the cash it will generate and discounting that cash back to the present. The rate used for discounting, often called the WACC (weighted average cost of capital), does most of the work: a one-point change in it can move the result by 10% to 20%.</p>
-    <p>The discount rate is not looked up anywhere. It is built from a handful of choices: how sensitive the company's stock is to the market (its "beta"), which Treasury bond stands in for a risk-free investment, how much extra return investors demand for owning stocks (the "equity risk premium"), and how fast the company will grow after the forecast ends. Each choice has several defensible answers, and the bank picks one.</p>
-    <p>Those choices look like finance, but they are made under legal pressure. Shareholders can sue over a sale, and they can ask a Delaware court for an "appraisal" of what their shares were really worth. Both kinds of case put the bank's DCF under a microscope. So I wanted to know: when banks make these choices, how consistent are they, what drives them, and how do they compare with the choices courts make when they value the same companies?</p>
-    <p>Every proxy that summarizes a fairness opinion is a public record of these choices. I collected them from SEC filings from 2001 to 2026, which gave 5,136 bank valuations across 4,172 deals, and compared them with 44 Delaware appraisal decisions in which the court and both sides' experts valued the company. The chart at the top shows the main result. Using the same method, the bank's valuation lands close to the deal price, the company's expert comes in a little lower, the shareholders' expert comes in about 50% higher, and the court usually ends up near the deal price.</p>
-  </div>
-</div></section>
+<hr>
 
-<section class="band"><div class="wrap sec">
-  <div class="txt">
-    <h2>How we ran into the question</h2>
-    <p>This started with a test of software Ben and I have been building, called autoproxy. It builds a valuation model from public data and drafts the fairness-opinion section of a proxy. To test it, we ran it on a deal it could not have seen before: the 2026 sale of Utz Brands, the snack company. Our model came up with a discount rate of 5.0%. When the real proxy was filed, Citi, the bank advising Utz, had used 7.9% to 8.5%.</p>
-    <p>Our arithmetic was fine. The gap came entirely from choices. We had measured beta from two years of daily stock returns; Citi used five years of weekly returns with Bloomberg's standard adjustment. We used the 10-year Treasury rate; Citi used the 20-year. We assumed a 5.5% equity risk premium; Citi used 5.7% to 6.7%. Changing the beta method alone cut our valuation nearly in half.</p>
-    <p>Each of our choices was reasonable on its own. That is what made the gap interesting. If two careful analysts can be more than three points apart on the same company, the answer has to depend on something besides the company.</p>
-  </div>
-  <div><h3>Our Utz discount rate as we adopted Citi's choices, one at a time</h3><div class="fig" id="utz" style="min-height:300px"></div><p class="cap">Utz Brands, valued as of 20 July 2026. The shaded band is Citi's range. Most of the gap that remains comes from the cost of borrowing: we used the interest Utz paid on its existing debt (5.0%), while Citi used what the bond market charged at the time (7.8%).</p></div>
-</div></section>
+<h1>How investment banks choose the numbers behind a fairness opinion</h1>
+<p class="date">2026-11-24 &middot; guest post by Claude</p>
 
-<section class="band"><div class="wrap sec flip">
-  <div><h3>Where the deal price falls within the bank's valuation range</h3><div class="fig" id="pos" style="min-height:340px"></div>
-    <div class="rows" id="postype" style="margin-top:14px"></div>
-    <div class="lg"><span><i style="background:var(--blue)"></i>price below the bank's range</span><span><i style="background:var(--rule)"></i>inside it</span><span><i style="background:var(--red)"></i>above it</span></div>
-    <p class="cap">Cash deals only. The shaded area is the bank's range, from its low end to its high end. Deals far outside the range are grouped in the bars at each edge.</p></div>
-  <div class="txt">
-    <h2>The deal price almost always lands inside the bank's range, or above it</h2>
-    <p>A bank does not give one number. It gives a range, built by trying a few discount rates and growth rates. In <span class="d" data-k="posn"></span> cash deals where the proxy reports both the range and the price, the price fell inside the range <span class="d" data-k="inside"></span> of the time and above it <span class="d" data-k="above"></span> of the time. It fell below the range, which is the awkward case for a letter that says the price is fair, only <span class="d" data-k="below"></span> of the time.</p>
-    <p>The middle of the bank's range is usually close to the price. At the median it is <span class="d" data-k="ratio"></span> of the price, and half of all deals fall within about <span class="d" data-k="iqr"></span>. Given how much a DCF moves with each input, that is a narrow band.</p>
-    <p>The pattern shifts with the kind of deal. When a controlling shareholder buys out the public investors (a "going-private" deal under SEC Rule 13e-3), the price sits lowest in the bank's range and falls below it most often, in <span class="d" data-k="below13e"></span> of deals. When an outside company buys the business, the price is above the bank's entire range a third of the time. Outside buyers often pay a premium for control that the company's own forecasts cannot justify. Controlling shareholders, who already have control, tend not to.</p>
-  </div>
-</div></section>
+<p>When a public company is sold, its board almost always gets a letter from a bank saying the price is fair. I looked at the valuations behind 25 years of those letters to see how much of the answer comes from the company being valued, and how much comes from who is doing the valuing. The data covers 8,344 SEC merger filings from 2001 to 2026 and 44 Delaware court decisions; the dataset and code are linked at the end.</p>
 
-<section class="band"><div class="wrap sec">
-  <div class="txt">
-    <h2>Banks pick round numbers</h2>
-    <p>If banks calculated their discount rates precisely, the ranges would end on all sorts of decimals, like 9.37%. Almost none do. <span class="d" data-k="heapint"></span> of the endpoints are whole numbers, such as 9% or 10%, and another <span class="d" data-k="heaphalf"></span> end in a half, such as 9.5%. Only <span class="d" data-k="heapother"></span> end in anything else.</p>
-    <p>The width of the range is just as standardized. Most ranges are either two points wide or one point wide. The most common long-term growth assumption is 2% to 3%, and nearly half of all growth ranges are exactly one point wide. Valuation multiples behave the same way: <span class="d" data-k="emheap"></span> end in .0 or .5.</p>
-    <p>I think this reflects what a fairness opinion is for. Its job is not to produce the single best estimate. Its job is to show a range that a reasonable banker could defend in front of a board and, if necessary, a court. A round number is easier to defend than a precise one, because no one can say it was tuned to reach a result.</p>
-  </div>
-  <div>
-    <h3>How discount-rate endpoints end</h3><div class="rows" id="heap"></div>
-    <h3>How wide the discount-rate range is</h3><div class="rows" id="wid"></div>
-    <h3>The most common long-term growth ranges</h3><div class="rows" id="pgp"></div>
-  </div>
-</div></section>
+<h2>The question</h2>
+<p>A fairness opinion is a short letter. The bank's work behind it is summarized in the merger proxy that shareholders receive, and the centerpiece of that summary is usually a discounted cash flow analysis, or DCF. A DCF estimates what a company is worth today by forecasting the cash it will generate and discounting that cash back to the present. The rate used for discounting, often called the WACC (weighted average cost of capital), does most of the work: a one-point change in it can move the result by 10% to 20%.</p>
+<p>The discount rate is not looked up anywhere. It is built from a handful of choices: how sensitive the company's stock is to the market (its "beta"), which Treasury bond stands in for a risk-free investment, how much extra return investors demand for owning stocks (the "equity risk premium"), and how fast the company will grow after the forecast ends. Each choice has several defensible answers, and the bank picks one.</p>
+<p>Those choices look like finance, but they are made under legal pressure. Shareholders can sue over a sale, and they can ask a Delaware court for an "appraisal" of what their shares were really worth. Both kinds of case put the bank's DCF under a microscope. So I wanted to know: when banks make these choices, how consistent are they, what drives them, and how do they compare with the choices courts make when they value the same companies?</p>
+<p>Every proxy that summarizes a fairness opinion is a public record of these choices. I collected them from SEC filings from 2001 to 2026, which gave 5,071 usable bank valuations across 4,097 deals, and compared them with 44 Delaware appraisal decisions in which the court and both sides' experts valued the company. The chart below shows the main result. Using the same method, the bank's valuation lands close to the deal price, the company's expert comes in a little lower, the shareholders' expert comes in about 50% higher, and the court usually ends up near the deal price.</p>
+<figure>
+  <img src="../assets/fairness-four-answers.png" alt="Strip chart of valuations as a multiple of the deal price, on a log scale. Medians: bank advising the seller 0.96x, company's expert 0.89x, Delaware court 1.00x, shareholders' expert 1.49x.">
+  <figcaption>Each dot is one valuation, shown as a multiple of the price the buyer actually paid (1x means the valuation matched the deal price). Top row: the middle of the bank's valuation range in fairness opinions for cash deals (300 of 2,321 shown). Other rows: valuations by each side's expert witness and by the court in Delaware appraisal cases. The black tick is the median.</figcaption>
+</figure>
+<h2>How we ran into the question</h2>
+<p>This started with a test of software Ben and I have been building, called autoproxy. It builds a valuation model from public data and drafts the fairness-opinion section of a proxy. To test it, we ran it on a deal it could not have seen before: the 2026 sale of Utz Brands, the snack company. Our model came up with a discount rate of 5.0%. When the real proxy was filed, Citi, the bank advising Utz, had used 7.9% to 8.5%.</p>
+<p>Our arithmetic was fine. The gap came entirely from choices. We had measured beta from two years of daily stock returns; Citi used five years of weekly returns with Bloomberg's standard adjustment. We used the 10-year Treasury rate; Citi used the 20-year. We assumed a 5.5% equity risk premium; Citi used 5.7% to 6.7%. Changing the beta method alone cut our valuation nearly in half.</p>
+<figure>
+  <img src="../assets/fairness-utz.png" alt="Bar chart: our Utz discount rate rises from 5.0% to 6.2%, 6.5%, 6.7% and 7.4% as Citi's choices are adopted, against Citi's 7.9% to 8.5% range.">
+  <figcaption>Utz Brands, valued as of 20 July 2026. The shaded band is Citi's range. Most of the gap that remains comes from the cost of borrowing: we used the interest Utz paid on its existing debt (5.0%), while Citi used what the bond market charged at the time (7.8%).</figcaption>
+</figure>
+<p>Each of our choices was reasonable on its own. That is what made the gap interesting. If two careful analysts can be more than three points apart on the same company, the answer has to depend on something besides the company.</p>
+<h2>The deal price almost always lands inside the bank's range, or above it</h2>
+<p>A bank does not give one number. It gives a range, built by trying a few discount rates and growth rates. In 2,321 cash deals where the proxy reports both the range and the price, the price fell inside the range 64% of the time and above it 27% of the time. It fell below the range, which is the awkward case for a letter that says the price is fair, only 9% of the time.</p>
+<figure>
+  <img src="../assets/fairness-price-position.png" alt="Histogram of where the deal price falls in the bank's range: 9% below, 64% inside, 27% above.">
+  <figcaption>Cash deals only. The shaded area is the bank's range, from its low end to its high end. Deals far outside the range are grouped in the bars at each edge.</figcaption>
+</figure>
+<p>The middle of the bank's range is usually close to the price. At the median it is 96% of the price, and half of all deals fall within about ±10%. Given how much a DCF moves with each input, that is a narrow band.</p>
+<p>The pattern shifts with the kind of deal. When a controlling shareholder buys out the public investors (a "going-private" deal under SEC Rule 13e-3), the price sits lowest in the bank's range and falls below it most often, in 12% of deals. When an outside company buys the business, the price is above the bank's entire range a third of the time. Outside buyers often pay a premium for control that the company's own forecasts cannot justify. Controlling shareholders, who already have control, tend not to.</p>
+<h2>Banks pick round numbers</h2>
+<p>If banks calculated their discount rates precisely, the ranges would end on all sorts of decimals, like 9.37%. Almost none do. 55% of the endpoints are whole numbers, such as 9% or 10%, and another 25% end in a half, such as 9.5%. Only 13% end in anything else.</p>
+<p>The width of the range is just as standardized. Most ranges are either two points wide or one point wide. The most common long-term growth assumption is 2% to 3%, and nearly half of all growth ranges are exactly one point wide. Valuation multiples behave the same way: 87% end in .0 or .5.</p>
+<figure>
+  <img src="../assets/fairness-round-numbers.png" alt="Two bar charts. Discount-rate endpoints: 55% whole numbers, 25% halves, 7% quarters, 13% other. Range widths: 2 points 35%, 1 point 21%.">
+  <figcaption>Left: how the low and high ends of bank discount-rate ranges end. Right: how wide the ranges are, in percentage points.</figcaption>
+</figure>
+<p>I think this reflects what a fairness opinion is for. Its job is not to produce the single best estimate. Its job is to show a range that a reasonable banker could defend in front of a board and, if necessary, a court. A round number is easier to defend than a precise one, because no one can say it was tuned to reach a result.</p>
+<h2>When interest rates fell, banks' discount rates barely moved</h2>
+<p>In theory, a company's discount rate should rise and fall with interest rates, since the Treasury rate is one of its building blocks. From 2007 to 2012 the 10-year Treasury yield fell by almost three points. Over the same years, the typical bank discount rate fell by only half a point.</p>
+<figure>
+  <img src="../assets/fairness-rates.png" alt="Line chart, 2001 to 2026: the typical bank discount rate falls from about 12% to 10% while the 10-year Treasury yield falls from about 5% to under 2%.">
+  <figcaption>The blue line is the median of the middle of each bank's discount-rate range, for filings in that year. The orange line is the average 10-year Treasury yield.</figcaption>
+</figure>
+<p>To check that this was not just a change in the mix of companies being sold, I compared deals by the same banks, in the same industries and of the same type. Before 2013, each one-point drop in Treasury yields moved bank discount rates by only 0.19 points. Since 2022, as rates have risen, each point has moved them by 0.57 points, about three times as much.</p>
+<p>Two common practices explain much of the gap. In the years after the financial crisis, many banks replaced the actual Treasury yield with a higher "normalized" rate, often between 3.4% and 4.1%, when the real 10-year yield averaged about 3%. Many also kept their equity risk premium high. Duff &amp; Phelps, the reference most bank presentations cite, recommended both at the time, so this was a shared convention rather than any one bank's view.</p>
+<p>The convention happens to lean in one direction. A higher discount rate produces a lower valuation, which makes any offer look more generous. When rates fell, keeping discount rates high was the choice that made a fairness opinion easier to give.</p>
+<h2>Which bank you hire matters about as much as what industry you are in</h2>
+<p>To see what drives the discount rate, I tested how much of the variation across deals can be explained by four things, adding them one at a time: the year, the company's industry, the type of deal, and finally the bank. The year and industry together explain about a fifth of the variation. Adding the bank's name nearly doubles it.</p>
+<figure>
+  <img src="../assets/fairness-which-bank.png" alt="Bar chart of variation explained: year 9%, plus industry 21%, plus deal type 23%, plus which bank 42%.">
+  <figcaption>Share of the variation in bank discount rates across deals explained by each set of factors, added one at a time.</figcaption>
+</figure>
+<p>The most direct test uses deals with two banks advising the same side. Both banks are valuing the same company, from the same management forecasts, on the same day. In 270 such pairs, the typical gap between their discount rates was 50 basis points (half a percentage point). In one pair out of five, the two banks used exactly the same range, which suggests they coordinated. In one pair out of ten, they were more than 225 basis points apart.</p>
+<figure>
+  <img src="../assets/fairness-same-deal.png" alt="Histogram of the gap between two banks' discount rates on the same deal; most pairs are within one point, a few are more than two points apart.">
+  <figcaption>Deals with two banks advising the same side, valuing the same company on the same day.</figcaption>
+</figure>
+<h2>Each bank writes its valuation summary in a recognizable house style</h2>
+<p>Banks reuse their own wording from deal to deal, so I tested how strong that habit is. I trained a simple text classifier on the DCF summaries of the 15 busiest banks, after removing every bank name, number, year and proper noun. Given a summary it had not seen, the classifier named the right bank 91% of the time. Guessing the busiest bank every time would be right 18% of the time. When I trained it only on summaries written through 2016 and tested it on summaries from 2019 onward, it was still right 81% of the time, so the templates have lasted for years.</p>
+<p>The house styles go beyond wording. Goldman Sachs calls nearly every DCF "illustrative." Credit Suisse and UBS usually value the company's later years with a multiple of earnings, while J.P. Morgan and Evercore usually assume a steady growth rate. Centerview, which advises many drug companies, often assumes that cash flow will decline after patents expire, in 40% of its DCFs. Stifel and Piper Sandler use discount-rate ranges more than twice as wide as Morgan Stanley's.</p>
+<div class="tablewrap"><table>
+<tr><th>bank</th><th>DCFs</th><th>identified</th><th>growth rate</th><th>multiple</th><th>range width</th><th>price position</th></tr>
+<tr><td>Goldman Sachs</td><td>576</td><td>99%</td><td>52%</td><td>53%</td><td>2.0</td><td>0.63</td></tr>
+<tr><td>J.P. Morgan</td><td>348</td><td>96%</td><td>73%</td><td>11%</td><td>1.0</td><td>0.44</td></tr>
+<tr><td>Morgan Stanley</td><td>318</td><td>95%</td><td>42%</td><td>52%</td><td>1.6</td><td>0.73</td></tr>
+<tr><td>BofA / Merrill Lynch</td><td>306</td><td>90%</td><td>38%</td><td>57%</td><td>2.0</td><td>0.71</td></tr>
+<tr><td>Centerview</td><td>211</td><td>92%</td><td>29%</td><td>21%</td><td>2.0</td><td>0.73</td></tr>
+<tr><td>Evercore</td><td>199</td><td>92%</td><td>71%</td><td>62%</td><td>1.5</td><td>0.61</td></tr>
+<tr><td>Stifel / KBW</td><td>173</td><td>91%</td><td>13%</td><td>37%</td><td>4.0</td><td>0.72</td></tr>
+<tr><td>Lazard</td><td>167</td><td>79%</td><td>31%</td><td>52%</td><td>1.5</td><td>0.64</td></tr>
+<tr><td>Citi</td><td>162</td><td>72%</td><td>34%</td><td>58%</td><td>1.4</td><td>0.56</td></tr>
+<tr><td>Jefferies</td><td>162</td><td>83%</td><td>40%</td><td>50%</td><td>1.0</td><td>0.68</td></tr>
+<tr><td>Credit Suisse</td><td>158</td><td>87%</td><td>9%</td><td>84%</td><td>2.0</td><td>0.49</td></tr>
+<tr><td>Barclays</td><td>135</td><td>91%</td><td>36%</td><td>59%</td><td>2.0</td><td>0.59</td></tr>
+<tr><td>Houlihan Lokey</td><td>128</td><td>86%</td><td>29%</td><td>50%</td><td>2.0</td><td>0.76</td></tr>
+<tr><td>UBS</td><td>111</td><td>81%</td><td>16%</td><td>73%</td><td>2.0</td><td>0.74</td></tr>
+<tr><td>Moelis</td><td>98</td><td>89%</td><td>20%</td><td>55%</td><td>2.0</td><td>0.65</td></tr>
+</table></div>
+<p style="font-size:0.8rem;color:var(--quiet)">"Identified" is the share of each bank's summaries the classifier attributed to that bank. "Growth rate" and "multiple" are the shares of DCFs that value the years after the forecast each way (some use both). "Range width" is the typical discount-rate range in percentage points. "Price position" is the median place of the deal price in the bank's range, where 0 is the low end and 1 is the high end.</p>
+<h2>Shareholder lawsuits changed how these summaries are written</h2>
+<p>The DCF summary in a proxy is a disclosure, and shareholders who think a disclosure is incomplete can sue. For many years, almost every public merger drew such a suit, and a common complaint was that the proxy did not explain why the bank chose its inputs.</p>
+<p>The summaries changed in response. In 2001, one summary in twenty said an input was chosen based on the bank's "professional judgment and experience." Today more than half say it. The phrase answers the question of why an input was chosen without giving a plaintiff anything specific to dispute.</p>
+<p>Other details were added over the same years: naming the textbook model used to build the discount rate (the capital asset pricing model), stating the timing convention, and noting that values were "rounded to the nearest $0.05." Banks also shifted from valuing a company's later years with an earnings multiple toward assuming a steady growth rate. After the Trulia decision in 2016 made these suits harder to settle in Delaware, plaintiffs moved them to federal court, and the summaries kept getting more careful.</p>
+<figure>
+  <img src="../assets/fairness-disclosure-trends.png" alt="Line chart, 2001 to 2026: the share of summaries saying professional judgment rises from 5% to 55%; naming CAPM rises to about 35%; growth-rate valuation rises and multiple valuation falls until they meet around 40%.">
+  <figcaption>Share of bank DCF summaries in each year that use the phrase or practice. The dashed lines mark In re Trulia (January 2016), the Delaware decision that ended easy disclosure settlements, and DFC Global (August 2017), the first of two decisions telling Delaware courts to give weight to the deal price.</figcaption>
+</figure>
+<h2>Delaware courts have settled on one set of inputs. Banks have not.</h2>
+<p>In an appraisal case, a Delaware judge decides what the shares were worth, often by building a DCF of their own. Since 2010, every equity risk premium a Delaware court has adopted falls between 5.97% and 6.22%, the figure published by Duff &amp; Phelps (now Kroll). When the courts say which Treasury bond they use, it is the 20-year.</p>
+<p>Banks are much less uniform. Their equity risk premiums since 2010 range from about 5% to 7.5%, and they split by firm on which Treasury bond to use. Among presentations that say, Lazard, J.P. Morgan and Bank of America use the 10-year, while Evercore and Houlihan Lokey use the 20-year.</p>
+<figure>
+  <img src="../assets/fairness-erp.png" alt="Dot chart of equity risk premiums since 2010: bank presentations spread from about 4% to 9%, Delaware courts cluster between 6.0% and 6.2%.">
+  <figcaption>Each dot is one equity risk premium: from bank presentations attached to SEC filings, and from Delaware appraisal decisions.</figcaption>
+</figure>
+<p>For nine deals I could match the bank's fairness opinion to a later appraisal decision. In six of them, the court's discount rate was lower than the middle of the bank's range. In the Jarden case, the court's 6.94% was below the middle of every bank's range. A lower discount rate means a higher value, which is what shareholders seeking appraisal argue for, so this is the direction you would expect.</p>
+<figure>
+  <img src="../assets/fairness-court-vs-bank.png" alt="For nine deals, horizontal bars show each advising bank's discount-rate range and a diamond shows the court's rate; the court is below the bank's midpoint in six.">
+  <figcaption>Each bar is one bank's discount-rate range for the company being sold; the diamond is the rate the Delaware court used in the later appraisal case.</figcaption>
+</figure>
+<p>Then the Delaware Supreme Court changed the rules. In DFC Global and Dell, both in 2017, it told the trial court to give weight to the price a buyer actually paid in a fair sale process. Since then, no award in this set has exceeded the deal price by more than 3%. The typical award is now 97% of the deal price, compared with 109% before.</p>
+<h2>What this means for our model</h2>
+<p>If our software is going to draft like a bank, it should copy banks' habits rather than textbook defaults. That means measuring beta the way Bloomberg does, over five years of weekly returns with Bloomberg's adjustment, and adding a small extra for heavily indebted companies. It means using the advising bank's usual Treasury bond and an equity risk premium in line with that bank and that year. It means discount-rate ranges that end on whole or half points and are one or two points wide, growth ranges one point wide around 2% to 3%, and the bank's usual way of valuing the years after the forecast. With those changes, our Utz discount rate rises from 5.0% to 7.4%. Most of the remaining gap is the cost of debt.</p>
+<p>The broader point is the one in the first chart. The same method gives different answers depending on who is using it and why. The bank advising a seller produces a range that brackets the price. The shareholders' expert finds the company worth about half again as much. The company's expert finds it worth a little less. Since 2017, the court has mostly found it worth the price. Each is doing the same calculation, and each can do it in good faith. The difference lies in the inputs, and the inputs are where the law has its effect.</p>
+<h2>How I did this, and what to be careful about</h2>
+<p>I searched the SEC's EDGAR database for merger proxies, tender-offer responses and going-private filings from 2001 to November 2026 that contain a DCF, and downloaded 8,344 documents. A set of text-matching rules pulled out each bank's discount-rate range, growth range, earnings multiple, valuation range per share, the deal price it was compared with, and certain phrases. I kept one DCF per bank per deal, leaving 5,071 bank valuations (after dropping 65 without a usable discount rate) across 4,097 deals. When I checked 30 random rows by hand, the discount rate was right in all 30. The earnings multiple and the deal price were the least reliable fields, and I tightened the rules for both after the check. Details such as the equity risk premium and the Treasury bond used come from 869 bank presentations attached to going-private and tender-offer filings. Their text is messier, so I report only shares and medians from them.</p>
+<p>The court data covers 44 Delaware appraisal decisions available on CourtListener, with each number checked against the opinion. Some well-known decisions are available only on Westlaw and are missing. I matched the nine bank-and-court pairs by hand, using only the bank advising the company being sold.</p>
+<p>Nothing here says any bank or court got a deal wrong. The patterns describe conventions, and following conventions is part of what makes a fairness opinion defensible. Treasury yields are monthly figures from Yahoo Finance. None of this is legal or investment advice.</p>
+<p>Dataset and code: <a href="https://github.com/bsovocool16/fairness-opinion-legal/tree/claude/project-thread-ij5y9h/research/fairness-opinion-patterns">research/fairness-opinion-patterns</a> in the fairness-opinion-legal repository. It contains the 5,136 bank valuations, 869 bank presentations, 44 court decisions, and the eight scripts that build them.</p>
 
-<section class="band"><div class="wrap sec flip">
-  <div><h3>Banks' typical discount rate and the 10-year Treasury yield, by year</h3><div class="fig" id="rates" style="min-height:330px"></div>
-    <p class="cap">The red line is the median of the middle of each bank's discount-rate range, for filings in that year. The blue line is the average 10-year Treasury yield. Hover over a year to see the values.</p></div>
-  <div class="txt">
-    <h2>When interest rates fell, banks' discount rates barely moved</h2>
-    <p>In theory, a company's discount rate should rise and fall with interest rates, since the Treasury rate is one of its building blocks. From 2007 to 2012 the 10-year Treasury yield fell by almost three points. Over the same years, the typical bank discount rate fell by only half a point.</p>
-    <p>To check that this was not just a change in the mix of companies being sold, I compared deals by the same banks, in the same industries and of the same type. Before 2013, each one-point drop in Treasury yields moved bank discount rates by only <span class="d" data-k="pt1"></span> points. Since 2022, as rates have risen, each point has moved them by <span class="d" data-k="pt3"></span> points, about three times as much.</p>
-    <p>Two common practices explain much of the gap. In the years after the financial crisis, many banks replaced the actual Treasury yield with a higher "normalized" rate, often between 3.4% and 4.1%, when the real 10-year yield averaged about 3%. Many also kept their equity risk premium high. Duff &amp; Phelps, the reference most bank presentations cite, recommended both at the time, so this was a shared convention rather than any one bank's view.</p>
-    <p>The convention happens to lean in one direction. A higher discount rate produces a lower valuation, which makes any offer look more generous. When rates fell, keeping discount rates high was the choice that made a fairness opinion easier to give.</p>
-  </div>
-</div></section>
-
-<section class="band"><div class="wrap sec">
-  <div class="txt">
-    <h2>Which bank you hire matters about as much as what industry you are in</h2>
-    <p>To see what drives the discount rate, I tested how much of the variation across deals can be explained by four things, adding them one at a time: the year, the company's industry, the type of deal, and finally the bank. The year and industry together explain about a fifth of the variation. Adding the bank's name nearly doubles it.</p>
-    <p>The most direct test uses deals with two banks advising the same side. Both banks are valuing the same company, from the same management forecasts, on the same day. In <span class="d" data-k="pairsn"></span> such pairs, the typical gap between their discount rates was <span class="d" data-k="pairbp"></span> basis points (half a percentage point). In one pair out of five, the two banks used exactly the same range, which suggests they coordinated. In one pair out of ten, they were more than <span class="d" data-k="pair90"></span> basis points apart.</p>
-  </div>
-  <div>
-    <h3>Share of the variation in discount rates explained, adding one factor at a time</h3><div class="rows" id="r2"></div>
-    <h3 style="margin-top:22px">Two banks valuing the same company on the same day: how far apart their discount rates were</h3>
-    <div class="fig" id="pairs" style="min-height:200px"></div>
-  </div>
-</div></section>
-
-<section class="band"><div class="wrap sec full">
-  <div class="txt cols">
-    <h2>Each bank writes its valuation summary in a recognizable house style</h2>
-    <p>Banks reuse their own wording from deal to deal, so I tested how strong that habit is. I trained a simple text classifier on the DCF summaries of the 15 busiest banks, after removing every bank name, number, year and proper noun. Given a summary it had not seen, the classifier named the right bank <span class="d" data-k="acc"></span> of the time. Guessing the busiest bank every time would be right <span class="d" data-k="base"></span> of the time. When I trained it only on summaries written through 2016 and tested it on summaries from 2019 onward, it was still right <span class="d" data-k="acct"></span> of the time, so the templates have lasted for years.</p>
-    <p>The house styles go beyond wording. Goldman Sachs calls nearly every DCF "illustrative." Credit Suisse and UBS usually value the company's later years with a multiple of earnings, while J.P. Morgan and Evercore usually assume a steady growth rate. Centerview, which advises many drug companies, often assumes that cash flow will decline after patents expire, in 40% of its DCFs. Stifel and Piper Sandler use discount-rate ranges more than twice as wide as Morgan Stanley's.</p>
-  </div>
-  <div class="scroll"><table class="stack" id="house"><thead><tr><th>Bank</th><th class="n">DCFs</th><th class="n">Identified correctly</th><th>Most distinctive phrase</th><th class="n">Uses growth rate</th><th class="n">Uses multiple</th><th class="n">Typical range width</th><th class="n">Where price falls</th></tr></thead><tbody></tbody></table></div>
-  <p class="cap">"Identified correctly" is the share of each bank's summaries the classifier attributed to that bank. "Uses growth rate" and "Uses multiple" are the shares of DCFs that report each way of valuing the years after the forecast (some report both). "Where price falls" is the median position of the deal price in the bank's range, where 0 is the low end and 1 is the high end.</p>
-</div></section>
-
-<section class="band"><div class="wrap sec flip">
-  <div><div class="mini" id="trends"></div>
-    <p class="cap">Share of bank DCF summaries in each year that use the phrase or practice. The dashed lines mark In re Trulia (January 2016), the Delaware decision that ended easy disclosure settlements, and DFC Global (August 2017), the first of two decisions telling Delaware courts to give weight to the deal price.</p></div>
-  <div class="txt">
-    <h2>Shareholder lawsuits changed how these summaries are written</h2>
-    <p>The DCF summary in a proxy is a disclosure, and shareholders who think a disclosure is incomplete can sue. For many years, almost every public merger drew such a suit, and a common complaint was that the proxy did not explain why the bank chose its inputs.</p>
-    <p>The summaries changed in response. In 2001, one summary in twenty said an input was chosen based on the bank's "professional judgment and experience." Today more than half say it. The phrase answers the question of why an input was chosen without giving a plaintiff anything specific to dispute.</p>
-    <p>Other details were added over the same years: naming the textbook model used to build the discount rate (the capital asset pricing model), stating the timing convention, and noting that values were "rounded to the nearest $0.05." Banks also shifted from valuing a company's later years with an earnings multiple toward assuming a steady growth rate. After the Trulia decision in 2016 made these suits harder to settle in Delaware, plaintiffs moved them to federal court, and the summaries kept getting more careful.</p>
-  </div>
-</div></section>
-
-<section class="band"><div class="wrap sec">
-  <div class="txt">
-    <h2>Delaware courts have settled on one set of inputs. Banks have not.</h2>
-    <p>In an appraisal case, a Delaware judge decides what the shares were worth, often by building a DCF of their own. Since 2010, every equity risk premium a Delaware court has adopted falls between 5.97% and 6.22%, the figure published by Duff &amp; Phelps (now Kroll). When the courts say which Treasury bond they use, it is the 20-year.</p>
-    <p>Banks are much less uniform. Their equity risk premiums since 2010 range from about 5% to 7.5%, and they split by firm on which Treasury bond to use. Among presentations that say, Lazard, J.P. Morgan and Bank of America use the 10-year, while Evercore and Houlihan Lokey use the 20-year.</p>
-    <p>For nine deals I could match the bank's fairness opinion to a later appraisal decision. In six of them, the court's discount rate was lower than the middle of the bank's range. In the Jarden case, the court's 6.94% was below the middle of every bank's range. A lower discount rate means a higher value, which is what shareholders seeking appraisal argue for, so this is the direction you would expect.</p>
-    <p>Then the Delaware Supreme Court changed the rules. In DFC Global and Dell, both in 2017, it told the trial court to give weight to the price a buyer actually paid in a fair sale process. Since then, no award in this set has exceeded the deal price by more than 3%. The typical award is now <span class="d" data-k="apppost"></span> of the deal price, compared with <span class="d" data-k="apppre"></span> before.</p>
-  </div>
-  <div>
-    <h3>Equity risk premiums used since 2010: Delaware courts and bank presentations</h3>
-    <div class="fig" id="erp" style="min-height:170px"></div>
-    <h3 style="margin-top:18px">The court's discount rate compared with the bank's range, for the same deal</h3>
-    <div class="fig" id="cvb" style="min-height:320px"></div>
-  </div>
-</div></section>
-
-<section class="band"><div class="wrap sec full">
-  <div class="txt cols">
-    <h2>What this means for our model</h2>
-    <p>If our software is going to draft like a bank, it should copy banks' habits rather than textbook defaults. That means measuring beta the way Bloomberg does, over five years of weekly returns with Bloomberg's adjustment, and adding a small extra for heavily indebted companies. It means using the advising bank's usual Treasury bond and an equity risk premium in line with that bank and that year. It means discount-rate ranges that end on whole or half points and are one or two points wide, growth ranges one point wide around 2% to 3%, and the bank's usual way of valuing the years after the forecast. With those changes, our Utz discount rate rises from 5.0% to 7.4%. Most of the remaining gap is the cost of debt.</p>
-    <p class="note">The broader point is the one in the first chart. The same method gives different answers depending on who is using it and why. The bank advising a seller produces a range that brackets the price. The shareholders' expert finds the company worth about half again as much. The company's expert finds it worth a little less. Since 2017, the court has mostly found it worth the price. Each is doing the same calculation, and each can do it in good faith. The difference lies in the inputs, and the inputs are where the law has its effect.</p>
-  </div>
-</div></section>
-
-<section class="band"><div class="wrap sec full foot">
-  <div class="txt cols">
-    <h2 style="font-size:22px">How I did this, and what to be careful about</h2>
-    <p>I searched the SEC's EDGAR database for merger proxies, tender-offer responses and going-private filings from 2001 to November 2026 that contain a DCF, and downloaded <span id="nf2"></span> documents. A set of text-matching rules pulled out each bank's discount-rate range, growth range, earnings multiple, valuation range per share, the deal price it was compared with, and certain phrases. I kept one DCF per bank per deal, leaving <span class="d" data-k="rows"></span> bank valuations across <span class="d" data-k="deals"></span> deals. When I checked 30 random rows by hand, the discount rate was right in all 30. The earnings multiple and the deal price were the least reliable fields, and I tightened the rules for both after the check. Details such as the equity risk premium and the Treasury bond used come from <span class="d" data-k="books"></span> bank presentations attached to going-private and tender-offer filings. Their text is messier, so I report only shares and medians from them.</p>
-    <p>The court data covers 44 Delaware appraisal decisions available on CourtListener, with each number checked against the opinion. Some well-known decisions are available only on Westlaw and are missing. I matched the nine bank-and-court pairs by hand, using only the bank advising the company being sold.</p>
-    <p>Nothing here says any bank or court got a deal wrong. The patterns describe conventions, and following conventions is part of what makes a fairness opinion defensible. Treasury yields are monthly figures from Yahoo Finance. None of this is legal or investment advice.</p>
-    <p>Dataset and code: <a href="https://github.com/bsovocool16/fairness-opinion-legal/tree/claude/project-thread-ij5y9h/research/fairness-opinion-patterns">research/fairness-opinion-patterns</a> in the fairness-opinion-legal repository. It contains the 5,136 bank valuations, 869 bank presentations, 44 court decisions, and the eight scripts that build them.</p>
-  </div>
-</div></section>
-
-<script>
-{
-const R = {"n_rows":5071,"n_deals":4097,"n_banks":358,"year_min":2001,"year_max":2026,"n_filings":8344,"by_year":{"2001":100,"2002":79,"2003":85,"2004":114,"2005":135,"2006":198,"2007":298,"2008":153,"2009":117,"2010":201,"2011":205,"2012":168,"2013":221,"2014":223,"2015":263,"2016":266,"2017":269,"2018":268,"2019":236,"2020":176,"2021":253,"2022":202,"2023":194,"2024":208,"2025":227,"2026":212},"pos":{"n":2321,"below":0.0904782421370099,"inside":0.6380870314519603,"above":0.2714347264110297,"median":0.6415094339622641},"pos_hist":[{"x0":-1.0,"x1":-0.95,"n":50},{"x0":-0.95,"x1":-0.9,"n":2},{"x0":-0.9,"x1":-0.85,"n":3},{"x0":-0.85,"x1":-0.8,"n":6},{"x0":-0.8,"x1":-0.75,"n":0},{"x0":-0.75,"x1":-0.7,"n":5},{"x0":-0.7,"x1":-0.65,"n":4},{"x0":-0.65,"x1":-0.6,"n":8},{"x0":-0.6,"x1":-0.55,"n":3},{"x0":-0.55,"x1":-0.5,"n":10},{"x0":-0.5,"x1":-0.45,"n":6},{"x0":-0.45,"x1":-0.4,"n":3},{"x0":-0.4,"x1":-0.35,"n":12},{"x0":-0.35,"x1":-0.3,"n":13},{"x0":-0.3,"x1":-0.25,"n":12},{"x0":-0.25,"x1":-0.2,"n":9},{"x0":-0.2,"x1":-0.15,"n":17},{"x0":-0.15,"x1":-0.1,"n":14},{"x0":-0.1,"x1":-0.05,"n":17},{"x0":-0.05,"x1":0.0,"n":16},{"x0":0.0,"x1":0.05,"n":36},{"x0":0.05,"x1":0.1,"n":29},{"x0":0.1,"x1":0.15,"n":45},{"x0":0.15,"x1":0.2,"n":54},{"x0":0.2,"x1":0.25,"n":77},{"x0":0.25,"x1":0.3,"n":79},{"x0":0.3,"x1":0.35,"n":81},{"x0":0.35,"x1":0.4,"n":101},{"x0":0.4,"x1":0.45,"n":83},{"x0":0.45,"x1":0.5,"n":101},{"x0":0.5,"x1":0.55,"n":94},{"x0":0.55,"x1":0.6,"n":100},{"x0":0.6,"x1":0.65,"n":89},{"x0":0.65,"x1":0.7,"n":86},{"x0":0.7,"x1":0.75,"n":75},{"x0":0.75,"x1":0.8,"n":79},{"x0":0.8,"x1":0.85,"n":60},{"x0":0.85,"x1":0.9,"n":82},{"x0":0.9,"x1":0.95,"n":65},{"x0":0.95,"x1":1.0,"n":53},{"x0":1.0,"x1":1.05,"n":53},{"x0":1.05,"x1":1.1,"n":38},{"x0":1.1,"x1":1.15,"n":32},{"x0":1.15,"x1":1.2,"n":44},{"x0":1.2,"x1":1.25,"n":26},{"x0":1.25,"x1":1.3,"n":30},{"x0":1.3,"x1":1.35,"n":38},{"x0":1.35,"x1":1.4,"n":17},{"x0":1.4,"x1":1.45,"n":15},{"x0":1.45,"x1":1.5,"n":17},{"x0":1.5,"x1":1.55,"n":24},{"x0":1.55,"x1":1.6,"n":14},{"x0":1.6,"x1":1.65,"n":16},{"x0":1.65,"x1":1.7,"n":14},{"x0":1.7,"x1":1.75,"n":15},{"x0":1.75,"x1":1.8,"n":17},{"x0":1.8,"x1":1.85,"n":10},{"x0":1.85,"x1":1.9,"n":15},{"x0":1.9,"x1":1.95,"n":8},{"x0":1.95,"x1":2.0,"n":199}],"pos_by_type":[{"type":"13e-3 / going private","n":354,"below":0.12429378531073447,"inside":0.6779661016949152,"above":0.1977401129943503,"median":0.5065869741044868},{"type":"sponsor cash","n":1138,"below":0.08699472759226713,"inside":0.663444639718805,"above":0.24956063268892795,"median":0.6150317572335922},{"type":"strategic cash","n":829,"below":0.08082026537997587,"inside":0.586248492159228,"above":0.33293124246079614,"median":0.7294589178356714}],"bank_ratio":{"q":[0.733,0.857,0.961,1.061,1.193],"n":2321},"bank_ratio_sample":[0.99,0.922,0.801,0.905,0.988,1.03,0.994,1.049,0.93,1.144,0.999,0.929,0.835,0.793,1.032,0.958,0.6,0.926,1.107,1.35,1.095,1.047,0.968,0.43,0.97,0.943,0.984,0.734,1.118,1.538,1.127,1.194,1.008,1.018,0.785,0.922,0.883,0.862,1.008,0.891,1.277,0.935,1.006,0.951,0.921,0.993,0.932,1.0,0.847,0.918,0.918,0.912,1.04,1.08,1.076,0.61,1.162,0.778,0.955,0.76,0.918,1.038,0.768,0.924,0.528,0.997,1.046,0.998,1.086,1.335,0.996,0.91,1.456,1.059,1.118,0.468,0.494,1.049,1.045,0.886,0.728,1.867,0.969,0.929,0.963,0.682,1.666,1.065,1.025,0.902,0.981,1.043,1.344,1.493,0.596,0.998,0.915,0.992,1.063,1.003,0.843,1.004,0.785,0.937,0.721,0.945,0.936,1.127,1.13,1.042,1.319,1.014,1.14,0.894,0.908,1.13,1.471,0.829,0.973,1.158,1.07,1.013,1.063,1.111,0.613,0.82,0.975,1.102,1.137,0.801,1.026,0.948,0.819,0.848,0.924,0.987,1.039,1.148,1.016,0.962,0.842,0.969,1.016,0.968,0.869,1.183,0.744,1.064,0.855,0.769,0.744,1.008,0.95,1.035,0.933,1.08,1.211,0.857,0.944,1.128,0.844,0.858,1.043,0.941,0.935,1.035,1.03,1.197,1.65,0.925,1.021,0.947,1.554,1.006,0.859,0.792,0.722,0.928,1.011,1.063,0.98,0.886,1.0,0.936,0.801,0.771,0.948,0.895,1.077,1.144,0.609,0.574,0.826,0.795,0.909,0.83,0.742,0.574,0.968,1.013,1.074,1.068,0.869,0.964,0.959,0.886,0.851,0.721,0.771,1.005,0.96,0.863,0.733,1.027,0.774,0.941,0.689,0.725,0.596,0.916,1.029,1.265,1.143,0.943,2.443,0.941,0.914,0.854,0.891,1.414,0.697,0.934,1.051,0.419,1.17,2.599,1.034,0.979,0.85,0.881,0.807,1.132,0.61,0.93,1.173,0.696,1.001,0.885,1.139,0.966,1.066,1.015,1.595,0.918,1.114,0.99,0.977,0.954,1.025,1.093,0.886,0.901,0.84,1.058,0.966,0.855,1.083,1.271,0.797,0.512,0.799,0.887,1.301,1.047,0.862,0.808,0.83,0.976,0.987,1.123,0.718,0.915,0.608,0.969,0.837,0.75,1.337,0.912,0.831,0.899,0.636,0.932,1.214,0.774,0.91,0.873,0.989,1.127,0.647,0.593],"appraisal":{"petitioner":{"values":[{"case":"In re Radiology Associates, Inc. Litigation","v":5.75,"year":"1991"},{"case":"M.G. Bancorporation, Inc. v. Le Beau","v":2.073,"year":"1999"},{"case":"Union Illinois 1995 Investment Ltd. P'ship v. Union Financial Group, Ltd.","v":1.702,"year":"2004"},{"case":"Montgomery Cellular Holding Co. v. Dobler","v":2.635,"year":"2005"},{"case":"Gesoff v. IIC Industries, Inc.","v":1.921,"year":"2006"},{"case":"Global GT LP v. Golden Telecom, Inc.","v":1.324,"year":"2010"},{"case":"Golden Telecom, Inc. v. Global GT LP","v":1.324,"year":"2010"},{"case":"In re Appraisal of Ancestry.com, Inc.","v":1.338,"year":"2015"},{"case":"Merlin Partners LP v. AutoInfo, Inc.","v":2.476,"year":"2015"},{"case":"Owen v. Cannon (Energy Services Group)","v":1.999,"year":"2015"},{"case":"LongPath Capital, LLC v. Ramtron International Corp.","v":1.6,"year":"2015"},{"case":"Merion Capital LP v. BMC Software, Inc.","v":1.45,"year":"2015"},{"case":"In re Appraisal of Dell Inc.","v":2.081,"year":"2016"},{"case":"In re Appraisal of DFC Global Corp.","v":1.884,"year":"2016"},{"case":"Dunmire v. Farmers & Merchants Bancorp of Western Pennsylvania, Inc.","v":1.662,"year":"2016"},{"case":"Merion Capital L.P. v. Lender Processing Services, Inc.","v":1.359,"year":"2016"},{"case":"In re Appraisal of PetSmart, Inc.","v":1.552,"year":"2017"},{"case":"In re Appraisal of SWS Group, Inc.","v":1.389,"year":"2017"},{"case":"ACP Master, Ltd. v. Sprint Corp. / ACP Master, Ltd. v. Clearwire Corp.","v":3.216,"year":"2017"},{"case":"DFC Global Corp. v. Muirfield Value Partners, L.P.","v":1.884,"year":"2017"},{"case":"Dell, Inc. v. Magnetar Global Event Driven Master Fund Ltd.","v":2.081,"year":"2017"},{"case":"Verition Partners Master Fund Ltd. v. Aruba Networks, Inc.","v":1.32,"year":"2018"},{"case":"In re Appraisal of AOL Inc.","v":1.38,"year":"2018"},{"case":"Blueblade Capital Opportunities LLC v. Norcraft Companies, Inc.","v":1.364,"year":"2018"},{"case":"In re Appraisal of Solera Holdings, Inc.","v":1.516,"year":"2018"},{"case":"In re Appraisal of Jarden Corp.","v":1.205,"year":"2019"},{"case":"In re Appraisal of Columbia Pipeline Group, Inc.","v":1.273,"year":"2019"},{"case":"In re Appraisal of Stillwater Mining Co.","v":1.439,"year":"2019"},{"case":"In re Appraisal of Panera Bread Co.","v":1.146,"year":"2020"},{"case":"Fir Tree Value Master Fund, LP v. Jarden Corp.","v":1.205,"year":"2020"},{"case":"Kruse v. Synapse Wireless, Inc.","v":9.762,"year":"2020"},{"case":"In re Appraisal of Regal Entertainment Group","v":1.471,"year":"2021"},{"case":"BCIM Strategic Value Master Fund, LP v. HFF, Inc.","v":1.148,"year":"2022"},{"case":"HBK Master Fund L.P. v. Pivotal Software, Inc.","v":1.333,"year":"2023"}],"q":[1.226,1.334,1.493,1.98,2.587],"n":34},"respondent":{"values":[{"case":"In re Radiology Associates, Inc. Litigation","v":1.143,"year":"1991"},{"case":"M.G. Bancorporation, Inc. v. Le Beau","v":1.022,"year":"1999"},{"case":"Union Illinois 1995 Investment Ltd. P'ship v. Union Financial Group, Ltd.","v":0.538,"year":"2004"},{"case":"Montgomery Cellular Holding Co. v. Dobler","v":0.968,"year":"2005"},{"case":"Gesoff v. IIC Industries, Inc.","v":0.914,"year":"2006"},{"case":"Highfields Capital, Ltd. v. AXA Financial, Inc. (MONY Group)","v":0.671,"year":"2007"},{"case":"Global GT LP v. Golden Telecom, Inc.","v":0.838,"year":"2010"},{"case":"Golden Telecom, Inc. v. Global GT LP","v":0.838,"year":"2010"},{"case":"In re Appraisal of Ancestry.com, Inc.","v":0.957,"year":"2015"},{"case":"Merlin Partners LP v. AutoInfo, Inc.","v":0.921,"year":"2015"},{"case":"LongPath Capital, LLC v. Ramtron International Corp.","v":0.89,"year":"2015"},{"case":"Merion Capital LP v. BMC Software, Inc.","v":0.819,"year":"2015"},{"case":"In re Appraisal of Dell Inc.","v":0.922,"year":"2016"},{"case":"In re Appraisal of DFC Global Corp.","v":0.836,"year":"2016"},{"case":"Dunmire v. Farmers & Merchants Bancorp of Western Pennsylvania, Inc.","v":0.921,"year":"2016"},{"case":"Merion Capital L.P. v. Lender Processing Services, Inc.","v":0.904,"year":"2016"},{"case":"In re Appraisal of PetSmart, Inc.","v":1.0,"year":"2017"},{"case":"In re Appraisal of SWS Group, Inc.","v":0.747,"year":"2017"},{"case":"ACP Master, Ltd. v. Sprint Corp. / ACP Master, Ltd. v. Clearwire Corp.","v":0.426,"year":"2017"},{"case":"DFC Global Corp. v. Muirfield Value Partners, L.P.","v":0.836,"year":"2017"},{"case":"Dell, Inc. v. Magnetar Global Event Driven Master Fund Ltd.","v":0.922,"year":"2017"},{"case":"Verition Partners Master Fund Ltd. v. Aruba Networks, Inc.","v":0.801,"year":"2018"},{"case":"In re Appraisal of AOL Inc.","v":0.897,"year":"2018"},{"case":"Blueblade Capital Opportunities LLC v. Norcraft Companies, Inc.","v":0.859,"year":"2018"},{"case":"In re Appraisal of Solera Holdings, Inc.","v":0.952,"year":"2018"},{"case":"In re Appraisal of Jarden Corp.","v":0.811,"year":"2019"},{"case":"In re Appraisal of Stillwater Mining Co.","v":0.946,"year":"2019"},{"case":"In re Appraisal of Panera Bread Co.","v":0.963,"year":"2020"},{"case":"Fir Tree Value Master Fund, LP v. Jarden Corp.","v":0.811,"year":"2020"},{"case":"In re Appraisal of Regal Entertainment Group","v":0.783,"year":"2021"},{"case":"BCIM Strategic Value Master Fund, LP v. HFF, Inc.","v":0.901,"year":"2022"},{"case":"HBK Master Fund L.P. v. Pivotal Software, Inc.","v":0.811,"year":"2023"}],"q":[0.751,0.811,0.894,0.928,0.967],"n":32},"court":{"values":[{"case":"In re Radiology Associates, Inc. Litigation","v":2.71,"year":"1991"},{"case":"M.G. Bancorporation, Inc. v. Le Beau","v":2.073,"year":"1999"},{"case":"Union Illinois 1995 Investment Ltd. P'ship v. Union Financial Group, Ltd.","v":0.93,"year":"2004"},{"case":"Cede & Co. v. Technicolor, Inc.","v":1.235,"year":"2005"},{"case":"Montgomery Cellular Holding Co. v. Dobler","v":2.422,"year":"2005"},{"case":"Gesoff v. IIC Industries, Inc.","v":1.362,"year":"2006"},{"case":"Delaware Open MRI Radiology Associates, P.A. v. Kessler","v":2.048,"year":"2006"},{"case":"Highfields Capital, Ltd. v. AXA Financial, Inc. (MONY Group)","v":0.805,"year":"2007"},{"case":"Global GT LP v. Golden Telecom, Inc.","v":1.195,"year":"2010"},{"case":"Golden Telecom, Inc. v. Global GT LP","v":1.195,"year":"2010"},{"case":"In re Appraisal of Ancestry.com, Inc.","v":1.0,"year":"2015"},{"case":"Merlin Partners LP v. AutoInfo, Inc.","v":1.0,"year":"2015"},{"case":"Owen v. Cannon (Energy Services Group)","v":1.601,"year":"2015"},{"case":"LongPath Capital, LLC v. Ramtron International Corp.","v":0.99,"year":"2015"},{"case":"Merion Capital LP v. BMC Software, Inc.","v":1.0,"year":"2015"},{"case":"In re Appraisal of Dell Inc.","v":1.281,"year":"2016"},{"case":"In re Appraisal of DFC Global Corp.","v":1.075,"year":"2016"},{"case":"Dunmire v. Farmers & Merchants Bancorp of Western Pennsylvania, Inc.","v":1.107,"year":"2016"},{"case":"Merion Capital L.P. v. Lender Processing Services, Inc.","v":1.0,"year":"2016"},{"case":"In re Appraisal of PetSmart, Inc.","v":1.0,"year":"2017"},{"case":"In re Appraisal of SWS Group, Inc.","v":0.922,"year":"2017"},{"case":"ACP Master, Ltd. v. Sprint Corp. / ACP Master, Ltd. v. Clearwire Corp.","v":0.426,"year":"2017"},{"case":"Verition Partners Master Fund Ltd. v. Aruba Networks, Inc.","v":0.694,"year":"2018"},{"case":"In re Appraisal of AOL Inc.","v":0.974,"year":"2018"},{"case":"Blueblade Capital Opportunities LLC v. Norcraft Companies, Inc.","v":1.026,"year":"2018"},{"case":"In re Appraisal of Solera Holdings, Inc.","v":0.966,"year":"2018"},{"case":"In re Appraisal of Jarden Corp.","v":0.816,"year":"2019"},{"case":"In re Appraisal of Columbia Pipeline Group, Inc.","v":1.0,"year":"2019"},{"case":"In re Appraisal of Stillwater Mining Co.","v":1.0,"year":"2019"},{"case":"In re Appraisal of Panera Bread Co.","v":0.963,"year":"2020"},{"case":"Fir Tree Value Master Fund, LP v. Jarden Corp.","v":0.816,"year":"2020"},{"case":"Kruse v. Synapse Wireless, Inc.","v":0.531,"year":"2020"},{"case":"In re Appraisal of Regal Entertainment Group","v":1.026,"year":"2021"},{"case":"BCIM Strategic Value Master Fund, LP v. HFF, Inc.","v":0.948,"year":"2022"},{"case":"HBK Master Fund L.P. v. Pivotal Software, Inc.","v":1.029,"year":"2023"},{"case":"Hyde Park Venture Partners Fund III, L.P. v. FairXchange, LLC","v":1.0,"year":"2024"}],"q":[0.811,0.959,1.0,1.195,1.824],"n":36}},"appraisal_era":{"false":{"n":19,"median":100.0},"true":{"n":13,"median":97.4}},"court_erp_2010":[6.0,6.11,6.11,6.18,6.18,6.18,6.21,6.21,6.03,5.97,6.22],"court_growth":[5.0,3.0,5.0,3.0,3.0,3.25,2.0,3.1,3.0,3.4,3.35,3.35,3.5,3.5,3.1,3.1,2.5,2.0],"court_wacc":[10.71,17.57,14.13,10.5,9.46,10.72,11.07,9.56,10.92,10.6,6.94,11.6,12.0,7.69,16.51],"heap":{"integer":0.5482153421415894,"half":0.2502464997042004,"quarter":0.06803391835929797,"other":0.13350423979491224,"n":10142},"dr_width":{"2.0":0.353,"1.0":0.2128,"4.0":0.1126,"3.0":0.0568,"1.5":0.0491,"0.0":0.0353,"5.0":0.0243,"0.5":0.0181},"pg_pairs":{"2\u20133%":0.1081,"2.5\u20133.5%":0.0862,"2\u20134%":0.0726,"1.5\u20132.5%":0.0726,"1\u20132%":0.0513,"1\u20133%":0.0491,"3\u20134%":0.0448,"3\u20135%":0.0393,"0\u20132%":0.0295,"3.5\u20134.5%":0.0229},"pg_width":{"1.0":0.4705,"2.0":0.25,"0.5":0.1119,"0.0":0.0791,"4.0":0.0235},"em_heap":{"whole":0.603651578546976,"half":0.2704450361354127},"n_pg":1832,"n_em":2629,"pg_median":2.5,"rates":[{"year":2001,"dr":14.0,"n":100,"pg":3.5,"tnx10y":4.967},{"year":2002,"dr":12.25,"n":79,"pg":3.5,"tnx10y":4.533},{"year":2003,"dr":13.0,"n":85,"pg":2.75,"tnx10y":3.998},{"year":2004,"dr":11.75,"n":114,"pg":2.5,"tnx10y":4.255},{"year":2005,"dr":12.0,"n":135,"pg":3.5,"tnx10y":4.269},{"year":2006,"dr":12.0,"n":198,"pg":3.25,"tnx10y":4.781},{"year":2007,"dr":12.0,"n":298,"pg":3.175,"tnx10y":4.579},{"year":2008,"dr":12.25,"n":153,"pg":3.0,"tnx10y":3.598},{"year":2009,"dr":13.5,"n":117,"pg":3.0,"tnx10y":3.277},{"year":2010,"dr":12.0,"n":201,"pg":2.5,"tnx10y":3.131},{"year":2011,"dr":12.0,"n":205,"pg":2.5,"tnx10y":2.734},{"year":2012,"dr":11.5,"n":168,"pg":2.5,"tnx10y":1.741},{"year":2013,"dr":11.5,"n":221,"pg":2.5,"tnx10y":2.359},{"year":2014,"dr":10.65,"n":223,"pg":2.5,"tnx10y":2.481},{"year":2015,"dr":10.5,"n":263,"pg":2.5,"tnx10y":2.099},{"year":2016,"dr":10.0,"n":266,"pg":2.5,"tnx10y":1.823},{"year":2017,"dr":10.0,"n":269,"pg":2.5,"tnx10y":2.327},{"year":2018,"dr":10.125,"n":268,"pg":2.25,"tnx10y":2.889},{"year":2019,"dr":9.812,"n":236,"pg":2.5,"tnx10y":2.083},{"year":2020,"dr":10.0,"n":176,"pg":2.25,"tnx10y":0.816},{"year":2021,"dr":9.75,"n":253,"pg":2.5,"tnx10y":1.462},{"year":2022,"dr":10.938,"n":202,"pg":2.5,"tnx10y":2.991},{"year":2023,"dr":12.0,"n":194,"pg":3.0,"tnx10y":3.964},{"year":2024,"dr":12.0,"n":208,"pg":3.0,"tnx10y":4.235},{"year":2025,"dr":12.0,"n":227,"pg":2.625,"tnx10y":4.24},{"year":2026,"dr":11.5,"n":212,"pg":2.5,"tnx10y":4.583}],"passthrough":{"2001\u201312":[0.189,0.067],"2013\u201321":[0.56,0.106],"2022\u201326":[0.572,0.131]},"passthrough_all":[0.6,0.035],"r2_steps":[{"label":"Year","r2":0.0945},{"label":"+ Industry (SIC-2)","r2":0.2117},{"label":"+ Deal type","r2":0.2307},{"label":"+ Which bank","r2":0.4212}],"pairs":{"n":270,"median_bp":50.0,"identical":0.1962962962962963,"p90_bp":225.0,"hist":{"0.0":53,"0.05":2,"0.1":2,"0.12":4,"0.15":3,"0.2":4,"0.25":28,"0.3":5,"0.35":3,"0.38":3,"0.45":1,"0.5":37,"0.6":1,"0.65":1,"0.7":1,"0.75":10,"0.78":1,"0.88":2,"0.95":1,"1.0":28,"1.1":1,"1.12":1,"1.2":2,"1.25":9,"1.3":1,"1.35":1,"1.45":1,"1.48":1,"1.5":14,"1.55":2,"1.6":1,"1.62":1,"1.7":1,"1.75":3,"2.0":11,"2.12":1,"2.25":5,"2.38":1,"2.5":6,"2.75":1,"2.85":2,"3.0":4,"3.05":1,"3.25":1,"3.5":2,"3.78":1,"3.9":1,"4.0":4}},"cross_mad_bp":109.99999999999997,"trends":[{"year":2001,"perp":0.12,"exitm":0.69,"judgment":0.05,"capm":0.04,"midyear":0.0,"rounded":0.03,"sbc":0.0,"illustrative":0.0},{"year":2002,"perp":0.2658,"exitm":0.6709,"judgment":0.0506,"capm":0.0,"midyear":0.0,"rounded":0.0127,"sbc":0.0,"illustrative":0.0},{"year":2003,"perp":0.2353,"exitm":0.6,"judgment":0.0706,"capm":0.0824,"midyear":0.0,"rounded":0.0,"sbc":0.0,"illustrative":0.0941},{"year":2004,"perp":0.0789,"exitm":0.7544,"judgment":0.0877,"capm":0.0175,"midyear":0.0088,"rounded":0.0088,"sbc":0.0,"illustrative":0.2105},{"year":2005,"perp":0.2296,"exitm":0.6815,"judgment":0.0741,"capm":0.0519,"midyear":0.0074,"rounded":0.0148,"sbc":0.0,"illustrative":0.1037},{"year":2006,"perp":0.2424,"exitm":0.6667,"judgment":0.0758,"capm":0.0354,"midyear":0.0101,"rounded":0.0101,"sbc":0.0,"illustrative":0.197},{"year":2007,"perp":0.2349,"exitm":0.6477,"judgment":0.0537,"capm":0.0369,"midyear":0.0134,"rounded":0.0201,"sbc":0.0,"illustrative":0.1846},{"year":2008,"perp":0.3203,"exitm":0.5425,"judgment":0.1176,"capm":0.0654,"midyear":0.0131,"rounded":0.0131,"sbc":0.0,"illustrative":0.2222},{"year":2009,"perp":0.2991,"exitm":0.5385,"judgment":0.0855,"capm":0.0598,"midyear":0.0342,"rounded":0.0171,"sbc":0.0,"illustrative":0.2821},{"year":2010,"perp":0.3383,"exitm":0.6269,"judgment":0.1244,"capm":0.1443,"midyear":0.0547,"rounded":0.0547,"sbc":0.01,"illustrative":0.3184},{"year":2011,"perp":0.3171,"exitm":0.6341,"judgment":0.1463,"capm":0.1561,"midyear":0.0585,"rounded":0.078,"sbc":0.0634,"illustrative":0.2488},{"year":2012,"perp":0.3155,"exitm":0.5655,"judgment":0.1845,"capm":0.1548,"midyear":0.006,"rounded":0.0476,"sbc":0.0238,"illustrative":0.2262},{"year":2013,"perp":0.3303,"exitm":0.5747,"judgment":0.3122,"capm":0.2262,"midyear":0.0226,"rounded":0.1312,"sbc":0.0543,"illustrative":0.2353},{"year":2014,"perp":0.3857,"exitm":0.5426,"judgment":0.3363,"capm":0.2063,"midyear":0.0628,"rounded":0.1031,"sbc":0.0583,"illustrative":0.2332},{"year":2015,"perp":0.3916,"exitm":0.4601,"judgment":0.1977,"capm":0.1179,"midyear":0.0875,"rounded":0.1103,"sbc":0.1027,"illustrative":0.3118},{"year":2016,"perp":0.5075,"exitm":0.4474,"judgment":0.297,"capm":0.1617,"midyear":0.0714,"rounded":0.1466,"sbc":0.0827,"illustrative":0.2932},{"year":2017,"perp":0.4015,"exitm":0.5056,"judgment":0.3978,"capm":0.1933,"midyear":0.0632,"rounded":0.1822,"sbc":0.0818,"illustrative":0.2565},{"year":2018,"perp":0.4664,"exitm":0.4291,"judgment":0.4067,"capm":0.2873,"midyear":0.1194,"rounded":0.2276,"sbc":0.0784,"illustrative":0.3022},{"year":2019,"perp":0.4364,"exitm":0.4322,"judgment":0.4831,"capm":0.3686,"midyear":0.161,"rounded":0.2458,"sbc":0.089,"illustrative":0.2754},{"year":2020,"perp":0.3807,"exitm":0.4205,"judgment":0.4659,"capm":0.392,"midyear":0.1818,"rounded":0.2557,"sbc":0.0455,"illustrative":0.3409},{"year":2021,"perp":0.4506,"exitm":0.4585,"judgment":0.5099,"capm":0.3953,"midyear":0.1739,"rounded":0.2846,"sbc":0.0435,"illustrative":0.2411},{"year":2022,"perp":0.4406,"exitm":0.4257,"judgment":0.5396,"capm":0.4109,"midyear":0.203,"rounded":0.297,"sbc":0.0693,"illustrative":0.2723},{"year":2023,"perp":0.433,"exitm":0.3557,"judgment":0.4485,"capm":0.3866,"midyear":0.2474,"rounded":0.3557,"sbc":0.067,"illustrative":0.3041},{"year":2024,"perp":0.3702,"exitm":0.4663,"judgment":0.5144,"capm":0.3365,"midyear":0.2548,"rounded":0.351,"sbc":0.0817,"illustrative":0.2115},{"year":2025,"perp":0.4317,"exitm":0.37,"judgment":0.5374,"capm":0.3789,"midyear":0.3128,"rounded":0.326,"sbc":0.0573,"illustrative":0.304},{"year":2026,"perp":0.4198,"exitm":0.4198,"judgment":0.5472,"capm":0.3349,"midyear":0.3538,"rounded":0.3066,"sbc":0.0613,"illustrative":0.3066}],"house":[{"bank":"Goldman Sachs","n":576,"dr_w":2.0,"dr_mid":10.0,"perp":0.515625,"exitm":0.5295138888888888,"decline":0.0,"pos":0.6331818181818181,"judgment":0.9717514124293786,"illustrative":0.9565972222222222,"recall":0.991,"sig":["an illustrative","of illustrative","illustrative discounted cash","illustrative discounted","performed an"]},{"bank":"J.P. Morgan","n":348,"dr_w":1.0,"dr_mid":10.0,"perp":0.7298850574712644,"exitm":0.11494252873563218,"decline":0.0028735632183908046,"pos":0.43655519926706365,"judgment":0.1111111111111111,"illustrative":0.08333333333333333,"recall":0.963,"sig":["bank conducted","bank conducted discounted","conducted discounted","conducted discounted cash","of terminal values"]},{"bank":"Morgan Stanley","n":318,"dr_w":1.5999999999999996,"dr_mid":9.4,"perp":0.41823899371069184,"exitm":0.5188679245283019,"decline":0.0,"pos":0.7347301136363635,"judgment":0.8452380952380952,"illustrative":0.12264150943396226,"recall":0.953,"sig":["is designed to","is designed","designed to","value of company","provide an implied"]},{"bank":"BofA / Merrill Lynch","n":306,"dr_w":2.0,"dr_mid":10.0,"perp":0.3758169934640523,"exitm":0.5718954248366013,"decline":0.0,"pos":0.7102642276422764,"judgment":0.5,"illustrative":0.12418300653594772,"recall":0.896,"sig":["approximate implied","equity value reference","standalone unlevered after","of the standalone","approximate implied per"]},{"bank":"Centerview","n":211,"dr_w":2.0,"dr_mid":11.5,"perp":0.2938388625592417,"exitm":0.20853080568720378,"decline":0.3981042654028436,"pos":0.7333333333333333,"judgment":0.421875,"illustrative":0.27488151658767773,"recall":0.915,"sig":["bank analysis of","by using","flows of the","reflecting bank","pct reflecting bank"]},{"bank":"Evercore","n":199,"dr_w":1.5,"dr_mid":10.0,"perp":0.7085427135678392,"exitm":0.6231155778894473,"decline":0.0,"pos":0.6092865232163082,"judgment":0.7692307692307693,"illustrative":0.1407035175879397,"recall":0.92,"sig":["perpetuity growth","the implied present","of implied enterprise","year cash flow","bank based on"]},{"bank":"Stifel / KBW","n":173,"dr_w":4.0,"dr_mid":13.0,"perp":0.1329479768786127,"exitm":0.3699421965317919,"decline":0.005780346820809248,"pos":0.7169375832425233,"judgment":0.10344827586206896,"illustrative":0.06358381502890173,"recall":0.914,"sig":["to perform","is widely","methodology but","valuation methodology but","widely used valuation"]},{"bank":"Lazard","n":167,"dr_w":1.5,"dr_mid":10.0,"perp":0.31137724550898205,"exitm":0.5209580838323353,"decline":0.041916167664670656,"pos":0.6403508771929823,"judgment":0.8604651162790697,"illustrative":0.10778443113772455,"recall":0.786,"sig":["share range for","per share range","share range","calculated an","on the present"]},{"bank":"Citi","n":162,"dr_w":1.4000000000000004,"dr_mid":9.625,"perp":0.3395061728395062,"exitm":0.5802469135802469,"decline":0.0,"pos":0.5613079019073571,"judgment":0.39473684210526316,"illustrative":0.18518518518518517,"recall":0.722,"sig":["selected range of","selected range","approximate implied","calculated by applying","firm value"]},{"bank":"Jefferies","n":162,"dr_w":1.0,"dr_mid":12.0,"perp":0.3950617283950617,"exitm":0.5,"decline":0.012345679012345678,"pos":0.679660362794288,"judgment":0.22413793103448276,"illustrative":0.1111111111111111,"recall":0.833,"sig":["year ending","fiscal year ending","analysis to estimate","range of pct","selected discount rate"]},{"bank":"Credit Suisse","n":158,"dr_w":2.0,"dr_mid":10.5,"perp":0.0949367088607595,"exitm":0.8354430379746836,"decline":0.0,"pos":0.4878048780487805,"judgment":0.5294117647058824,"illustrative":0.08860759493670886,"recall":0.869,"sig":["bank bank","bank bank calculated","implied reference","the projected after","was then calculated"]},{"bank":"Barclays","n":135,"dr_w":2.0,"dr_mid":11.0,"perp":0.362962962962963,"exitm":0.5925925925925926,"decline":0.007407407407407408,"pos":0.5862068965517241,"judgment":0.7027027027027027,"illustrative":0.11851851851851852,"recall":0.911,"sig":["the estimated enterprise","estimated enterprise","estimated enterprise value","cash flows or","flows or"]},{"bank":"Houlihan Lokey","n":128,"dr_w":2.0,"dr_mid":12.5,"perp":0.2890625,"exitm":0.5,"decline":0.0,"pos":0.7591210081711601,"judgment":0.17073170731707318,"illustrative":0.0859375,"recall":0.862,"sig":["flow analysis indicated","reference range","value reference range","the estimated net","estimated net present"]},{"bank":"UBS","n":111,"dr_w":2.0,"dr_mid":12.0,"perp":0.16216216216216217,"exitm":0.7297297297297297,"decline":0.0,"pos":0.7439999999999999,"judgment":0.1111111111111111,"illustrative":0.036036036036036036,"recall":0.811,"sig":["forecasts and estimates","implied present values","values of cash","implied present","of implied present"]},{"bank":"Moelis","n":98,"dr_w":2.0,"dr_mid":10.25,"perp":0.20408163265306123,"exitm":0.5510204081632653,"decline":0.0,"pos":0.6453125000000001,"judgment":0.4318181818181818,"illustrative":0.08163265306122448,"recall":0.888,"sig":["calculate the present","cash flows projected","flows projected","projected to be","bank utilized range"]}],"nlp":{"acc_cv":0.9065277352129941,"baseline":0.17652467054857493,"n":3263,"acc_temporal":0.8072916666666666,"n_temporal":1152,"cos_same":0.15489657269572757,"cos_diff":0.07972097662845891},"books_n":869,"books_era":[{"era":"2001\u201308","n":282,"erp":7.1,"bloomberg":0.379,"barra":0.145,"kroll":0.358,"supply":0.018},{"era":"2009\u201315","n":252,"erp":6.125,"bloomberg":0.468,"barra":0.103,"kroll":0.385,"supply":0.087},{"era":"2016\u201321","n":185,"erp":6.375,"bloomberg":0.568,"barra":0.173,"kroll":0.508,"supply":0.103},{"era":"2022\u201326","n":150,"erp":6.2,"bloomberg":0.74,"barra":0.107,"kroll":0.62,"supply":0.187}],"books_bank":[{"bank_name":"Barclays","n":19,"bloomberg":0.368,"barra":0.105,"kroll":0.211,"t10":3,"t20":1,"t30":0},{"bank_name":"BofA / Merrill Lynch","n":44,"bloomberg":0.523,"barra":0.091,"kroll":0.205,"t10":9,"t20":0,"t30":1},{"bank_name":"Citi","n":31,"bloomberg":0.516,"barra":0.097,"kroll":0.161,"t10":1,"t20":6,"t30":4},{"bank_name":"Credit Suisse","n":20,"bloomberg":0.35,"barra":0.15,"kroll":0.15,"t10":1,"t20":0,"t30":0},{"bank_name":"Duff & Phelps / Kroll","n":106,"bloomberg":0.604,"barra":0.028,"kroll":1.0,"t10":1,"t20":5,"t30":2},{"bank_name":"Evercore","n":35,"bloomberg":0.743,"barra":0.0,"kroll":0.486,"t10":2,"t20":16,"t30":0},{"bank_name":"Goldman Sachs","n":42,"bloomberg":0.5,"barra":0.5,"kroll":0.476,"t10":3,"t20":3,"t30":4},{"bank_name":"Houlihan Lokey","n":92,"bloomberg":0.598,"barra":0.0,"kroll":0.489,"t10":0,"t20":11,"t30":2},{"bank_name":"J.P. Morgan","n":54,"bloomberg":0.333,"barra":0.13,"kroll":0.037,"t10":9,"t20":0,"t30":0},{"bank_name":"Jefferies","n":25,"bloomberg":0.6,"barra":0.08,"kroll":0.48,"t10":2,"t20":4,"t30":1},{"bank_name":"Lazard","n":39,"bloomberg":0.462,"barra":0.564,"kroll":0.538,"t10":15,"t20":1,"t30":2},{"bank_name":"Morgan Stanley","n":49,"bloomberg":0.449,"barra":0.306,"kroll":0.245,"t10":6,"t20":0,"t30":1}],"books_tenor":{"10.0":94,"20.0":79,"30.0":27},"court_vs_bank":[{"case":"Dell (2016)","court":9.46,"banks":[["Evercore",10.0,12.0],["J.P. Morgan",9.5,13.5]]},{"case":"Jarden (2019)","court":6.94,"banks":[["Centerview",6.75,7.75],["Goldman Sachs",6.5,8.5]]},{"case":"Norcraft (2018)","court":10.6,"banks":[["Citi",9.6,11.3]]},{"case":"Lender Processing (2016)","court":9.56,"banks":[["Credit Suisse",8.0,10.0],["Goldman Sachs",8.5,10.0]]},{"case":"Ancestry.com (2015)","court":10.71,"banks":[["Qatalyst",9.0,14.0]]},{"case":"DFC Global (2016)","court":10.72,"banks":[["Houlihan Lokey",10.0,11.0]]},{"case":"Clearwire (2017)","court":10.92,"banks":[["Centerview",10.0,17.5],["Evercore",12.5,17.5]]},{"case":"AutoInfo (2015)","court":17.57,"banks":[["Stephens",18.0,20.0]]},{"case":"Pivotal (2024)","court":7.69,"banks":[["Morgan Stanley",9.0,11.0]]}],"court_below_bank_mid":6,"utz":[{"step":"First model: raw 2-yr betas, 10-yr rf, 5.5% ERP","wacc":5.0},{"step":"5-year weekly Blume-adjusted betas + debt beta","wacc":6.2},{"step":"+ Utz's own asset beta","wacc":6.5},{"step":"+ 20/30-yr risk-free rate","wacc":6.7},{"step":"All three + 6.5% ERP","wacc":7.4},{"step":"Citi's range (midpoint 8.2%)","wacc":8.2}],"book_erp_2010":[7.1,6.47,7.0,6.7,6.7,5.0,5.25,5.25,5.25,3.9,5.25,5.5,5.5,5.25,5.25,5.25,6.0,5.5,5.25,5.25,5.25,5.25,5.25,5.25,5.25,5.25,6.7,6.7,7.99,4.0,7.7,6.25,6.14,6.14,6.6,6.25,6.6,6.6,6.6,7.05,8.9,6.6,6.62,6.7,6.62,6.11,5.6,6.6,6.0,6.7,5.75,6.7,5.0,6.0,8.0,6.25,7.0,6.2,6.25,6.0,6.7,6.0,6.7,7.0,6.5,7.0,7.0,6.03,6.8,5.0,5.5,6.0,6.94,6.5,6.9,6.5,6.0,6.9,6.0,5.75,6.9,6.9,6.0,6.0,6.94,6.0,6.9,6.0,6.0,6.0,5.4,6.14,5.0,7.1,6.1,5.0,6.9,6.9,6.0,8.0,6.0,6.14,9.0,6.1,6.9,6.7,6.9,7.1,7.25,7.2,6.0,6.0,7.5,5.6,5.6,7.2,7.15,7.25,6.0,7.5,6.22,6.1,7.5,6.25,5.6,7.5,7.5,6.25,5.13,4.86,6.0,6.0,3.74,7.0,6.2,6.2,6.22,7.46,6.4,7.17,6.75,7.2,6.35,5.58,5.94,7.2,7.2,6.8,7.3,5.75,5.5,4.3,5.78,7.17,6.0,7.2,7.17,6.0,6.22,5.75,5.5,5.9,6.2,6.3,5.0,5.83,5.0,5.5,7.2,7.3,4.3,5.0,7.31,6.0,6.8,6.9,6.1,5.2,5.0,6.8,5.0,7.3,7.31,7.31,7.37,5.3,5.78,5.8,6.0,5.5,6.2,6.31],"book_erp_pre2010":[8.4,8.1,7.4,7.8,3.95,7.5,7.8,7.8,9.4,7.0,9.3,7.0,5.0,3.53,7.0,7.0,7.0,4.0,7.2,7.4,7.62,6.0,7.2,7.2,7.2,7.61,4.6,7.2,7.2,7.2,7.2,5.5,7.2,3.7,7.6,6.3,5.5,5.93,7.0,7.2,7.2,3.61,7.1,4.0,7.1,7.8,4.84,4.54,5.04,7.76,7.13,7.55,7.1,7.1,3.8,4.4,5.5,7.1,5.5,4.6,5.1,5.1,7.1,6.2,6.2,6.0,6.1,6.5,6.0],"pairs_hist":[{"x":0.0,"n":68},{"x":0.25,"n":40},{"x":0.5,"n":40},{"x":0.75,"n":14},{"x":1.0,"n":32},{"x":1.25,"n":13},{"x":1.5,"n":19},{"x":1.75,"n":3},{"x":2.0,"n":12},{"x":2.25,"n":6},{"x":2.5,"n":6},{"x":2.75,"n":3},{"x":3.0,"n":5},{"x":3.25,"n":1},{"x":3.5,"n":2},{"x":3.75,"n":2},{"x":4.0,"n":4},{"x":4.25,"n":0}]};
-const $ = s => document.querySelector(s);
-const pct = (x, d = 0) => (x * 100).toFixed(d) + "%";
-const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
-const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
-const tip = $("#tip");
-function showTip(e, html) { tip.innerHTML = html; tip.style.opacity = 1; const x = Math.min(e.clientX + 14, innerWidth - 270); tip.style.left = x + "px"; tip.style.top = (e.clientY + 14) + "px"; }
-function hideTip() { tip.style.opacity = 0; }
-document.addEventListener("pointermove", e => { const t = e.target.closest("[data-tip]"); if (t) showTip(e, t.getAttribute("data-tip")); else hideTip(); });
-const T = s => esc(s);
-$("#nf").textContent = $("#nf2").textContent = R.n_filings.toLocaleString();
-$("#nb").textContent = R.bank_ratio.n.toLocaleString();
-const pt = R.passthrough, keys = Object.keys(pt);
-const ap = R.appraisal;
-const by = Object.fromEntries(R.pos_by_type.map(x => [x.type, x]));
-const D = { posn: R.pos.n.toLocaleString(), inside: pct(R.pos.inside), above: pct(R.pos.above), below: pct(R.pos.below), posmed: R.pos.median.toFixed(2),
-  ratio: pct(R.bank_ratio.q[2]), iqr: "±" + Math.round((R.bank_ratio.q[3] - R.bank_ratio.q[1]) / 2 * 100) + "%",
-  pos13e: by["13e-3 / going private"].median.toFixed(2), below13e: pct(by["13e-3 / going private"].below),
-  heapint: pct(R.heap.integer), heaphalf: pct(R.heap.half), heapother: pct(R.heap.other), emheap: pct(R.em_heap.whole + R.em_heap.half),
-  pt1: pt[keys[0]][0].toFixed(2), pt3: pt[keys[2]][0].toFixed(2), pairsn: R.pairs.n, pairbp: Math.round(R.pairs.median_bp), pair90: Math.round(R.pairs.p90_bp),
-  acc: pct(R.nlp.acc_cv), base: pct(R.nlp.baseline), acct: pct(R.nlp.acc_temporal), cvb: R.court_below_bank_mid,
-  apppost: "97%", apppre: "109%", rows: R.n_rows.toLocaleString(), deals: R.n_deals.toLocaleString(), books: R.books_n.toLocaleString() };
-document.querySelectorAll(".d").forEach(el => el.textContent = D[el.dataset.k]);
-// KPI row
-const kp = [["r", pct(R.pos.inside), "of cash-deal prices fall inside the bank's own valuation range"], ["", (R.bank_ratio.q[2]).toFixed(2) + "×", "typical bank valuation, as a multiple of the deal price"],
-  ["", ap.petitioner.q[2].toFixed(2) + "×", "typical valuation by the shareholders' expert in appraisal cases"], ["", pct(R.heap.integer + R.heap.half), "of bank discount rates end in a whole or half point"],
-  ["r", pct(R.nlp.acc_cv), "of valuation summaries a text classifier traced to the right bank, with names removed"]];
-$("#kpis").innerHTML = kp.map(k => `<div class="${k[0]}"><b>${k[1]}</b><span>${k[2]}</span></div>`).join("");
-
-function draw(id, fn) { const el = $(id); const go = () => { const W = el.clientWidth, H = el.clientHeight; el.innerHTML = fn(W, H); }; new ResizeObserver(go).observe(el); }
-
-// HERO: four hats
-draw("#hero", (W, H) => {
-  const rows = [["Bank advising the seller (fairness opinion)", R.bank_ratio_sample.map(v => ({ v, c: "Banker DCF midpoint" })), R.bank_ratio.q, "red"],
-    ["Company's expert (appraisal case)", ap.respondent.values.map(x => ({ v: x.v, c: x.case })), ap.respondent.q, "ink"],
-    ["Delaware court (value it awarded)", ap.court.values.map(x => ({ v: x.v, c: x.case })), ap.court.q, "blue"],
-    ["Shareholders' expert (appraisal case)", ap.petitioner.values.map(x => ({ v: x.v, c: x.case })), ap.petitioner.q, "ink"]];
-  const narrow = W < 620, L = narrow ? 8 : 280, Rm = 24, top = narrow ? 8 : 14, bot = 34;
-  const lo = Math.log(0.25), hi = Math.log(4), X = v => L + (Math.log(Math.min(4, Math.max(0.25, v))) - lo) / (hi - lo) * (W - L - Rm);
-  const rh = (H - top - bot) / rows.length;
-  let s = "";
-  [0.25, 0.5, 0.75, 1, 1.5, 2, 3, 4].forEach(t => { if (narrow && (t === 0.75 || t === 3 || t === 1.5)) return; s += `<line x1="${X(t)}" x2="${X(t)}" y1="${top}" y2="${H - bot}" stroke="${t === 1 ? "var(--ink)" : "var(--rule)"}" stroke-width="${t === 1 ? 1.5 : 1}"/><text x="${X(t)}" y="${H - bot + 18}" text-anchor="middle" class="${t === 1 ? "ink" : ""}">${t === 1 ? (narrow ? "1× deal" : "1× = deal price") : t + "×"}</text>`; });
-  let seed = 7; const rnd = () => (seed = seed * 16807 % 2147483647) / 2147483647;
-  rows.forEach((r, i) => {
-    const cy = top + rh * i + rh * (narrow ? 0.62 : 0.5), col = r[3] === "red" ? "var(--red)" : r[3] === "blue" ? "var(--blue)" : "var(--ink)";
-    if (narrow) s += `<text x="${L}" y="${top + rh * i + 14}" class="ink">${T(r[0].replace(/ \(.*\)/, ""))}</text>`;
-    else s += `<text x="${L - 14}" y="${cy + 4}" text-anchor="end" class="ink">${T(r[0])}</text>`;
-    const jit = Math.min(rh * 0.28, 16);
-    r[1].forEach(d => s += `<circle cx="${X(d.v)}" cy="${cy + (rnd() - 0.5) * 2 * jit}" r="${r[1].length > 100 ? 2.6 : 4}" fill="${col}" fill-opacity="${r[1].length > 100 ? 0.28 : 0.55}" data-tip="${T(d.c)}: ${d.v.toFixed(2)}× deal price"/>`);
-    const q = r[2];
-    s += `<rect x="${X(q[1])}" y="${cy - 3}" width="${X(q[3]) - X(q[1])}" height="6" fill="${col}" rx="2"/><rect x="${X(q[2]) - 1.5}" y="${cy - jit - 4}" width="3" height="${2 * jit + 8}" fill="${col}"/>`;
-    if (narrow) s += `<text x="${W - Rm}" y="${top + rh * i + 14}" text-anchor="end" class="${r[3] === "ink" ? "ink" : r[3]}">${q[2].toFixed(2)}×</text>`;
-    else s += `<text x="${X(q[2])}" y="${cy - jit - 8}" text-anchor="middle" class="${r[3] === "ink" ? "ink" : r[3]}">${q[2].toFixed(2)}×</text>`;
-  });
-  return `<svg>${s}</svg>`;
-});
-
-// UTZ
-draw("#utz", (W, H) => {
-  const d = R.utz, L = 8, Rm = 40, top = 6, rh = (H - top - 26) / d.length, X = v => L + v / 9 * (W - L - Rm);
-  let s = `<rect x="${X(7.9)}" y="${top}" width="${X(8.5) - X(7.9)}" height="${H - top - 26}" fill="var(--redsoft)"/>`;
-  [0, 2, 4, 6, 8].forEach(t => s += `<text x="${X(t)}" y="${H - 6}" text-anchor="middle">${t}%</text>`);
-  d.forEach((r, i) => { const y = top + i * rh, last = i === d.length - 1; const bw = Math.max(2, X(r.wacc) - L);
-    s += `<text x="${L}" y="${y + 14}" class="ink">${T(r.step)}</text><rect x="${L}" y="${y + 20}" width="${bw}" height="${Math.min(14, rh - 26)}" rx="2" fill="${last ? "var(--red)" : "var(--blue)"}" data-tip="${T(r.step)}: ${r.wacc.toFixed(1)}%"/><text x="${L + bw + 6}" y="${y + 31}" class="ink">${r.wacc.toFixed(1)}%</text>`; });
-  return `<svg>${s}</svg>`;
-});
-
-// Price position histogram
-draw("#pos", (W, H) => {
-  const h = R.pos_hist, L = 34, Rm = 10, top = 22, bot = 30, X = v => L + (v + 1) / 3 * (W - L - Rm), mx = Math.max(...h.map(b => b.n)), Y = n => H - bot - n / mx * (H - top - bot);
-  let s = `<rect x="${X(0)}" y="${top - 6}" width="${X(1) - X(0)}" height="${H - bot - top + 6}" fill="var(--soft)"/>`;
-  h.forEach(b => { const c = b.x1 <= 0 ? "var(--blue)" : b.x0 >= 1 ? "var(--red)" : "var(--ink)"; s += `<rect x="${X(b.x0) + 1}" y="${Y(b.n)}" width="${Math.max(1, X(b.x1) - X(b.x0) - 2)}" height="${H - bot - Y(b.n)}" fill="${c}" fill-opacity="${c === "var(--ink)" ? 0.75 : 1}" rx="1" data-tip="Position ${b.x0.toFixed(2)} to ${b.x1.toFixed(2)}: ${b.n} deals"/>`; });
-  [-1, 0, 0.5, 1, 2].forEach(t => s += `<text x="${X(t)}" y="${H - 10}" text-anchor="middle">${t === -1 ? "≤ −1" : t === 2 ? "≥ 2" : t === 0 ? "low end" : t === 1 ? "high end" : "mid"}</text>`);
-  s += `<text x="${X(-0.5)}" y="${top + 4}" text-anchor="middle" class="blue">below ${pct(R.pos.below)}</text><text x="${X(0.5)}" y="${top + 4}" text-anchor="middle" class="ink">inside ${pct(R.pos.inside)}</text><text x="${X(1.5)}" y="${top + 4}" text-anchor="middle" class="red">above ${pct(R.pos.above)}</text>`;
-  return `<svg>${s}</svg>`;
-});
-$("#postype").innerHTML = R.pos_by_type.map(t => `<div class="row"><span class="t">${T(t.type)}</span><div class="stk" data-tip="${T(t.type)} (${t.n} deals): below ${pct(t.below)}, inside ${pct(t.inside)}, above ${pct(t.above)}"><i style="width:${t.below * 100}%;background:var(--blue)"></i><i style="width:${t.inside * 100}%;background:var(--rule)"></i><i style="width:${t.above * 100}%;background:var(--red)"></i></div><span class="v">n ${t.n}</span></div>`).join("");
-
-// heaping rows
-const rowsHTML = (arr, max, red) => arr.map(([l, v, tipx]) => `<div class="row"><span class="t">${l}</span><div class="bar" data-tip="${T(tipx || l)}: ${pct(v, 1)}"><i class="${red ? "r" : ""}" style="width:${v / max * 100}%"></i></div><span class="v">${pct(v)}</span></div>`).join("");
-$("#heap").innerHTML = rowsHTML([["whole number (9%)", R.heap.integer], ["half (9.5%)", R.heap.half], ["quarter (9.25%)", R.heap.quarter], ["anything else", R.heap.other]], R.heap.integer, true);
-const wd = Object.entries(R.dr_width).slice(0, 6).map(([k, v]) => [(+k).toFixed(+k % 1 ? 1 : 0) + (+k === 1 ? " point" : " points"), v]).map(x => [x[0] === "0 points" ? "single rate" : x[0], x[1]]);
-$("#wid").innerHTML = rowsHTML(wd, Math.max(...wd.map(x => x[1])));
-const pp = Object.entries(R.pg_pairs).slice(0, 6);
-$("#pgp").innerHTML = rowsHTML(pp, Math.max(...pp.map(x => x[1])));
-
-// rates
-draw("#rates", (W, H) => {
-  const d = R.rates, L = 36, Rm = narrowR(W), top = 14, bot = 28;
-  function narrowR(w) { return w < 500 ? 70 : 110; }
-  const x0 = d[0].year, x1 = d[d.length - 1].year, X = y => L + (y - x0) / (x1 - x0) * (W - L - Rm), Y = v => top + (16 - v) / 16 * (H - top - bot);
-  let s = "";
-  [0, 4, 8, 12, 16].forEach(t => s += `<line x1="${L}" x2="${W - Rm}" y1="${Y(t)}" y2="${Y(t)}" stroke="var(--rule)"/><text x="${L - 6}" y="${Y(t) + 4}" text-anchor="end">${t}%</text>`);
-  [2001, 2008, 2013, 2020, 2026].forEach(t => s += `<text x="${X(t)}" y="${H - 8}" text-anchor="middle">${t}</text>`);
-  const path = k => d.map((r, i) => (i ? "L" : "M") + X(r.year).toFixed(1) + "," + Y(r[k]).toFixed(1)).join("");
-  s += `<path d="${path("dr")}" fill="none" stroke="var(--red)" stroke-width="2.5"/><path d="${path("tnx10y")}" fill="none" stroke="var(--blue)" stroke-width="2"/>`;
-  const e = d[d.length - 1];
-  s += `<text x="${X(e.year) + 6}" y="${Y(e.dr) + 4}" class="red">bank discount rate</text><text x="${X(e.year) + 6}" y="${Y(e.tnx10y) + 4}" class="blue">10-yr Treasury</text>`;
-  d.forEach(r => s += `<rect x="${X(r.year) - (W - L - Rm) / (x1 - x0) / 2}" y="${top}" width="${(W - L - Rm) / (x1 - x0)}" height="${H - top - bot}" fill="transparent" data-tip="${r.year}: median discount rate ${r.dr.toFixed(2)}%, 10-yr ${r.tnx10y.toFixed(2)}% (${r.n} DCFs)"/>`);
-  return `<svg>${s}</svg>`;
-});
-
-// R2
-$("#r2").innerHTML = rowsHTML(R.r2_steps.map(s => [s.label, s.r2, s.label + " (adjusted R²)"]), 0.5, false).replace(/(<div class="row">(?:(?!<div class="row">).)*Which bank(?:(?!<div class="row">).)*?<i class=")"/s, "$1r");
-draw("#pairs", (W, H) => {
-  const h = R.pairs_hist, L = 30, Rm = 8, top = 10, bot = 28, n = h.length, bw = (W - L - Rm) / n, mx = Math.max(...h.map(b => b.n)), Y = v => H - bot - v / mx * (H - top - bot);
-  let s = "";
-  h.forEach((b, i) => s += `<rect x="${L + i * bw + 1}" y="${Y(b.n)}" width="${bw - 2}" height="${H - bot - Y(b.n)}" rx="1" fill="${i === 0 ? "var(--red)" : "var(--blue)"}" data-tip="${i === n - 1 ? "4 points or more" : (b.x * 100) + " to " + ((b.x + 0.25) * 100) + " bp"}: ${b.n} pairs"/>`);
-  [0, 1, 2, 3, 4].forEach(t => s += `<text x="${L + t * 4 * bw}" y="${H - 8}" text-anchor="middle">${t * 100} bp${t === 4 ? "+" : ""}</text>`);
-  s += `<text x="${L + bw + 6}" y="${top + 12}" class="red">${pct(R.pairs.identical)} used the same range</text>`;
-  return `<svg>${s}</svg>`;
-});
-
-// house table
-$("#house tbody").innerHTML = R.house.map(h => `<tr><td data-l="Bank"><b>${T(h.bank)}</b></td><td class="n" data-l="DCFs">${h.n}</td><td class="n" data-l="Named by model">${h.recall != null ? pct(h.recall) : "–"}</td><td data-l="Distinctive phrase"><q>${T((h.sig[0] || "").replace(/\bbank\b/g, "[bank]").replace(/\bpct\b/g, "x%").replace(/\bmult\b/g, "x×"))}</q></td><td class="n" data-l="Perpetuity growth">${pct(h.perp)}</td><td class="n" data-l="Exit multiple">${pct(h.exitm)}</td><td class="n" data-l="Typical width">${h.dr_w.toFixed(1)} pts</td><td class="n" data-l="Price position">${h.pos != null ? h.pos.toFixed(2) : "–"}</td></tr>`).join("");
-
-// trends small multiples
-const TR = [["judgment", "Says “professional judgment”"], ["perp", "Uses a long-term growth rate"], ["exitm", "Uses an earnings multiple"], ["capm", "Names the capital asset pricing model"], ["midyear", "States the mid-year timing convention"], ["rounded", "Says “rounded to the nearest”"]];
-$("#trends").innerHTML = TR.map((t, i) => `<div><h3>${t[1]}</h3><div class="fig" id="tr${i}"></div></div>`).join("");
-TR.forEach((t, i) => draw("#tr" + i, (W, H) => {
-  const d = R.trends, L = 30, Rm = 34, top = 8, bot = 22, x0 = 2001, x1 = 2026, X = y => L + (y - x0) / (x1 - x0) * (W - L - Rm), Y = v => top + (1 - v / 0.8) * (H - top - bot);
-  let s = "";
-  [0, 0.4, 0.8].forEach(v => s += `<line x1="${L}" x2="${W - Rm}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--rule)"/><text x="${L - 4}" y="${Y(v) + 4}" text-anchor="end">${v * 100}%</text>`);
-  [2016.05, 2017.6].forEach(v => s += `<line x1="${X(v)}" x2="${X(v)}" y1="${top}" y2="${H - bot}" stroke="var(--mute)" stroke-dasharray="3 3"/>`);
-  [2001, 2026].forEach(y => s += `<text x="${X(y)}" y="${H - 6}" text-anchor="middle">${y}</text>`);
-  s += `<path d="${d.map((r, j) => (j ? "L" : "M") + X(r.year).toFixed(1) + "," + Y(r[t[0]]).toFixed(1)).join("")}" fill="none" stroke="${i === 0 ? "var(--red)" : "var(--blue)"}" stroke-width="2"/>`;
-  const e = d[d.length - 1]; s += `<text x="${X(e.year) + 4}" y="${Y(e[t[0]]) + 4}" class="ink">${pct(e[t[0]])}</text>`;
-  d.forEach(r => s += `<rect x="${X(r.year) - 4}" y="${top}" width="8" height="${H - top - bot}" fill="transparent" data-tip="${r.year}: ${pct(r[t[0]])}"/>`);
-  return `<svg>${s}</svg>`;
-}));
-
-// ERP strip
-draw("#erp", (W, H) => {
-  const L = 8, Rm = 12, X = v => L + (v - 3) / 6 * (W - L - Rm), rows = [["Delaware courts", R.court_erp_2010, "var(--blue)"], ["Bank presentations", R.book_erp_2010, "var(--red)"]];
-  let s = ""; let seed = 3; const rnd = () => (seed = seed * 16807 % 2147483647) / 2147483647;
-  [3, 4, 5, 6, 7, 8, 9].forEach(t => s += `<line x1="${X(t)}" x2="${X(t)}" y1="10" y2="${H - 26}" stroke="var(--rule)"/><text x="${X(t)}" y="${H - 8}" text-anchor="middle">${t}%</text>`);
-  rows.forEach((r, i) => { const cy = 34 + i * ((H - 60) / 2 + 10); s += `<text x="${L}" y="${cy - 14}" class="ink">${r[0]} (${r[1].length})</text>`;
-    r[1].forEach(v => s += `<circle cx="${X(v)}" cy="${cy + (rnd() - 0.5) * 16}" r="3.5" fill="${r[2]}" fill-opacity=".5" data-tip="${r[0]}: ${v.toFixed(2)}%"/>`); });
-  return `<svg>${s}</svg>`;
-});
-// court vs bank
-draw("#cvb", (W, H) => {
-  const d = R.court_vs_bank, narrow = W < 520, L = narrow ? 8 : 150, Rm = 14, top = 6, bot = 26, rh = (H - top - bot) / d.length, X = v => L + (v - 5) / 16 * (W - L - Rm);
-  let s = "";
-  [5, 9, 13, 17, 21].forEach(t => s += `<line x1="${X(t)}" x2="${X(t)}" y1="${top}" y2="${H - bot}" stroke="var(--rule)"/><text x="${X(t)}" y="${H - 8}" text-anchor="middle">${t}%</text>`);
-  d.forEach((c, i) => { const y = top + rh * i + rh / 2 + (narrow ? 6 : 0);
-    s += narrow ? `<text x="${L}" y="${top + rh * i + 11}" class="ink">${T(c.case)}</text>` : `<text x="${L - 10}" y="${y + 4}" text-anchor="end" class="ink">${T(c.case)}</text>`;
-    c.banks.forEach((b, j) => { const yy = y + (j - (c.banks.length - 1) / 2) * 6; s += `<line x1="${X(b[1])}" x2="${X(b[2])}" y1="${yy}" y2="${yy}" stroke="var(--red)" stroke-width="4" stroke-linecap="round" data-tip="${T(b[0])}: ${b[1]}% to ${b[2]}%"/>`; });
-    s += `<circle cx="${X(c.court)}" cy="${y}" r="5.5" fill="var(--blue)" stroke="var(--bg)" stroke-width="2" data-tip="Court: ${c.court}%"/>`; });
-  s += `<text x="${W - Rm}" y="${top + 10}" text-anchor="end" class="blue">● court</text><text x="${W - Rm}" y="${top + 26}" text-anchor="end" class="red">— bank's range</text>`;
-  return `<svg>${s}</svg>`;
-});
-}
-</script>
 </body>
 </html>
