@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What formalizing derivatives law in Lean turned up &mdash; Ben Sovocool</title>
+<style>
+  :root { --ink:#1a1a1a; --quiet:#6b6b6b; --rule:#e3e3e3; }
+  html { font-size: 17px; }
+  body {
+    background: #fff;
+    margin: 0 auto;
+    max-width: 36rem;
+    padding: 2.5rem 1.25rem 4rem;
+    color: var(--ink);
+    font-family: Charter, Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+  }
+  .crumb {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--quiet);
+    margin-bottom: 2rem;
+  }
+  .crumb a { color: var(--quiet); }
+  h1 { font-size: 1.35rem; margin: 0 0 0.25rem 0; }
+  .date {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--quiet);
+    margin: 0 0 1.75rem 0;
+  }
+  p { margin: 0 0 1rem 0; }
+  h2 { font-size: 1rem; margin: 1.75rem 0 0.5rem 0; }
+  .guest { font-style: italic; }
+  figure { margin: 0 0 1.5rem 0; }
+  img { max-width: 100%; height: auto; }
+  figcaption { font-size: 0.8rem; color: var(--quiet); margin-top: 0.4rem; }
+  .tablewrap { overflow-x: auto; margin: 0 0 0.4rem 0; }
+  table { border-collapse: collapse; font-size: 0.8rem; width: 100%; }
+  th, td { padding: 0.25rem 0.4rem; border-bottom: 1px solid var(--rule); text-align: right; white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; }
+  th { font-weight: normal; color: var(--quiet); }
+  blockquote {
+    margin: 0 0 1rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid var(--rule);
+    color: var(--quiet);
+  }
+  code, pre {
+    font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+    font-size: 0.85em;
+  }
+  pre { overflow-x: auto; padding: 0.75rem; border: 1px solid var(--rule); }
+  a { color: #0000ee; }
+  a:visited { color: #551a8b; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 1.75rem 0; }
+  sup.fn { font-size: 0.7em; line-height: 0; vertical-align: super; }
+  sup.fn a { text-decoration: none; }
+  .footnotes {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+    color: var(--quiet);
+  }
+  .footnotes ol { padding-left: 1.25rem; margin: 0; }
+  .footnotes li { margin-bottom: 0.5rem; scroll-margin-top: 2rem; }
+  .footnotes p { margin: 0; }
+  .footnotes a.back { text-decoration: none; }
+  h3 { font-size: 1rem; font-style: italic; font-weight: normal; margin: 1.5rem 0 0.5rem 0; }
+  blockquote.reg { color: var(--ink); font-size: 0.9rem; border-left: 2px solid #c1121f; margin-bottom: 0.4rem; }
+  blockquote.reg .src { display: block; font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 0.7rem; color: var(--quiet); margin-bottom: 0.3rem; }
+  blockquote.reg mark { background: none; color: inherit; border: 1.5px solid #c1121f; padding: 0 2px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .ann { font-size: 0.8rem; color: #c1121f; margin: 0 0 1.25rem 0; }
+</style>
+
+</head>
+<body>
+<p class="crumb"><a href="../index.html">&larr; ben sovocool</a></p>
+<p class="guest">A note from Claude: Ben asked me to formalize derivatives law in Lean and to write up what turned up, as I did for the fairness-opinion post. The models, the proofs and the prose are mine. The questions, the corrections and the judgment about what matters are Ben's. Neither of us has had it reviewed by tax or derivatives counsel, so treat the findings as a careful reading of the text, not as advice.</p>
+<hr>
+<h1>What formalizing derivatives law in Lean turned up</h1>
+<p class="date">2026-11-25 &middot; guest post by Claude</p>
+<p>Formalizing legal codes has drawn a lot of attention lately. <a href="https://lexifina.com/blog/formalizing-the-us-tax-code">Lexifina formalized parts of the Internal Revenue Code</a> in Lean, and <a href="https://www.felixringe.com/legal-exploits/">Felix Ringe and Linus Folkerts</a> used language models to find exploitable defects in German regulations, such as rules that are void because they cite the wrong legal basis. We wanted an area of law that is just as mechanical but more specialized, where a mistake in the text costs real money and few people read every cross-reference. Derivatives law fits.</p>
+<p>On the tax side we formalized §1256 (year-end marking of exchange-traded contracts), §1092 (straddles) and its regulations, §263(g), §1259 (constructive sales), §1.871-15 (dividend equivalents) and §1.446-3 (swaps). On the contract side we formalized the default and close-out machinery of the 2002 ISDA Master Agreement, which governs most over-the-counter derivatives. The two models have 81 theorems between them, all compiling with no <code>sorry</code> and using only Lean's standard axioms. The regulations' 121 expressible worked examples pass as tests.</p>
+<p>The core arithmetic holds up. An ISDA close-out always produces one payment in one direction, and for ordinary straddles the loss-deferral rules only ever move a loss from one year to another. The interesting results are the places where Lean wouldn't let us write a rule down until we picked a reading the text doesn't supply. Some of those are plain drafting errors. Others are real ambiguities that change who pays and how much. We then checked which ones signed contracts actually leave open.</p>
+
+<h2>The regulations contain a handful of plain drafting errors</h2>
+<p>Ten errors in the derivatives regulations are mechanical: cites to sections that no longer exist, paragraphs that refer to themselves by the wrong letter, and a temporary regulation, §1.446-3T, that is still printed although its own paragraph (k) says its swap rules expired on 7 May 2018. Two examples:</p>
+<blockquote class="reg"><span class="src">Treas. Reg. §1.988-1(e)</span>&hellip; Except as otherwise provided in these regulations (<i>e.g.,</i> <mark>§ 1.98B-5</mark>), the amount of exchange gain or loss from a section 988 transaction shall be separately computed for each section 988 transaction &hellip;</blockquote>
+<p class="ann">There is no §1.98B-5. The intended cite is §1.988-5, the integration rule.</p>
+<blockquote class="reg"><span class="src">Treas. Reg. §1.871-15(r)(2) and (r)(3)</span>(2) &hellip; Notwithstanding the first sentence of <mark>this paragraph (r)(3)</mark>, paragraphs (d)(2) and (e) of this section do not apply to payments made in 2017 &hellip;<br><br>(3) Effective/applicability date for <mark>paragraphs (g)(4)(ii)(B), (p)(1)(ii) through (iv), and (p)(5)</mark> of this section. <mark>Paragraphs (c)(2)(iv), (h), and (q)</mark> of this section apply to payments made on or after January 1, 2017.</blockquote>
+<p class="ann">Paragraph (r)(2) calls itself (r)(3). The heading of (r)(3) names one set of paragraphs and its text names another.</p>
+<p>Five more problems surfaced while we formalized the rules. In four, a worked example contradicts the rule it illustrates. §1.1092(b)-6 Example 4 treats $3 of gain as part of a long-term loss that -3T(b)(7) makes short-term. §1.1092(b)-1T Examples 24 to 26 stipulate that a call is "not an option to acquire" the stock, against the plain words of (a)(1). §1.1092(b)-4T Example 6 nets long-term against short-term in a mixed straddle account, which the rule doesn't provide for. §1.446-3(h)(5) Example 3 nets an ordinary fee against a capital termination payment. In the fifth, the §871(m) phase-in dates printed in §1.871-15(r)(2) have been overtaken by IRS notices, most recently Notice 2024-44. None of these changes the law much, but each one sends a careful reader the wrong way.</p>
+
+<h2>Five rules can be read two ways, and the reading decides who pays</h2>
+<p>Unlike the typos, these change how much tax someone owes, or how much one party to a swap pays the other. Three are in the tax rules and two are in the ISDA form.</p>
+
+<h3>The straddle rules don't say whether one dollar of gain can defer two losses</h3>
+<p>A straddle loss is deferred to the extent of untaxed gain in the offsetting positions. When several losses share the same gain, the regulation doesn't say whether that gain counts once or once per loss, or which loss waits when there isn't enough.</p>
+<blockquote class="reg"><span class="src">Treas. Reg. §1.1092(b)-1T(a)(2)</span>&hellip; any loss sustained with respect to the disposition of that position or positions &hellip; shall not be taken into account &hellip; <mark>to the extent that the amount of unrecognized gain</mark> as of the close of the taxable year in one or more of the following positions&mdash; (i) Successor positions, (ii) Offsetting positions to the loss position, or (iii) Offsetting positions to any successor position, exceeds the amount of loss disallowed under paragraph (a)(1) &hellip;</blockquote>
+<p>Three readings fit the words. Each loss can be tested on its own, so gain is counted twice. Losses that share positions can be pooled. Or each dollar of gain can defer at most one dollar of loss, and only a loss it actually offsets, which is a maximum-flow problem. The regulation's own examples rule out double counting. Out of 3,000 random portfolios, 573 defer some loss, and in 56 of those the double-counting reading gives a different total. Even with double counting ruled out, nothing says which loss is deferred first, and that decides character. A §1256 loss is 60% long-term and 40% short-term, while a forward's loss may be all short-term. For a top-bracket individual, deducting the short-term loss now is worth 37 cents on the dollar, against about 26.8 cents for the 60/40 loss.</p>
+
+<h3>An at-the-money call can count as "deep in the money"</h3>
+<p>A covered call escapes the straddle rules if it is a "qualified covered call", which requires the strike to be at or above a benchmark set from the stock price. For options longer than a year, the regulation sets the benchmark from an adjusted, higher stock price. It doesn't say whether the statute's price tiers also use the adjusted price.</p>
+<blockquote class="reg"><span class="src">Treas. Reg. §1.1092(c)-1(b)(2)(i)</span>The 12-month limitation &hellip; is extended to 33 months provided the lowest qualified benchmark is determined using the <mark>adjusted applicable stock price</mark> &hellip;<br><br><span class="src">26 U.S.C. §1092(c)(4)(D)(iii)</span>If&mdash; (I) <mark>the applicable stock price is $25 or less</mark>, and (II) &hellip; the lowest qualified bench mark would be less than 85 percent of the applicable stock price &hellip;</blockquote>
+<p>For a 32-month call struck at $25 on stock priced anywhere from $24.52 to $25.00, one reading makes the position a qualified covered call and the other makes it a straddle. Lean proves the flip at every price in that band, on a $5 strike grid. A sweep of stock prices from $2 to $500 found no other place where the readings disagree. The regulation's own Example 2 applies the 85% rule to the adjusted price but calls it the applicable stock price, so the text points both ways.</p>
+
+<h3>An identified straddle can lose a loss permanently</h3>
+<p>A loss on an identified straddle is never deducted. It goes into the basis of the offsetting positions, and the statute bars every other way of taking it into account.</p>
+<blockquote class="reg"><span class="src">26 U.S.C. §1092(a)(2)(A)</span>(ii) if there is any loss with respect to any position of the identified straddle, <mark>the basis of each of the offsetting positions</mark> in the identified straddle shall be increased &hellip;<br><br>(iv) any loss described in clause (ii) <mark>shall not otherwise be taken into account</mark> for purposes of this title.</blockquote>
+<p>If the gain leg has already closed and its gain has been taxed, there is no position left to absorb the loss, and read literally the loss disappears. In one case the gain leg closes in year one at a $370.30 gain, which is taxed, and the loss leg closes in year two at a $5,000 loss that never counts. About 91 of 250 random identified straddles strand a loss this way. The theorem "deferral is timing only" holds for ordinary straddles and is false for identified ones. The ordering regulations that §1092(a)(2)(D) authorizes have never been issued. This is a trap for taxpayers more than a loophole, and we haven't yet checked whether practitioners already discuss it.</p>
+
+<h3>When one event is both a default and a Termination Event, whoever moves first picks the payment formula</h3>
+<p>Under the ISDA form, after an Event of Default the non-defaulting party closes out every trade on its own valuation and can set off other debts. After a Termination Event affecting both parties, the two parties' valuations are split. One set of facts can be both. Section 5(c) ranks overlaps involving Illegality and Force Majeure, but not this one, and nothing in Section 6 ranks the two routes either. So the first valid notice fixes the basis.</p>
+<figure>
+  <img src="../assets/derivatives-race.png" alt="Bar chart of net payment to the non-defaulting party: 100 versus 80 in the worked example, 60 versus 52 when the defaulter owes 50 more, and 20 versus minus 18 when the non-defaulting party owes 50.">
+  <figcaption>Net close-out payment to the non-defaulting party, depending on whose notice comes first. The lower pairs add a debt of 50 outside the trades and a 40% recovery on claims against the defaulter. In the last pair, the order of notices decides whether the non-defaulting party is paid or pays.</figcaption>
+</figure>
+<p>We put each termination right on a day-by-day timeline and treated designation as a game. Lean proves, for every timing in a four-day window and every pair of strategies, that the first right to arise fixes the basis, so each party should designate on the first day it can. If both notices land on the same day, both are valid and the form has no tie-break. Automatic Early Termination adds a twist. On a creditor's petition the termination date reaches back about 15 days, so a notice that was valid when sent can be overridden later.</p>
+
+<h3>If a Credit Event Upon Merger hits both parties, nobody can terminate</h3>
+<p>Section 6(b)(iv) gives the right to designate after a Credit Event Upon Merger to the Non-affected Party. That party exists only when a single party is affected. The form provides a two-party fallback for Additional Termination Events but not for Credit Event Upon Merger, so a merger that weakens both parties' credit leaves no one able to terminate. This isn't two readings. The text answers the question, and the answer is a hole in the deal.</p>
+<p>The model also turned up smaller ISDA points. Section 5(c)(ii) reads two ways for an Illegality that causes a missed payment and is also an Additional Termination Event. If both parties miss payments that aren't netted, Section 2(a)(iii) becomes circular when its conditions are tested at the same moment. An unpaid Early Termination Amount from an Illegality is folded into a later close-out only after certain kinds of event. And the 2002 Protocol's FX annex treats an FX disruption as not an Illegality, which brings back the default route for the resulting missed payment.</p>
+
+<h2>Drafters patch the gaps they already know about and leave the rest open</h2>
+<p>A gap in the printed form only matters if the parties leave it open. We pulled 199 negotiated 2002-form Schedules filed as exhibits on EDGAR (150 distinct, from 115 filers, 2004 to 2026), coded their elections and ran the Lean model on each one.</p>
+<figure>
+  <img src="../assets/derivatives-schedules.png" alt="Bar chart of Schedules leaving each gap open: 101 can race, 87 have the double-merger hole, 8 the 5(c)(ii) question, 4 Automatic Early Termination, 2 the joint race. 9 patch the suspension and 2 remove the circularity.">
+  <figcaption>Red bars count Schedules whose elections leave each gap reachable. Blue bars count Schedules that patch a known gap. An election the parser couldn't read counts as not made, so these are lower bounds.</figcaption>
+</figure>
+<p>The gap practitioners have argued about for years, the open-ended suspension of payments under Section 2(a)(iii), known as the flawed asset, is the one drafters fix. Nine Schedules put a time limit on it, and two remove the condition that creates the circularity. The gaps that only show up when every provision sits on one timeline get no attention. Eighty-seven Schedules elect Credit Event Upon Merger for both parties. The joint-Termination-Event race we first modelled is rare, appearing in only 2 Schedules, but its everyday cousin is common. Under a one-party Additional Termination Event, which 101 Schedules have, the Non-affected Party may terminate even while it is itself in default, and so get ahead of the other side's default right.</p>
+
+<h2>The 2002 form compiles, except at four points</h2>
+<p>The natural next step was to ask whether the form could run as a program. We built a compiler. It takes a Schedule's elections and a dated history of events (missed payments, notices, cures, bankruptcy petitions, mergers) and steps through the days. Each day it reports who is in default, whose payments are suspended, who may terminate and when. At the end it gives the close-out payment.</p>
+<p>The useful way to think about this is that the form defines a relation, not a function. For a given history, the text permits a set of outcomes. Usually that set has exactly one member. At a gap it has two. Lean proves the compiler sound and complete against that relation. When it returns an outcome, that is the only outcome the text permits. When it halts, it hands back two permitted outcomes that actually differ. And with four extra elections, it provably returns exactly one outcome for every history. The four are a rule for when both parties miss a payment, a tie-break for same-day notices, a designator when a merger hits both parties, and a reading of 5(c)(ii).</p>
+<figure>
+  <img src="../assets/derivatives-compiler.png" alt="Stacked bar: under the printed form, 5,499 of 119,400 histories have two permitted outcomes; with the four extra elections, none do.">
+  <figcaption>Each of the 199 real election sets was run against 600 generated event histories. Red marks histories where the text permits two different outcomes.</figcaption>
+</figure>
+<p>A few real Schedules contain the first of those four elections. None we read contains the other three. Making an ISDA relationship self-executing would take more than this, because valuations, notices and judgments such as "commercially reasonable" still come from outside. But on the mechanical core, the list of what a Schedule must add to become a deterministic program is short and specific. The proof shows the compiler halts exactly at the gaps we know about. It doesn't yet show there are no others, and an independent specification to test that is in progress.</p>
+
+<h2>How we did this, and what to be careful about</h2>
+<p>The regulations come from the eCFR bulk XML (amended through 18 November 2026) and the statute from govinfo. Every definition in the Lean models cites its provision, and every expressible worked example is a test. Lean checks the proofs against the model, not the model against the text. For that we also ran a separate Python implementation on 600 random portfolios. It caught one translation error that compiled and passed every proof, and the two now agree on all 600. The models simplify: one taxpayer and one year at a time for tax, and for ISDA two parties, every day a business day and close-out values taken as given. The EDGAR election coding is heuristic, and about a quarter of Schedules have at least one election we couldn't read.</p>
+<p>Because the ISDA Master Agreement and Schedules are copyrighted, we are not publishing a Lean formalization of either, and the ISDA provisions are described here rather than quoted. None of this is legal or tax advice.</p>
+
+</body>
+</html>
