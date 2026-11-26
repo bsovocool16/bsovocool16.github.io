@@ -67,7 +67,7 @@ save(fig, "derivatives-race.png")
 # 3. The compiler: how often the printed form determines a unique outcome.
 total = 119_400
 bars = [
-    ("Printed form", total - 5_499, 5_499),
+    ("Printed form", total - 18_813, 18_813),
     ("With the four\nextra elections", total, 0),
 ]
 fig, ax = plt.subplots(figsize=(7, 3.0))
